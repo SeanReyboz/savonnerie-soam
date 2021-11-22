@@ -7,13 +7,15 @@
   </head>
   <body>
     <header>
-      <a href=""><img class="logo" src="wp-content/themes/soam/images/logo.png" alt="Logo Soam"/></a>
-      
-      <ul>
-        <li><a href="">Gamme Soam</a></li>
-        <li><a href="">À propos</a></li>
-        <li><a href="">Conseils pratiques</a></li>
-        <li><a href="">Partenaires</a></li>
-        <li><a href="">Points de ventes</a></li>
-      </ul>
+      <div class="main_nav flex-row">
+        <a href=""><img class="logo" src="wp-content/themes/soam/images/logo.png" alt="Logo Soam"/></a>
+        
+        <ul class="nav flex-row">
+          <li><a class="text" href="">Gamme Soam</a></li>
+          <li><a class="text" href="">À propos</a></li>
+          <li><a class="text"  href="">Conseils pratiques</a></li>
+          <li><a class="text"  href="">Partenaires</a></li>
+          <li><a class="text"  href="">Points de ventes</a></li>
+        </ul>
+      </div>
     </header>

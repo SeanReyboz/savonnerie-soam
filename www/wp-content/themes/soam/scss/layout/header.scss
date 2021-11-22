@@ -1,6 +1,26 @@
 //Header .scss
 
+//Varaible
+@import "../base/colors";
+//Start
+.flex-row {
+	display: flex;
+	flex-direction: row;
+}
+
+.main_nav {
+	justify-content: space-between;
+}
 .logo {
 	height: 50px;
 	width: auto;
+}
+
+.text {
+	text-decoration: none;
+}
+.nav {
+	li {
+		margin-right: 40px;
+	}
 }
