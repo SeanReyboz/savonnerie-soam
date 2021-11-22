@@ -140,19 +140,22 @@ table {
 
 .main_nav {
   justify-content: space-between;
+  align-items: center;
+  padding: 34px 112px 34px 48px;
 }
-
-.logo {
+.main_nav .logo {
   height: 50px;
   width: auto;
+}
+.main_nav .nav li {
+  margin-right: 40px;
+}
+.main_nav #facebook {
+  margin-right: 16px;
 }
 
 .text {
   text-decoration: none;
-}
-
-.nav li {
-  margin-right: 40px;
 }
 
 h1 {

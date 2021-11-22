@@ -1,7 +1,5 @@
 //Header .scss
 
-//Varaible
-@import "../base/colors";
 //Start
 .flex-row {
 	display: flex;
@@ -10,17 +8,24 @@
 
 .main_nav {
 	justify-content: space-between;
-}
-.logo {
-	height: 50px;
-	width: auto;
+	align-items: center;
+	padding: 34px 112px 34px 48px;
+
+	.logo {
+		height: 50px;
+		width: auto;
+	}
+
+	.nav {
+		li {
+			margin-right: 40px;
+		}
+	}
+	#facebook {
+		margin-right: 16px;
+	}
 }
 
 .text {
 	text-decoration: none;
-}
-.nav {
-	li {
-		margin-right: 40px;
-	}
 }
