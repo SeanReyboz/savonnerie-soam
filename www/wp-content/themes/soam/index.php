@@ -1,16 +1,16 @@
 <?php 
 
-wp_head();
+get_header();
 
 ?>
-<body>
+
     <h1>
     by Pikoom - 2021
     </h1>
-</body>
+
 
 <?php 
 
-wp_footer();
+get_footer();
 
 ?>
