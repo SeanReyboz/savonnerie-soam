@@ -4,10 +4,12 @@
 @import "pages/home";
 @import "layout/header";
 @import "base/colors";
+@import "base/fonts";
 
 h1 {
 	color: green;
 }
-.text {
+body * {
+	font-family: mulish;
 	color: $black;
 }
