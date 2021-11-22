@@ -7,8 +7,5 @@
   </head>
   <body>
     <header>
-      <h1><?php bloginfo('name'); ?></h1>
-      <div class="menu-container">
-        <?php wp_nav_menu(array('menu' => 'primary_menu')); ?>
-      </div>
+      <img class="logo" src="wp-content/themes/soam/images/logo.png" alt="Logo Soam"/>
     </header>
