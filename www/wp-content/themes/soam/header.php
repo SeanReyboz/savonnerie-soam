@@ -7,5 +7,13 @@
   </head>
   <body>
     <header>
-      <img class="logo" src="wp-content/themes/soam/images/logo.png" alt="Logo Soam"/>
+      <a href=""><img class="logo" src="wp-content/themes/soam/images/logo.png" alt="Logo Soam"/></a>
+      
+      <ul>
+        <li><a href="">Gamme Soam</a></li>
+        <li><a href="">À propos</a></li>
+        <li><a href="">Conseils pratiques</a></li>
+        <li><a href="">Partenaires</a></li>
+        <li><a href="">Points de ventes</a></li>
+      </ul>
     </header>
