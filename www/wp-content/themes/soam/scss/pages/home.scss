@@ -1,0 +1,20 @@
+#hero-section {
+	display: flex;
+	justify-content: space-between;
+	margin-left: 216px;
+	margin-right: 112px;
+	margin-top: 48px;
+
+	#hero-info {
+		max-width: 488px;
+		p {
+			margin-top: 32px;
+		}
+		a {
+			margin-top: 24px;
+		}
+	}
+	img {
+		border-radius: 2rem;
+	}
+}
