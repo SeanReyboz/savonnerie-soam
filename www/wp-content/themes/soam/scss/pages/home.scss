@@ -66,3 +66,13 @@
     text-align: center;
   }
 }
+#features-section {
+	.features {
+		img {
+			-webkit-mask-image: var(--mask);
+
+			//	-webkit-mask-image: url(http://yoksel.github.io/Sandbox/img/tiles/tile-transparent-black.png),linear-gradient(-45deg, black 20%, transparent 50%);
+			-webkit-mask-repeat: space;
+		}
+	}
+}
