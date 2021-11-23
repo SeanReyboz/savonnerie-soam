@@ -28,3 +28,9 @@
                <img src="" alt="">
           </div>
         </div>
+
+
+        <footer>
+    </footer>
+  </body>
+</html>
