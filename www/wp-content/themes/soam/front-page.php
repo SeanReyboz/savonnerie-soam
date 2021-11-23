@@ -14,7 +14,7 @@ get_header();
             Implanté en Savoie, dans le massif des Bauges, tous les savons et cosmétiques sont confectionnés
              à la main pour répondre au mieux aux besoins de chacun.
         </p>
-        <a class="button-xl bg-cyan color-white" href=""><button>Viens me découvrir !</button> </a>
+        <a class="button-xl bg-cyan color-white" href="">Viens me découvrir !</a>
     </div>
     <img src="https://picsum.photos/488/515" alt="Image savons">
 </section>
@@ -74,7 +74,7 @@ get_header();
 </section>
 
 <!--
-points de ventes
+    points de ventes
 -->
 <section id="selling-points-section">
 
