@@ -271,12 +271,14 @@ table {
   padding: 1.25rem 2rem;
   border-radius: 0.5rem;
   text-decoration: none;
+  display: inline-flex;
 }
 
 .button {
   padding: 0.5625rem 2.375rem;
   text-decoration: none;
   border-radius: 0.5rem;
+  display: inline-flex;
 }
 
 body {
