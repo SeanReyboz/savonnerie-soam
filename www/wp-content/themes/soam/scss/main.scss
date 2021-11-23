@@ -6,7 +6,15 @@
 @import "base/colors";
 @import "base/fonts";
 @import "layout/button.scss";
-body * {
-	font-family: mulish;
-	color: $black;
+
+body {
+	// ---
+	//  Background color - full page
+	// ---
+	background-color: #eaeaea;
+
+	* {
+		font-family: mulish;
+		color: $black;
+	}
 }

@@ -135,10 +135,6 @@ table {
   border-spacing: 0;
 }
 
-html {
-  background-color: #eaeaea;
-}
-
 #hero-section {
   display: flex;
   justify-content: center;
@@ -281,6 +277,9 @@ html {
   padding: 0.5625rem 2.375rem;
 }
 
+body {
+  background-color: #eaeaea;
+}
 body * {
   font-family: mulish;
   color: #090909;
