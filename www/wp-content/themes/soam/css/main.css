@@ -266,6 +266,16 @@ table {
   font-family: "Mulish", sans-serif;
 }
 
+.button-xl {
+  padding: 1.25rem 2rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+}
+
+.button {
+  padding: 0.5625rem 2.375rem;
+}
+
 body * {
   font-family: mulish;
   color: #090909;
