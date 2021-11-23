@@ -10,7 +10,7 @@
       </div>
       <?php dynamic_sidebar( 'footer-sidebar' ); ?>
     </div>
-    <small class="copyrights">
+    <small class="copyrights color-white text-xs ft-mulish">
       &copy; 2021 La Savonnerie Soâm | Design et Développement par Pikoom 
     </small>
   </footer>
