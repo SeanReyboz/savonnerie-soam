@@ -19,7 +19,7 @@
           <li><a class="text"  href="">Points de ventes</a></li>
         </ul>
         <div class="rs_icons">
-          <a id="facebook" target="_blank" href="https://www.facebook.com/SoAmsavonneriebbio"  ><img src="<?php echo get_template_directory_uri() . '/images/icons/facebook.svg'; ?>" alt="Logo facebook"></a>
+          <a id="facebook" class="mg-16px-r" target="_blank" href="https://www.facebook.com/SoAmsavonneriebbio"  ><img src="<?php echo get_template_directory_uri() . '/images/icons/facebook.svg'; ?>" alt="Logo facebook"></a>
           <a id="instagram" target="_blank" href="https://www.instagram.com/soam_savonneriebio/"><img src="<?php echo get_template_directory_uri() . '/images/icons/instagram.svg'; ?>" alt="Logo Instagram"></a>
         </div>
       </div>
