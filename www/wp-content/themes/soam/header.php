@@ -11,8 +11,8 @@
       <div class="main_nav flex-row">
         <a href=""><img class="logo" src="<?php echo get_template_directory_uri() . '/images/logo.png'; ?>" alt="Logo Soam"/></a>
         
-        <ul class="nav flex-row">
-          <li><a class="text" href="">Gamme Soam</a></li>
+        <ul class="nav flex-row ">
+          <li><a class="text ft-bold" href="">Gamme Soam</a></li>
           <li><a class="text" href="">À propos</a></li>
           <li><a class="text"  href="">Conseils pratiques</a></li>
           <li><a class="text"  href="">Partenaires</a></li>
