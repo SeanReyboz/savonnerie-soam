@@ -275,6 +275,8 @@ table {
 
 .button {
   padding: 0.5625rem 2.375rem;
+  text-decoration: none;
+  border-radius: 0.5rem;
 }
 
 body {
