@@ -5,3 +5,41 @@ $white: #eaeaea;
 $cyan: #008788;
 $cyan-light: #dce4e4;
 $magenta: #9d2450;
+
+// ---
+//  Foreground colors
+// ---
+.color-black {
+  color: $black;
+}
+.color-white {
+  color: $white;
+}
+.color-cyan {
+  color: $cyan;
+}
+.color-cyan-light {
+  color: $cyan-light;
+}
+.color-magenta {
+  color: $magenta;
+}
+
+// ---
+//  Background colors
+// ---
+.bg-black {
+  background-color: $black;
+}
+.bg-white {
+  background-color: $white;
+}
+.bg-cyan {
+  background-color: $cyan;
+}
+.bg-cyan-light {
+  background-color: $cyan-light;
+}
+.bg-magenta {
+  background-color: $magenta;
+}
