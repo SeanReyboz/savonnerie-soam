@@ -30,10 +30,28 @@
 .text-xl {
   // 28px
   font-size: 1.75rem;
-  line-height: 3rem;
+  line-height: 125%;
 }
 .text-xxl {
   // 48 px
   font-size: 3rem;
-  line-height: 3.75rem;
+  line-height: 115%;
+}
+
+// Font weight
+
+.ft-bold {
+  font-weight: 700;
+}
+.ft-semibold {
+  font-weight: 600;
+}
+
+// Font family
+
+.ft-nunito {
+  font-family: "Nunito", sans-serif;
+}
+.ft-mulish {
+  font-family: "Mulish", sans-serif;
 }
