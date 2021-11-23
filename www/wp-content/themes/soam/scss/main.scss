@@ -4,20 +4,22 @@
 // @Import
 //----
 @import "base/reset";
-@import "pages/home";
-@import "layout/header";
 @import "base/colors";
 @import "base/fonts";
-@import "layout/button.scss";
+@import "base/shadows";
+@import "layout/header";
+@import "layout/button";
+@import "layout/footer";
+@import "pages/home";
 
 body {
-	// ---
-	//  Background color - full page
-	// ---
-	background-color: #eaeaea;
+  // ---
+  //  Background color - full page
+  // ---
+  background-color: #eaeaea;
 
-	* {
-		font-family: mulish;
-		color: $black;
-	}
+  * {
+    font-family: mulish;
+    color: $black;
+  }
 }
