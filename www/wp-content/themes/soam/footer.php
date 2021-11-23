@@ -50,7 +50,7 @@
       </nav>
     </div>
     <small class="copyrights color-white text-xs ft-mulish mg-72px-t">
-      &copy; 2021 La Savonnerie Soâm | Design et Développement par Pikoom 
+      &copy; 2021 La Savonnerie Soâm | Design et Développement par <a href="https://mmi.univ-smb.fr/">Pikoom 🌵</a>
     </small>
   </footer>
 

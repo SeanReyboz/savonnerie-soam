@@ -3,6 +3,9 @@
 footer {
   padding-block: 6rem 2rem;
   background-color: $black;
+  background-image: url("../images/footer_image.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
 
   .content {
     display: flex;
@@ -49,5 +52,22 @@ footer {
     display: block;
     max-width: max-content;
     margin-inline: auto;
+
+    a {
+      position: relative;
+      color: $white;
+      text-decoration: none;
+
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 1px;
+        background-color: rgba($white, $alpha: 0.7);
+      }
+    }
   }
 }
