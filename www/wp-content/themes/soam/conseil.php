@@ -37,6 +37,9 @@
         <h1>Me contacter</h1>
         <p>...</p>
         <a class="button-xl bg-cyan color-white" href=""><button>Envoyer !</button></a>
+        <p>Name</p>
+        <p>Email</p>
+        <p>Message</p>
       </div>
     </div>
 
