@@ -16,4 +16,15 @@
               <p></p>
             </div>
          </div>
-        
+
+       <div class="tip2">
+         <div class="text2">
+             <h1>Soin de la peau</h1>
+             <img src="" alt="line">
+             <p></p>
+             <p></p>
+           </div>
+           <div class="image2">
+               <img src="" alt="">
+          </div>
+        </div>
