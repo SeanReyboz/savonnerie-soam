@@ -29,6 +29,11 @@
 // ----
 
 #values-section {
+	margin-top: 136px;
+	padding: 128px 112px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 	.values {
 		display: flex;
 		flex-direction: column;
