@@ -6,7 +6,10 @@
   </head>
   <body>
     <div class="search_menu">
-      <a href="#"></a>
+      <a href="#all"></a>
+      <a href="#soap"></a>
+      <a href="#oil"></a>
+      <a href="#balm"></a>
     </div>
     <div class="products">
 
@@ -116,16 +119,55 @@
 
       <div class="balm">
         <h2></h2>
+        <div class="balm_window">
+          <button type="button" name="yallah">
+            <img src="" alt="Baume Yallah nutrition">
+            <h3>Baume Yallah nutrition</h3>
+          </button>
+
+          <button type="button" name="miracle">
+            <img src="" alt="Baume miracle amande douce">
+            <h3>Baume miracle amande douce</h3>
+          </button>
+
+          <button type="button" name="demaquillant">
+            <img src="" alt="Baume nettoyant démaquillant">
+            <h3>Baume nettoyant démaquillant</h3>
+          </button>
+
+          <button type="button" name="relaxant">
+            <img src="" alt="Baume de massage relaxant">
+            <h3>Baume de massage relaxant</h3>
+          </button>
+
+          <button type="button" name="miracle2">
+            <img src="" alt="Baume miracle huile d'olive">
+            <h3>Baume miracle huile d'olive</h3>
+          </button>
+
+          <button type="button" name="intense">
+            <img src="" alt="Baume réparateur intense ++">
+            <h3>Baume réparateur intense ++</h3>
+          </button>
+
+        </div>
 
       </div>
 
     </div>
     <div class="infos">
       <div class="about">
-
+        <h2></h2>
+        <p></p>
+        <button type="button" name="more"></button>
       </div>
-      <div class="find_me">
 
+      <div class="find_me">
+        <h2></h2>
+        <p></p>
+        <a href="#adress"></a>
+        <a href="#phone"></a>
+        <a href="#mail"></a>
       </div>
     </div>
     <footer>
