@@ -15,15 +15,14 @@
 @import "pages/produits";
 
 body {
-  // ---
-  //  Background color - full page
-  // ---
-  background-color: $white;
+	// ---
+	//  Background color - full page
+	// ---
+	background-color: $white;
+	font-size: 1rem;
 
-  * {
-    font-family: mulish;
-    color: $black;
-  }
-
-  
+	* {
+		font-family: mulish;
+		color: $black;
+	}
 }
