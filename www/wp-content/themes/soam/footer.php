@@ -1,5 +1,5 @@
   <footer>
-    <div class="content">
+    <div class="content main-wrapper">
       <div class="brand-information">
         <img class="brand-logo" src="<?php echo get_template_directory_uri() . '/images/logo_white.png'  ?>" alt="Logo Soâm">
         <p class="text-sm brand-desc">

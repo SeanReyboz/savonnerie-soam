@@ -7,19 +7,20 @@
 @import "base/colors";
 @import "base/fonts";
 @import "base/shadows";
+@import "base/spacing";
 @import "layout/header";
 @import "layout/button";
 @import "layout/footer";
 @import "pages/home";
 
 body {
-	// ---
-	//  Background color - full page
-	// ---
-	background-color: $white;
+  // ---
+  //  Background color - full page
+  // ---
+  background-color: $white;
 
-	* {
-		font-family: mulish;
-		color: $black;
-	}
+  * {
+    font-family: mulish;
+    color: $black;
+  }
 }
