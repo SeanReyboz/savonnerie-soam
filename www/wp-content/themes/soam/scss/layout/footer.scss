@@ -17,4 +17,31 @@ footer {
       max-width: 280px;
     }
   }
+
+  .footer-nav {
+    min-width: 700px;
+    display: flex;
+    justify-content: space-between;
+    color: $white;
+
+    &-entry-title {
+      font-weight: 700;
+      font-size: 1rem;
+      line-height: 110%;
+    }
+
+    &-entry-list {
+      margin-top: 1.5rem;
+
+      li:not(:first-of-type) {
+        margin-top: 0.5rem;
+      }
+    }
+  }
+
+  .copyrights {
+    display: block;
+    max-width: max-content;
+    margin-inline: auto;
+  }
 }

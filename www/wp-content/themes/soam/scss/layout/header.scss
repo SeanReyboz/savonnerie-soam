@@ -25,4 +25,9 @@
 
 .text {
 	text-decoration: none;
+	color: $black;
+
+	&:hover {
+		color: $cyan;
+	}
 }

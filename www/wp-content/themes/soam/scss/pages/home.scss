@@ -31,9 +31,13 @@
 #values-section {
 	margin-top: 136px;
 	padding: 128px 112px;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+
+	.values-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
 	.values {
 		display: flex;
 		flex-direction: column;
@@ -55,10 +59,33 @@
 }
 
 // ----
-// savons et cosmétiques
+// 	savons et cosmétiques
 // ----
 #features-section {
 	h1 {
 		text-align: center;
+	}
+}
+#features-section {
+	#features {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: row;
+	}
+	.features {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		max-width: 384px;
+		img {
+			width: 300px;
+			height: 300px;
+			-webkit-mask-image: var(--mask);
+			-webkit-mask-repeat: round;
+		}
+
+		a {
+			text-decoration: none;
+		}
 	}
 }
