@@ -19,37 +19,42 @@ get_header();
     <img src="https://picsum.photos/488/515" alt="Image savons">
 </section>
 
-// ----
-// valeurs
-// ----
+<!--
+    Valeurs
+ -->
 <section id="values-section">
-    
+    <div class="values ">
+        <img src="<?php echo get_template_directory_uri() . '/images/icons/icons_respect-du-corps.png'; ?>" alt="Icon ">
+        <h3 class="text-xl ft-semibold" >Respect du corps</h3>
+        <p class="text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, eius mollitia minima expedita modi autem aliquid quasi quo, sequi in enim harum recusandae doloribus reprehenderit cupiditate iusto vel impedit incidunt.</p>
+        <a class="ft-semibold color-cyan" href="">En savoir plus</a>
+    </div>
 </section>
 
-// ----
-// Savons et cosmétiques
-// ----
+<!--
+    Savons et cosmétiques
+-->
 <section id="features-section">
 
 </section>
 
-// ----
-// A propos
-// ----
+<!--
+    A propos
+-->
 <section id="about-section">
 
 </section>
 
-// ----
-// Besoin de conseils ? 
-// ----
+<!--
+    Besoin de conseils ? 
+-->
 <section id="advice-section">
 
 </section>
 
-// ----
-// points de ventes 
-// ----
+<!--
+points de ventes 
+-->
 <section id="selling-points-section">
 
 </section>

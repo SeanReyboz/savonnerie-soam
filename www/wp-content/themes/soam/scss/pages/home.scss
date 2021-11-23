@@ -1,3 +1,7 @@
+// ----
+// hero section
+// ----
+
 #hero-section {
 	display: flex;
 	justify-content: center;
@@ -17,5 +21,35 @@
 	}
 	img {
 		border-radius: 2rem;
+	}
+}
+
+// ----
+// values section
+// ----
+
+#values-section {
+	.values {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		max-width: 384px;
+		text-align: center;
+
+		img {
+			width: 153px;
+			height: auto;
+		}
+		h3 {
+			margin-top: 1rem;
+		}
+		p {
+			margin-top: 1.5rem;
+			width: 240px;
+		}
+		a {
+			margin-top: 1rem;
+			text-decoration: none;
+		}
 	}
 }
