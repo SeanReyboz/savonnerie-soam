@@ -13,13 +13,13 @@
 @import "pages/home";
 
 body {
-  // ---
-  //  Background color - full page
-  // ---
-  background-color: #eaeaea;
+	// ---
+	//  Background color - full page
+	// ---
+	background-color: $white;
 
-  * {
-    font-family: mulish;
-    color: $black;
-  }
+	* {
+		font-family: mulish;
+		color: $black;
+	}
 }
