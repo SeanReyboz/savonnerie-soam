@@ -5,3 +5,35 @@
 
 //mulish regular, semi bold
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;600&display=swap");
+
+// Font sizes
+.text-base {
+  // 16px
+  font-size: 1rem;
+  line-height: 150%;
+}
+.text-sm {
+  // 14px
+  font-size: 0.875rem;
+  line-height: 140%;
+}
+.text-xs {
+  // 10 px
+  font-size: 0.625rem;
+  line-height: 140%;
+}
+.text-lg {
+  // 24px
+  font-size: 1.5rem;
+  line-height: 120%;
+}
+.text-xl {
+  // 28px
+  font-size: 1.75rem;
+  line-height: 3rem;
+}
+.text-xxl {
+  // 48 px
+  font-size: 3rem;
+  line-height: 3.75rem;
+}
