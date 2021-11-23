@@ -18,15 +18,38 @@ get_header();
     </div>
     <img src="https://picsum.photos/488/515" alt="Image savons">
 </section>
+
+// ----
+// valeurs
+// ----
+<section id="values-section">
+
+</section>
+
+// ----
+// Savons et cosmétiques
+// ----
 <section id="features-section">
 
 </section>
+
+// ----
+// A propos
+// ----
 <section id="about-section">
 
 </section>
+
+// ----
+// Besoin de conseils ? 
+// ----
 <section id="advice-section">
 
 </section>
+
+// ----
+// points de ventes 
+// ----
 <section id="selling-points-section">
 
 </section>
