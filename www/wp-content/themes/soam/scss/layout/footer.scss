@@ -3,4 +3,18 @@
 footer {
   padding-block: 6rem 2rem;
   background-color: $black;
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .brand-logo {
+      max-width: 175px;
+      height: auto;
+    }
+    .brand-desc {
+      max-width: 280px;
+    }
+  }
 }
