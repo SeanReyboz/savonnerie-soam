@@ -5,6 +5,12 @@
 	border-radius: 0.5rem;
 	text-decoration: none;
 	display: inline-flex;
+	transition: 0.3s;
+}
+.button-xl:hover {
+	border: solid 1px $cyan;
+	background-color: $white;
+	color: $cyan;
 }
 
 .button {
