@@ -7,7 +7,7 @@
   <body>
     <div class="tip1">
       <div class="image1">
-        <img src="" alt="">
+        <img src=<?php echo get_template_directory_uri().'/images/conseils/hair.jpg'?>  alt="Cheveux"/>
       </div>
       <div class="text1">
         <h1>Soin des Cheveux</h1>
