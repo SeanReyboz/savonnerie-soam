@@ -58,6 +58,10 @@ get_header();
     <h1 class="ft-nunito text-xxl ft-bold ">
         Savons et cosmétiques
     </h1>
+    <div class="features">
+        <img src="https://picsum.photos/300/300" style=" --mask:url(<?php echo get_template_directory_uri() . '/images/blob/blob1.png'; ?>);" alt="png mask blob">
+        
+    </div>
 </section>
 
 <!--
