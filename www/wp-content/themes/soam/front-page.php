@@ -23,29 +23,30 @@ get_header();
     Valeurs
  -->
 <section id="values-section" class="bg-cyan-light">
-    <!-- Respect du corps -->
-    <div class="values ">
-        <img src="<?php echo get_template_directory_uri() . '/images/icons/icons_respect-du-corps.png'; ?>" alt="Icon ">
-        <h3 class="text-xl ft-semibold mg-16px-t" >Respect du corps</h3>
-        <p class="text-base mg-24px-t">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, eius mollitia minima expedita modi autem aliquid quasi quo, sequi in enim harum recusandae doloribus reprehenderit cupiditate iusto vel impedit incidunt.</p>
-        <a class="ft-semibold color-cyan mg-16px-t" href="">En savoir plus</a>
-    </div>
-     <!-- Produits Locaux -->
-    <div class="values ">
-        <img src="<?php echo get_template_directory_uri() . '/images/icons/icons_produits-locaux.png'; ?>" alt="Icon ">
-        <h3 class="text-xl ft-semibold mg-16px-t" >Produits Locaux</h3>
-        <p class="text-base mg-24px-t">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, eius mollitia minima expedita modi autem aliquid quasi quo, sequi in enim harum recusandae doloribus reprehenderit cupiditate iusto vel impedit incidunt.</p>
-        <a class="ft-semibold color-cyan mg-16px-t" href="">En savoir plus</a>
-    </div>
-    <!-- Produits naturels -->
-    <div class="values ">
-        <img src="<?php echo get_template_directory_uri() . '/images/icons/icons_produits-naturels.png'; ?>" alt="Icon ">
-        <h3 class="text-xl ft-semibold mg-16px-t" >Produits naturels</h3>
-        <p class="text-base mg-24px-t">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, eius mollitia minima expedita modi autem aliquid quasi quo, sequi in enim harum recusandae doloribus reprehenderit cupiditate iusto vel impedit incidunt.</p>
-        <a class="ft-semibold color-cyan mg-16px-t" href="">En savoir plus</a>
+    <div class="main-wrapper values-container">
+        <!-- Respect du corps -->
+        <div class="values ">
+            <img src="<?php echo get_template_directory_uri() . '/images/icons/icons_respect-du-corps.png'; ?>" alt="Icon ">
+            <h3 class="text-xl ft-semibold mg-16px-t" >Respect du corps</h3>
+            <p class="text-base mg-24px-t">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, eius mollitia minima expedita modi autem aliquid quasi quo, sequi in enim harum recusandae doloribus reprehenderit cupiditate iusto vel impedit incidunt.</p>
+            <a class="ft-semibold color-cyan mg-16px-t" href="">En savoir plus</a>
+        </div>
+        <!-- Produits Locaux -->
+        <div class="values ">
+            <img src="<?php echo get_template_directory_uri() . '/images/icons/icons_produits-locaux.png'; ?>" alt="Icon ">
+            <h3 class="text-xl ft-semibold mg-16px-t" >Produits Locaux</h3>
+            <p class="text-base mg-24px-t">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, eius mollitia minima expedita modi autem aliquid quasi quo, sequi in enim harum recusandae doloribus reprehenderit cupiditate iusto vel impedit incidunt.</p>
+            <a class="ft-semibold color-cyan mg-16px-t" href="">En savoir plus</a>
+        </div>
+        <!-- Produits naturels -->
+        <div class="values ">
+            <img src="<?php echo get_template_directory_uri() . '/images/icons/icons_produits-naturels.png'; ?>" alt="Icon ">
+            <h3 class="text-xl ft-semibold mg-16px-t" >Produits naturels</h3>
+            <p class="text-base mg-24px-t">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, eius mollitia minima expedita modi autem aliquid quasi quo, sequi in enim harum recusandae doloribus reprehenderit cupiditate iusto vel impedit incidunt.</p>
+            <a class="ft-semibold color-cyan mg-16px-t" href="">En savoir plus</a>
+        </div>
     </div>
 </section>
-
 
 
 <!--
