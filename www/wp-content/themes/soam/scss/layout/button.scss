@@ -1,5 +1,8 @@
 //Button start
 
+// ----
+// Button xl and hover
+// ----
 .button-xl {
 	padding: 1.25rem 2rem;
 	border-radius: 0.5rem;
@@ -13,9 +16,17 @@
 	color: $cyan;
 }
 
+// ----
+// Button and hover
+// ----
 .button {
 	padding: 0.5625rem 2.375rem;
 	text-decoration: none;
 	border-radius: 0.5rem;
 	display: inline-flex;
+}
+.button:hover {
+	border: solid 1px $cyan;
+	background-color: $white;
+	color: $cyan;
 }

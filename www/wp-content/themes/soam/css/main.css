@@ -288,6 +288,12 @@ table {
   display: inline-flex;
 }
 
+.button:hover {
+  border: solid 1px #008788;
+  background-color: #eaeaea;
+  color: #008788;
+}
+
 body {
   background-color: #eaeaea;
 }
