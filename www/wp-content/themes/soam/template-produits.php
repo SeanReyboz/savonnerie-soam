@@ -1,15 +1,16 @@
-<!DOCTYPE html>
-<html lang="fr" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
+<?php
+/*
+Template Name: Page produit
+ */
+get_header();
+?>
+
+
     <div class="search_menu">
-      <a href="#all"></a>
-      <a href="#soap"></a>
-      <a href="#oil"></a>
-      <a href="#balm"></a>
+      <a href="#all">Tous les produis</a>
+      <a href="#soap">Savons</a>
+      <a href="#oil">Huiles et Sérums</a>
+      <a href="#balm">Baumes</a>
     </div>
     <div class="products">
 
@@ -170,7 +171,7 @@
         <a href="#mail"></a>
       </div>
     </div>
-    <footer>
-    </footer>
-  </body>
-</html>
+
+    <?php 
+    get_footer()
+    ?>
