@@ -46,11 +46,17 @@ get_header();
     </div>
 </section>
 
+
+
 <!--
     Savons et cosmétiques
 -->
-<section id="features-section">
+<section id="features-section" class="pg-112px-t">
 
+
+    <h1 class="ft-nunito text-xxl ft-bold ">
+        Savons et cosmétiques
+    </h1>
 </section>
 
 <!--
