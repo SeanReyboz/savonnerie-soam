@@ -29,6 +29,17 @@
       </div>
     </div>
 
+    <div class="contact">
+      <div class="image3">
+        <img src="" alt="">
+      </div>
+      <div class="text3">
+        <h1>Me contacter</h1>
+        <p>...</p>
+        <a class="button-xl bg-cyan color-white" href=""><button>Envoyer !</button></a>
+      </div>
+    </div>
+
 
 
 
