@@ -1,8 +1,8 @@
 // Spacing related style including the wrappers
 
 .main-wrapper {
-  max-width: 1216px;
-  margin-inline: auto;
+	max-width: 1216px;
+	margin-inline: auto;
 }
 
 // ---
@@ -10,49 +10,49 @@
 // ---
 
 $spacings: 8px, 16px, 24px, 32px, 40px, 48px, 56px, 64px, 72px, 88px, 96px,
-  112px;
+	112px, 136px;
 
 @each $spacing in $spacings {
-  .mg-#{$spacing} {
-    margin: $spacing;
-    &-x {
-      margin-inline: $spacing;
-    }
-    &-y {
-      margin-block: $spacing;
-    }
-    &-t {
-      margin-top: $spacing;
-    }
-    &-b {
-      margin-bottom: $spacing;
-    }
-    &-l {
-      margin-left: $spacing;
-    }
-    &-r {
-      margin-right: $spacing;
-    }
-  }
-  .pg-#{$spacing} {
-    padding: $spacing;
-    &-x {
-      padding-inline: $spacing;
-    }
-    &-y {
-      padding-block: $spacing;
-    }
-    &-t {
-      padding-top: $spacing;
-    }
-    &-b {
-      padding-bottom: $spacing;
-    }
-    &-l {
-      padding-left: $spacing;
-    }
-    &-r {
-      padding-right: $spacing;
-    }
-  }
+	.mg-#{$spacing} {
+		margin: $spacing;
+		&-x {
+			margin-inline: $spacing;
+		}
+		&-y {
+			margin-block: $spacing;
+		}
+		&-t {
+			margin-top: $spacing;
+		}
+		&-b {
+			margin-bottom: $spacing;
+		}
+		&-l {
+			margin-left: $spacing;
+		}
+		&-r {
+			margin-right: $spacing;
+		}
+	}
+	.pg-#{$spacing} {
+		padding: $spacing;
+		&-x {
+			padding-inline: $spacing;
+		}
+		&-y {
+			padding-block: $spacing;
+		}
+		&-t {
+			padding-top: $spacing;
+		}
+		&-b {
+			padding-bottom: $spacing;
+		}
+		&-l {
+			padding-left: $spacing;
+		}
+		&-r {
+			padding-right: $spacing;
+		}
+	}
 }

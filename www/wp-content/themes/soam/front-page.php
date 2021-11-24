@@ -22,7 +22,7 @@ get_header();
 <!--
     Valeurs
  -->
-<section id="values-section" class="bg-cyan-light">
+<section id="values-section" class="mg-136px-t bg-cyan-light">
     <div class="main-wrapper values-container">
         <!-- Respect du corps -->
         <div class="values ">
@@ -52,7 +52,7 @@ get_header();
 <!--
     Savons et cosmétiques
 -->
-<section id="features-section" class="pg-112px-t pg-112px-x">
+<section id="features-section" class="pg-136px-t main-wrapper">
 
 
     <h1 class="ft-nunito text-xxl ft-bold ">
@@ -88,7 +88,7 @@ get_header();
 <!--
     A propos
 -->
-<section id="about-section">
+<section id="about-section" class="mg-136px-t">
 
 </section>
 
