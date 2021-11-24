@@ -55,9 +55,9 @@ get_header();
 <section id="features-section" class="pg-136px-t main-wrapper">
 
 
-    <h1 class="ft-nunito text-xxl ft-bold ">
+    <h2 class="ft-nunito text-xxl ft-bold ">
         Savons et cosmétiques
-    </h1>
+    </h2>
     <div id="features" class="mg-48px-t">
         <!-- Features 1 -->
         <div class="features">
@@ -88,7 +88,20 @@ get_header();
 <!--
     A propos
 -->
-<section id="about-section" class="mg-136px-t">
+<section id="about-section" class="bg-magenta mg-136px-t pg-112px-l pg-64px-y">
+
+
+
+    <!-- About text -->
+    <div id="about-text">
+        <h2 class="ft-nunito text-xxl ft-bold color-white" >
+            À Propos
+        </h2>
+        <p class="mg-24px-t color-white">
+        Soâm est une savonnerie qui s’engage à respecter votre peau en utilisant des ingrédients 100% naturels. Implanté en Savoie, dans le massif des Bauges, tous les savons et cosmétiques sont confectionnés à la main pour répondre au mieux aux besoins de chacun.
+        </p>
+        <a id="about-button" class="mg-32px-t button bg-cyan color-white" href="">En savoir plus</a>
+    </div>
 
 </section>
 

@@ -88,3 +88,16 @@
 		}
 	}
 }
+
+// ----
+// A propos
+// ----
+#about-section {
+	padding-right: 320px;
+	#about-text {
+		max-width: 384px;
+		#about-button {
+			border: 1px solid $magenta;
+		}
+	}
+}
