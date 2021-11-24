@@ -32,7 +32,7 @@ get_header();
         <img src="" alt="">
       </div>
       <div class="text3">
-        <h1>Me contacter</h1>
+        <h2>Me contacter</h2>
         <p>...</p>
         <a class="button-xl bg-cyan color-white" href=""><button>Envoyer !</button></a>
         <p>Name</p>
