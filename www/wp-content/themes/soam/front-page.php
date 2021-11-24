@@ -7,7 +7,7 @@ get_header();
 ?>
 <section id="hero-section">
     <div id="hero-info">
-        <h1 class="text-xxl ft-bold">
+        <h1 class="text-xxl ft-bold ">
             <?php echo get_field("title"); ?>
         </h1>
         <p class="text-base">
