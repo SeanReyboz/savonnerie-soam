@@ -1,9 +1,12 @@
-<?php
-/// Homepage
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Agence Pikoom">
+    <title><?php bloginfo('name'); ?></title>
+    <?php wp_head(); ?>
+  </head>
 
-get_header();
-
-?>
   <body>
     <div id="page404">
       <h1 class="ft-nunito mg-136px-t">Oups, erreur 404</h1>
