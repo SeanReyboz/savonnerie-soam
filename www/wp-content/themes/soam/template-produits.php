@@ -167,7 +167,7 @@ get_header();
       </div>
 
       <ul class="find_me">
-        <li><h2 class="where text-xxl">Où me trouver ?</h2></li>
+        <li><h2 class="text-xxl">Où me trouver ?</h2></li>
         <li><p class="about_text text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In integer eu porta fusce vitae, nunc nunc turpis sagittis. Sit pulvinar placerat posuere tincidunt at pulvinar proin facilisis tortor. Viverra in erat sed pharetra odio vulputate ut malesuada eget. Curabitur donec.</p>
         <li><a href="#adress">1177 Route des Croës,73340 Lescheraines</a></li>
         <li><a href="#phone">0651600314</a></li>
