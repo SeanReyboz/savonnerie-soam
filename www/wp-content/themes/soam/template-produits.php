@@ -22,6 +22,7 @@ get_header();
             <h3>Neem Teem</h3>
           </button>
 
+
           <button type="button" name="dendelion">
             <img src=<?php echo get_template_directory_uri() . '/images/produit.png'; ?> alt="Le savon Dendelion">
             <h3>Dendelion</h3>
@@ -158,17 +159,17 @@ get_header();
     </div>
     <div class="infos">
       <div class="about">
-        <h2></h2>
-        <p></p>
-        <button type="button" name="more"></button>
+        <h2>A propos</h2>
+        <p>Soâm est une savonnerie qui s’engage à respecter votre peau en utilisant des ingrédients 100% naturels. Implanté en Savoie, dans le massif des Bauges, tous les savons et cosmétiques sont confectionnés à la main pour répondre au mieux aux besoins de chacun.</p>
+        <button type="button" name="more">En savoir plus</button>
       </div>
 
       <div class="find_me">
-        <h2></h2>
-        <p></p>
-        <a href="#adress"></a>
-        <a href="#phone"></a>
-        <a href="#mail"></a>
+        <h2>Où me trouver ?</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In integer eu porta fusce vitae, nunc nunc turpis sagittis. Sit pulvinar placerat posuere tincidunt at pulvinar proin facilisis tortor. Viverra in erat sed pharetra odio vulputate ut malesuada eget. Curabitur donec.</p>
+        <a href="#adress">1177 Route des Croës,73340 Lescheraines</a>
+        <a href="#phone">0651600314</a>
+        <a href="#mail">Email@mail.com</a>
       </div>
     </div>
 
