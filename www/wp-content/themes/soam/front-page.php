@@ -58,13 +58,13 @@ get_header();
     <h2 class="ft-nunito text-xxl ft-bold ">
         Savons et cosmétiques
     </h2>
-    <div id="features" class="mg-48px-t">
+    <div id="features" class="mg-96px-t">
         <!-- Features 1 -->
         <div class="features">
             <div class="feature-image">
                 <img src="https://picsum.photos/300/300" style=" --mask:url(<?php echo get_template_directory_uri() . '/images/blob/blob1.png'; ?>);" alt="png mask blob">
             </div>
-            <h3 class="text-lg ft-semibold mg-24px-t ">Les Savons</h3>
+            <h3 class="text-lg ft-semibold mg-72px-t ">Les Savons</h3>
             <p class="mg-24px-t">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fusce eros, at massa dictum nulla a. </p>
             <a class="color-cyan ft-semibold mg-16px-t" href="">En savoir plus</a>
         </div>
@@ -74,7 +74,7 @@ get_header();
             <div class="feature-image">
                 <img src="https://picsum.photos/300/300" style=" --mask:url(<?php echo get_template_directory_uri() . '/images/blob/blob2.png'; ?>);" alt="png mask blob">
             </div>
-            <h3 class="text-lg ft-semibold mg-24px-t ">Les Baumes</h3>
+            <h3 class="text-lg ft-semibold mg-72px-t ">Les Baumes</h3>
             <p class="mg-24px-t">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fusce eros, at massa dictum nulla a. </p>
             <a class="color-cyan ft-semibold mg-16px-t" href="">En savoir plus</a>
         </div>
@@ -84,7 +84,7 @@ get_header();
             <div class="feature-image">
                 <img src="https://picsum.photos/300/300" style=" --mask:url(<?php echo get_template_directory_uri() . '/images/blob/blob3.png'; ?>);" alt="png mask blob">
             </div>
-            <h3 class="text-lg ft-semibold mg-24px-t ">Huiles & Sérums</h3>
+            <h3 class="text-lg ft-semibold mg-72px-t ">Huiles & Sérums</h3>
             <p class="mg-24px-t">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fusce eros, at massa dictum nulla a. </p>
             <a class="color-cyan ft-semibold mg-16px-t" href="">En savoir plus</a>
         </div>
