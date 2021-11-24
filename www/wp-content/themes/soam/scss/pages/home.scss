@@ -3,25 +3,25 @@
 // ----
 
 #hero-section {
-  display: flex;
-  justify-content: center;
-  margin-left: 216px;
-  margin-right: 112px;
-  margin-top: 48px;
+	display: flex;
+	justify-content: center;
+	margin-left: 216px;
+	margin-right: 112px;
+	margin-top: 48px;
 
-  #hero-info {
-    max-width: 488px;
-    margin-right: 8.125rem;
-    p {
-      margin-top: 32px;
-    }
-    a {
-      margin-top: 24px;
-    }
-  }
-  img {
-    border-radius: 2rem;
-  }
+	#hero-info {
+		max-width: 488px;
+		margin-right: 8.125rem;
+		p {
+			margin-top: 32px;
+		}
+		a {
+			margin-top: 24px;
+		}
+	}
+	img {
+		border-radius: 2rem;
+	}
 }
 
 // ----
@@ -29,98 +29,99 @@
 // ----
 
 #values-section {
-  padding: 128px 112px;
+	padding: 128px 112px;
 
-  .values-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
+	.values-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
 
-  .values {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 384px;
-    text-align: center;
+	.values {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		max-width: 384px;
+		text-align: center;
 
-    img {
-      width: 153px;
-      height: auto;
-    }
-    p {
-      width: 240px;
-    }
-    a {
-      text-decoration: none;
-    }
-  }
+		img {
+			width: 153px;
+			height: auto;
+		}
+		p {
+			width: 240px;
+		}
+		a {
+			text-decoration: none;
+		}
+	}
 }
 
 // ----
 // 	savons et cosmétiques
 // ----
 #features-section {
-  h2 {
-    text-align: center;
-  }
+	h2 {
+		text-align: center;
+	}
 }
 #features-section {
-  #features {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-  }
-  .features {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 384px;
+	#features {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: row;
+	}
+	.features {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		max-width: 384px;
 
-    .feature-image {
-      position: relative;
-      width: 300px;
-      height: 300px;
+		.feature-image {
+			position: relative;
+			width: 300px;
+			height: 300px;
 
-      &::before {
-        content: "";
-        position: absolute;
-        inset: -55px;
-        background-image: url("../images/blob/colorunderblob.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-      }
+			&::before {
+				content: "";
+				position: absolute;
+				inset: -55px;
+				background-image: url("../images/blob/colorunderblob.png");
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: contain;
+			}
 
-      img {
-        position: absolute;
-        inset: 0;
-        -webkit-mask-image: var(--mask);
-        -webkit-mask-repeat: round;
-      }
-    }
+			img {
+				position: absolute;
+				inset: 0;
+				-webkit-mask-image: var(--mask);
+				-webkit-mask-repeat: round;
+			}
+		}
 
-    a {
-      text-decoration: none;
-    }
-  }
+		a {
+			text-decoration: none;
+		}
+	}
 }
 
 // ----
 // A propos
 // ----
 #about-section {
-  padding-right: 320px;
+	padding-right: 320px;
 
-  .about-container {
-    display: flex;
-    justify-content: space-between;
-  }
+	.about-container {
+		display: flex;
+		justify-content: space-between;
+	}
 
-  #about-text {
-    max-width: 384px;
-    #about-button {
-      border: 1px solid $magenta;
-    }
-  }
+	#about-text {
+		max-width: 384px;
+		margin: auto 0;
+		#about-button {
+			border: 1px solid $magenta;
+		}
+	}
 }
