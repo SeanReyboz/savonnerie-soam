@@ -9,7 +9,7 @@
         </p>
       </div>
       <?php dynamic_sidebar( 'footer-sidebar' ); ?>
-      <nav class="footer-nav">
+      <nav class="footer-nav mg-32px-t">
         <div class="footer-nav-entry">
           <h3 class="footer-nav-entry-title">SOÂM</h3>
           <ul class="footer-nav-entry-list">
@@ -26,8 +26,16 @@
             <li><a href="mailto:amandinepiroux@hotmail.fr">amandinepiroux@hotmail.fr</a></li>
             <li><a href="tel:+33123456789">+33 (0)1 23 45 67 89</a></li>
             <li class="socials">
-              <a href=""><img src="<?php echo get_template_directory_uri() . '/images/icons/instagram.svg'; ?>" alt="Icone Instagram"></a>
-              <a href=""><img src="<?php echo get_template_directory_uri() . '/images/icons/facebook.svg'; ?>" alt="Icone Facebook"></a>
+              <a href="">
+                <img
+                  src="<?php echo get_template_directory_uri() . '/images/icons/instagram_white.svg'; ?>" 
+                  alt="Icone Instagram">
+              </a>
+              <a href="">
+                <img 
+                  src="<?php echo get_template_directory_uri() . '/images/icons/facebook_white.svg'; ?>" 
+                  alt="Icone Facebook">
+              </a>
             </li>
           </ul>
         </div>
@@ -42,7 +50,7 @@
       </nav>
     </div>
     <small class="copyrights color-white text-xs ft-mulish mg-72px-t">
-      &copy; 2021 La Savonnerie Soâm | Design et Développement par Pikoom 
+      &copy; 2021 La Savonnerie Soâm | Design et Développement par <a href="https://mmi.univ-smb.fr/">Pikoom 🌵</a>
     </small>
   </footer>
 
