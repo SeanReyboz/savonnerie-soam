@@ -35,14 +35,12 @@ get_header();
         <?php 
             $values = get_field("values");
             foreach ($values as $value) {
-                # code...
-                debug($value['link']);
                 ?>
                      <div class="values ">
-                        <img src="<?php echo get_template_directory_uri() . '/images/icons/icons_respect-du-corps.png'; ?>" alt="Icon ">
+                        <img src="<?php echo $value['icon']['url']; ?>" alt="Icon ">
                         <h3 class="text-xl ft-semibold mg-16px-t" ><?php echo $value['title']; ?></h3>
-                        <p class="text-base mg-24px-t">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, eius mollitia minima expedita modi autem aliquid quasi quo, sequi in enim harum recusandae doloribus reprehenderit cupiditate iusto vel impedit incidunt.</p>
-                        <a class="ft-semibold color-cyan mg-16px-t" href=""><?php echo $value['link']['title']; ?></a>
+                        <p class="text-base mg-24px-t"><?php echo $value['description']; ?></p>
+                        <a class="ft-semibold color-cyan mg-16px-t" href="<?php echo $value['link']['url']; ?>"><?php echo $value['link']['title']; ?></a>
                     </div>   
                 <?php
             }
