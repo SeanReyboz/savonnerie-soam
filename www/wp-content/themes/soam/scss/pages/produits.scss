@@ -13,7 +13,20 @@
         margin-left: auto;
         margin-right: auto;
     }
-
+    .oil_window{
+        max-width:1216px ;
+        display: grid;
+        grid: repeat(4, 330px) / auto-flow 405px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .balm_window{
+        max-width:1216px ;
+        display: grid;
+        grid: repeat(2, 330px) / auto-flow 405px;
+        margin-left: auto;
+        margin-right: auto;
+    }
     
     img{
         width: 280px;
@@ -29,5 +42,29 @@
         border: 0;
 
         background-color: transparent;
+    }
+}
+.infos{
+    display: flex;
+    .about{
+        padding-top: 64px;
+        padding-left:112px;
+        padding-right: 104px;
+        width: 50%;
+        background-color: #008788;
+        h2{}
+        p{
+            
+        }
+    }
+    .find_me{
+        text-align: right;
+        width: 50%;
+        padding-top: 64px;
+        padding-bottom: 68px;
+        padding-right:113px;
+        padding-left: 32px;
+        display: flex;
+        flex-direction: column;
     }
 }
