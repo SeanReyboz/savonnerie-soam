@@ -177,7 +177,18 @@ get_header();
 <!--
     points de ventes
 -->
-<section id="selling-points-section" class="mg-136px-t pg-40px-y bg-magenta">
+<section id="selling-points-section" class="mg-136px-t pg-40px-y bg-cyan">
+    <div class="selling-points-container main-wrapper mg-40px-t">
+        <h2 class="text-center ft-nunito text-xxl ft-bold color-white mg-88px-b">Points de vente</h2>
+        <div class="selling-points-content">
+            <div class="selling-points-content_slider">
+                
+            </div>
+            <div class="selling-points-content_text">
+
+            </div>
+        </div>
+    </div>
 
 </section>
 <?php
