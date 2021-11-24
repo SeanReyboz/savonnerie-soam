@@ -6,9 +6,9 @@ get_header();
 ?>
   <body>
     <div id="page404">
-      <h1>Oups, erreur 404</h1>
+      <h1 class="ft-nunito">Oups, erreur 404</h1>
       <p>Il semblerait que la page ne soit plus disponible...</p>
-      <button type="button" value="Retour à l'accueil" name="home_page"></button>
+      <a id="button404" class="button-xl color-white bg-cyan mg-16px-t">Retour à l'accueil</a>
     </div>
 
     <img src="" alt="blueblot">
