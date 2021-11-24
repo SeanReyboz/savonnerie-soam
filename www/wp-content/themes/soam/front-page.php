@@ -7,14 +7,12 @@ get_header();
 <section id="hero-section">
     <div id="hero-info">
         <h1 class="text-xxl ft-bold">
-            Artisant Savonnier responsable, local et respectueux de l’environnement !
+            <?php echo get_field("title"); ?>
         </h1>
         <p class="text-base">
-            Soâm est une savonnerie qui s’engage à respecter votre peau en utilisant des ingrédients 100% naturels.
-            Implanté en Savoie, dans le massif des Bauges, tous les savons et cosmétiques sont confectionnés
-             à la main pour répondre au mieux aux besoins de chacun.
+            <?php echo get_field("description"); ?>
         </p>
-        <a class="button-xl bg-cyan color-white" href="">Viens me découvrir !</a>
+        <a class="button-xl bg-cyan color-white" href=""> <?php echo get_field("link");?> </a>
     </div>
     <img src="https://picsum.photos/488/515" alt="Image savons">
 </section>
@@ -24,27 +22,46 @@ get_header();
  -->
 <section id="values-section" class="mg-136px-t bg-cyan-light">
     <div class="main-wrapper values-container">
-        <!-- Respect du corps -->
+
+        <?php 
+            $values = get_field("values");
+            foreach ($values as $value) {
+                # code...
+                debug($value['link']);
+                ?>
+                     <div class="values ">
+                        <img src="<?php echo get_template_directory_uri() . '/images/icons/icons_respect-du-corps.png'; ?>" alt="Icon ">
+                        <h3 class="text-xl ft-semibold mg-16px-t" ><?php echo $value['title']; ?></h3>
+                        <p class="text-base mg-24px-t">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, eius mollitia minima expedita modi autem aliquid quasi quo, sequi in enim harum recusandae doloribus reprehenderit cupiditate iusto vel impedit incidunt.</p>
+                        <a class="ft-semibold color-cyan mg-16px-t" href=""><?php echo $value['link']['title']; ?></a>
+                    </div>   
+                <?php
+            }
+        
+        ?>
+    <!-- Respect du corps 
         <div class="values ">
             <img src="<?php echo get_template_directory_uri() . '/images/icons/icons_respect-du-corps.png'; ?>" alt="Icon ">
             <h3 class="text-xl ft-semibold mg-16px-t" >Respect du corps</h3>
             <p class="text-base mg-24px-t">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, eius mollitia minima expedita modi autem aliquid quasi quo, sequi in enim harum recusandae doloribus reprehenderit cupiditate iusto vel impedit incidunt.</p>
             <a class="ft-semibold color-cyan mg-16px-t" href="">En savoir plus</a>
         </div>
-        <!-- Produits Locaux -->
+        Produits Locaux
         <div class="values ">
             <img src="<?php echo get_template_directory_uri() . '/images/icons/icons_produits-locaux.png'; ?>" alt="Icon ">
             <h3 class="text-xl ft-semibold mg-16px-t" >Produits Locaux</h3>
             <p class="text-base mg-24px-t">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, eius mollitia minima expedita modi autem aliquid quasi quo, sequi in enim harum recusandae doloribus reprehenderit cupiditate iusto vel impedit incidunt.</p>
             <a class="ft-semibold color-cyan mg-16px-t" href="">En savoir plus</a>
         </div>
-        <!-- Produits naturels -->
+         Produits naturels
         <div class="values ">
             <img src="<?php echo get_template_directory_uri() . '/images/icons/icons_produits-naturels.png'; ?>" alt="Icon ">
             <h3 class="text-xl ft-semibold mg-16px-t" >Produits naturels</h3>
             <p class="text-base mg-24px-t">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, eius mollitia minima expedita modi autem aliquid quasi quo, sequi in enim harum recusandae doloribus reprehenderit cupiditate iusto vel impedit incidunt.</p>
             <a class="ft-semibold color-cyan mg-16px-t" href="">En savoir plus</a>
         </div>
+
+        -->
     </div>
 </section>
 

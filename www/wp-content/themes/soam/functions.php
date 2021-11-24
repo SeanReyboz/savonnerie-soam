@@ -6,5 +6,8 @@ function add_style() {
   add_action( 'wp_enqueue_scripts', 'add_style' );
 
 
-
-?>
+function debug($val){
+  echo "<pre> ";
+    var_dump($val);
+  echo "</pre>";
+}
