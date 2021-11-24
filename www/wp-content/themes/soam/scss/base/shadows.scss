@@ -1,5 +1,12 @@
 // Shadows
 
+$shadow-color: rgb(34, 34, 34);
+$alpha-07: 0.07;
+
 .box-shadow {
-  box-shadow: 8px 4px 24px rgba(34, 34, 34, 0.07);
+  box-shadow: 8px 4px 24px rgba($color: $shadow-color, $alpha: $alpha-07);
+}
+
+.box-shadow-lg {
+  box-shadow: 8px 8px 24px rgba($color: $shadow-color, $alpha: $alpha-07);
 }

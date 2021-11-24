@@ -100,8 +100,8 @@ get_header();
     <div class="about-container main-wrapper">
         <!-- About double image -->
         <div class="doubled-image" style="--bg-img-height: 520px; --fg-img-height: 392px; --fg-img-width: 280px; --margin-left: 30%;">
-            <img class="doubled-image-bg" src="//picsum.photos/800" alt="background image">
-            <img class="doubled-image-fg" src="//picsum.photos/850" alt="foreground image">
+            <img class="doubled-image-bg box-shadow-lg" src="//picsum.photos/800" alt="background image">
+            <img class="doubled-image-fg box-shadow-lg" src="//picsum.photos/850" alt="foreground image">
         </div>
 
 
