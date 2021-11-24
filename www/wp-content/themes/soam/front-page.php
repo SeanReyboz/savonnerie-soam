@@ -122,14 +122,38 @@ get_header();
 <!--
     Besoin de conseils ?
 -->
-<section id="advice-section">
+<section id="advice-section" class="mg-136px-t">
+    <div id="advice-info" class="mg-136px-l">
+        <h2 class="ft-nunito text-xxl ft-bold ">
+        Besoin de conseils ? 
+        </h2>
+        <p class="text-base mg-16px-t">
+        Peau grasse ? Cheveux secs ? <br>
+        Et si vous trouviez des produits 100% naturels pour prendre soin de vous ?  <br>
+        Retrouvez les soins et conseils adaptés à vos besoins pour construire votre routine beauté bien-être. 
+
+        </p>
+        <a class="mg-32px-t button bg-cyan color-white" href="">En savoir plus</a>
+        <div id="advice-links">
+            <div class="advice-link mg-88px-r">
+                <img src="https://picsum.photos/64" alt="" class="mg-16px-r">
+                <a href="" class="text-base ft-semibold color-black">Soins des Cheveux</a>
+            </div>
+            <div class="advice-link">
+                <img src="https://picsum.photos/64" alt="" class="mg-16px-r">
+                <a href="" class="text-base ft-semibold color-black">Soins de la peau</a>
+            </div>
+        </div>
+    </div>
+    <img src="https://picsum.photos/488" alt="Image savons">
+
 
 </section>
 
 <!--
     points de ventes
 -->
-<section id="selling-points-section">
+<section id="selling-points-section" class="mg-136px-t pg-40px-y bg-magenta">
 
 </section>
 <?php
