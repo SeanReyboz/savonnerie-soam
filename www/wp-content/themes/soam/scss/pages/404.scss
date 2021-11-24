@@ -1,5 +1,12 @@
-body
+#page404
 {
-  display: grid;
-  place-content:center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+}
+
+h1
+{
+  font-size: 120px;
 }
