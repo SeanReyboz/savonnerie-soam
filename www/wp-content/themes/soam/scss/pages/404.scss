@@ -1,0 +1,17 @@
+#page404
+{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+}
+
+h1
+{
+  font-size: 120px;
+}
+
+#button404
+{
+  border:1px solid $cyan;
+}

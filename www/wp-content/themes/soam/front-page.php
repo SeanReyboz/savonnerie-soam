@@ -22,7 +22,7 @@ get_header();
 <!--
     Valeurs
  -->
-<section id="values-section" class="bg-cyan-light">
+<section id="values-section" class="mg-136px-t bg-cyan-light">
     <div class="main-wrapper values-container">
         <!-- Respect du corps -->
         <div class="values ">
@@ -52,33 +52,39 @@ get_header();
 <!--
     Savons et cosmétiques
 -->
-<section id="features-section" class="pg-112px-t pg-112px-x">
+<section id="features-section" class="pg-136px-t main-wrapper">
 
 
-    <h1 class="ft-nunito text-xxl ft-bold ">
+    <h2 class="ft-nunito text-xxl ft-bold ">
         Savons et cosmétiques
-    </h1>
-    <div id="features" class="mg-48px-t">
+    </h2>
+    <div id="features" class="mg-96px-t">
         <!-- Features 1 -->
         <div class="features">
-            <img  src="https://picsum.photos/300/300" style=" --mask:url(<?php echo get_template_directory_uri() . '/images/blob/blob1.png'; ?>);" alt="png mask blob">
-            <h3 class="text-lg ft-semibold mg-24px-t ">Les Savons</h3>
+            <div class="feature-image">
+                <img src="https://picsum.photos/300/300" style=" --mask:url(<?php echo get_template_directory_uri() . '/images/blob/blob1.png'; ?>);" alt="png mask blob">
+            </div>
+            <h3 class="text-lg ft-semibold mg-72px-t ">Les Savons</h3>
             <p class="mg-24px-t">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fusce eros, at massa dictum nulla a. </p>
             <a class="color-cyan ft-semibold mg-16px-t" href="">En savoir plus</a>
         </div>
 
         <!-- Features 2 -->
         <div class="features">
-            <img id="blob2" src="https://picsum.photos/300/300" style=" --mask:url(<?php echo get_template_directory_uri() . '/images/blob/blob2.png'; ?>);" alt="png mask blob">
-            <h3 class="text-lg ft-semibold mg-24px-t ">Les Baumes</h3>
+            <div class="feature-image">
+                <img src="https://picsum.photos/300/300" style=" --mask:url(<?php echo get_template_directory_uri() . '/images/blob/blob2.png'; ?>);" alt="png mask blob">
+            </div>
+            <h3 class="text-lg ft-semibold mg-72px-t ">Les Baumes</h3>
             <p class="mg-24px-t">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fusce eros, at massa dictum nulla a. </p>
             <a class="color-cyan ft-semibold mg-16px-t" href="">En savoir plus</a>
         </div>
 
         <!-- Features 3 -->
         <div class="features">
-            <img id="blob3" src="https://picsum.photos/300/300" style=" --mask:url(<?php echo get_template_directory_uri() . '/images/blob/blob3.png'; ?>);" alt="png mask blob">
-            <h3 class="text-lg ft-semibold mg-24px-t ">Huiles & Sérums</h3>
+            <div class="feature-image">
+                <img src="https://picsum.photos/300/300" style=" --mask:url(<?php echo get_template_directory_uri() . '/images/blob/blob3.png'; ?>);" alt="png mask blob">
+            </div>
+            <h3 class="text-lg ft-semibold mg-72px-t ">Huiles & Sérums</h3>
             <p class="mg-24px-t">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fusce eros, at massa dictum nulla a. </p>
             <a class="color-cyan ft-semibold mg-16px-t" href="">En savoir plus</a>
         </div>
@@ -88,7 +94,20 @@ get_header();
 <!--
     A propos
 -->
-<section id="about-section">
+<section id="about-section" class="bg-magenta mg-136px-t pg-112px-l pg-64px-y">
+
+
+
+    <!-- About text -->
+    <div id="about-text">
+        <h2 class="ft-nunito text-xxl ft-bold color-white" >
+            À Propos
+        </h2>
+        <p class="mg-24px-t color-white">
+        Soâm est une savonnerie qui s’engage à respecter votre peau en utilisant des ingrédients 100% naturels. Implanté en Savoie, dans le massif des Bauges, tous les savons et cosmétiques sont confectionnés à la main pour répondre au mieux aux besoins de chacun.
+        </p>
+        <a id="about-button" class="mg-32px-t button bg-cyan color-white" href="">En savoir plus</a>
+    </div>
 
 </section>
 

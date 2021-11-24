@@ -6,12 +6,14 @@ get_header();
 ?>
 
 
-    <div class="search_menu">
-      <a href="#all">Tous les produis</a>
-      <a href="#soap">Savons</a>
-      <a href="#oil">Huiles et Sérums</a>
-      <a href="#balm">Baumes</a>
-    </div>
+    <nav class="search_menu">
+      <ul>
+      <li><a href="#all" class="search_menu_products">Tous les produis</a></li>
+      <li><a href="#soap" class="search_menu_soap">Savons</a></li>
+      <li><a href="#oil" class="search_menu_oil">Huiles et Sérums</a></li>
+      <li><a href="#balm" class="search_menu_balm">Baumes</a></li>
+      </ul>
+    </nav>
     <div class="products">
 
       <div class="soap">
@@ -159,18 +161,18 @@ get_header();
     </div>
     <div class="infos">
       <div class="about">
-        <h2>A propos</h2>
-        <p>Soâm est une savonnerie qui s’engage à respecter votre peau en utilisant des ingrédients 100% naturels. Implanté en Savoie, dans le massif des Bauges, tous les savons et cosmétiques sont confectionnés à la main pour répondre au mieux aux besoins de chacun.</p>
-        <button type="button" name="more">En savoir plus</button>
+        <h2 class="text-xxl">A propos</h2>
+        <p class="about_text text-base">Soâm est une savonnerie qui s’engage à respecter votre peau en utilisant des ingrédients 100% naturels. Implanté en Savoie, dans le massif des Bauges, tous les savons et cosmétiques sont confectionnés à la main pour répondre au mieux aux besoins de chacun.</p>
+        <a  name="more" class="button bg-magenta color-white" id="more_about">En savoir plus</a>
       </div>
 
-      <div class="find_me">
-        <h2>Où me trouver ?</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In integer eu porta fusce vitae, nunc nunc turpis sagittis. Sit pulvinar placerat posuere tincidunt at pulvinar proin facilisis tortor. Viverra in erat sed pharetra odio vulputate ut malesuada eget. Curabitur donec.</p>
-        <a href="#adress">1177 Route des Croës,73340 Lescheraines</a>
-        <a href="#phone">0651600314</a>
-        <a href="#mail">Email@mail.com</a>
-      </div>
+      <ul class="find_me">
+        <li><h2 class="where text-xxl">Où me trouver ?</h2></li>
+        <li><p class="about_text text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In integer eu porta fusce vitae, nunc nunc turpis sagittis. Sit pulvinar placerat posuere tincidunt at pulvinar proin facilisis tortor. Viverra in erat sed pharetra odio vulputate ut malesuada eget. Curabitur donec.</p>
+        <li><a href="#adress">1177 Route des Croës,73340 Lescheraines</a></li>
+        <li><a href="#phone">0651600314</a></li>
+        <li><a href="#mail">Email@mail.com</a></li>
+      </ul>
     </div>
 
     <?php 

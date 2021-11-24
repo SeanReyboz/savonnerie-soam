@@ -3,6 +3,27 @@
     text-align: center;
     margin-top: 96px;
     margin-bottom: 69px;
+    margin-left: auto;
+    margin-right: auto;
+
+    ul{
+        display: flex;
+        flex-direction: row;
+        margin-left: 445px;
+        margin-right: auto;
+    }
+    li{
+        padding-left: 15px;
+        padding-right: 15px;
+
+        &:not(:last-of-type) {
+            border-right: 2px solid $black;
+        }
+
+        a{
+            text-decoration: none;
+        }
+    }
 }
 
 .products{
@@ -50,11 +71,19 @@
         padding-top: 64px;
         padding-left:112px;
         padding-right: 104px;
+        padding-bottom: 84px;
         width: 50%;
         background-color: #008788;
-        h2{}
-        p{
+        h2{
             
+        }
+        p{
+            margin-top: 24px;
+            margin-bottom: 32px; 
+
+            .about_text{
+                max-width: 488px;
+            }
         }
     }
     .find_me{
@@ -66,5 +95,11 @@
         padding-left: 32px;
         display: flex;
         flex-direction: column;
+
+        p{
+            margin-top: 24px;
+            margin-bottom: 32px; 
+        }
+
     }
 }
