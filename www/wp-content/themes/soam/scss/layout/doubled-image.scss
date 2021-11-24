@@ -1,0 +1,29 @@
+// Stylesheet for the `doubled-image` component
+
+.doubled-image {
+  --border-radius: 2rem;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: var(--bg-img-height);
+  border-radius: var(--border-radius);
+
+  &-bg {
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    height: var(--bg-img-height);
+    width: 385px;
+  }
+  &-fg {
+    position: absolute;
+    // Define the offset of the foreground image from the left of the
+    // background image.
+    left: 0;
+    transform: translateX(var(--fg-img-width));
+    border-radius: inherit;
+    width: var(--fg-img-width);
+    height: var(--fg-img-height);
+  }
+}

@@ -96,17 +96,25 @@ get_header();
 -->
 <section id="about-section" class="bg-magenta mg-136px-t pg-112px-l pg-64px-y">
 
+    <!-- About section flex container and wrapper -->
+    <div class="about-container main-wrapper">
+        <!-- About double image -->
+        <div class="doubled-image" style="--bg-img-height: 520px; --fg-img-height: 392px; --fg-img-width: 280px; --margin-left: 30%;">
+            <img class="doubled-image-bg" src="//picsum.photos/800" alt="background image">
+            <img class="doubled-image-fg" src="//picsum.photos/850" alt="foreground image">
+        </div>
 
 
-    <!-- About text -->
-    <div id="about-text">
-        <h2 class="ft-nunito text-xxl ft-bold color-white" >
-            À Propos
-        </h2>
-        <p class="mg-24px-t color-white">
-        Soâm est une savonnerie qui s’engage à respecter votre peau en utilisant des ingrédients 100% naturels. Implanté en Savoie, dans le massif des Bauges, tous les savons et cosmétiques sont confectionnés à la main pour répondre au mieux aux besoins de chacun.
-        </p>
-        <a id="about-button" class="mg-32px-t button bg-cyan color-white" href="">En savoir plus</a>
+        <!-- About text -->
+        <div id="about-text">
+            <h2 class="ft-nunito text-xxl ft-bold color-white" >
+                À Propos
+            </h2>
+            <p class="mg-24px-t color-white">
+            Soâm est une savonnerie qui s’engage à respecter votre peau en utilisant des ingrédients 100% naturels. Implanté en Savoie, dans le massif des Bauges, tous les savons et cosmétiques sont confectionnés à la main pour répondre au mieux aux besoins de chacun.
+            </p>
+            <a id="about-button" class="mg-32px-t button bg-cyan color-white" href="">En savoir plus</a>
+        </div>
     </div>
 
 </section>
