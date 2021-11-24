@@ -1,6 +1,7 @@
 <?php
 /// Homepage
-
+$link = get_field('link');
+$headerimg = get_field('image');
 get_header();
 
 ?>
@@ -12,9 +13,17 @@ get_header();
         <p class="text-base">
             <?php echo get_field("description"); ?>
         </p>
-        <a class="button-xl bg-cyan color-white" href=""> <?php echo get_field("link");?> </a>
+        <a class="button-xl bg-cyan color-white" href="<?php  echo $link['url']; ?>">
+             <?php 
+                echo $link['title'];
+             ?> 
+        </a>
     </div>
-    <img src="https://picsum.photos/488/515" alt="Image savons">
+    <img src="
+        <?php 
+            echo $headerimg['url'];
+         ?>" 
+         alt="Image savons">
 </section>
 
 <!--
