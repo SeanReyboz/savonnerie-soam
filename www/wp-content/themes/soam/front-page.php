@@ -2,6 +2,9 @@
 /// Homepage
 $link = get_field('link');
 $headerimg = get_field('image');
+$products = get_field('products');
+$product = get_field('product');
+$values = get_field("values");
 get_header();
 
 ?>
@@ -33,7 +36,7 @@ get_header();
     <div class="main-wrapper values-container">
 
         <?php 
-            $values = get_field("values");
+            
             foreach ($values as $value) {
                 ?>
                      <div class="values ">
@@ -80,21 +83,37 @@ get_header();
 
 
     <h2 class="ft-nunito text-xxl ft-bold ">
-        Savons et cosmétiques
+       <?php echo $products['title']; ?>
     </h2>
     <div id="features" class="mg-96px-t">
+
+        <?php foreach ($products['product'] as $product) {
+        ?>
         <!-- Features 1 -->
         <div class="features">
             <div class="feature-image">
-                <img src="https://picsum.photos/300/300" style=" --mask:url(<?php echo get_template_directory_uri() . '/images/blob/blob1.png'; ?>);" alt="png mask blob">
+                <img src="<?php echo $product['image']['url']; ?>" style=" --mask:url(<?php echo get_template_directory_uri() . '/images/blob/blob1.png'; ?>);" alt="png mask blob">
             </div>
-            <h3 class="text-lg ft-semibold mg-72px-t ">Les Savons</h3>
-            <p class="mg-24px-t">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fusce eros, at massa dictum nulla a. </p>
-            <a class="color-cyan ft-semibold mg-16px-t" href="">En savoir plus</a>
+            <?php if ($product['product_name']){ ?>
+            <h3 class="text-lg ft-semibold mg-72px-t "><?php echo $product['product_name']; ?></h3>
+                <?php } ?>
+            <p class="mg-24px-t"> <?php echo $product['product_description']; ?> </p>
+            <a class="color-cyan ft-semibold mg-16px-t" href="<?php echo $product['product_link']['url']; ?>"><?php echo $product['product_link']['title']; ?></a>
         </div>
 
-        <!-- Features 2 -->
-        <div class="features">
+        <?php
+
+        }
+        
+        
+        
+        ?>
+
+
+      
+
+        
+        <!-- <div class="features">
             <div class="feature-image">
                 <img src="https://picsum.photos/300/300" style=" --mask:url(<?php echo get_template_directory_uri() . '/images/blob/blob2.png'; ?>);" alt="png mask blob">
             </div>
@@ -103,7 +122,7 @@ get_header();
             <a class="color-cyan ft-semibold mg-16px-t" href="">En savoir plus</a>
         </div>
 
-        <!-- Features 3 -->
+        
         <div class="features">
             <div class="feature-image">
                 <img src="https://picsum.photos/300/300" style=" --mask:url(<?php echo get_template_directory_uri() . '/images/blob/blob3.png'; ?>);" alt="png mask blob">
@@ -111,7 +130,7 @@ get_header();
             <h3 class="text-lg ft-semibold mg-72px-t ">Huiles & Sérums</h3>
             <p class="mg-24px-t">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fusce eros, at massa dictum nulla a. </p>
             <a class="color-cyan ft-semibold mg-16px-t" href="">En savoir plus</a>
-        </div>
+        </div> -->
     </div>
 </section>
 
