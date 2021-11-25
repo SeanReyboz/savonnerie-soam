@@ -1,28 +1,73 @@
+<?php
+
+// Get the brand description (located under the brand icon)
+$brand_desc = get_field('description', 'options');
+
+// Get the footer navigation content
+$footer_fields = get_field('footer_nav', 'options');
+
+// ---
+//  Split the footer fields content
+// ---
+
+// First field (brand related)
+$brand = $footer_fields['brand'];
+$brand_links = $brand['links'];
+
+// Second field (contact info)
+$contact = $footer_fields['contact'];
+$contact_content = $contact['links'];
+$contact_emails = $contact_content['emails'];
+$contact_phone = $contact_content['phone'];
+$contact_links = $contact_content['links'];
+
+debug($contact_phone);
+
+// debug($contact);
+
+// Third Field (legals & politics)
+$politics = $footer_fields['legals'];
+$politics_links = $politics['links'];
+
+
+?>
   <footer>
     <div class="content main-wrapper">
       <div class="brand-information">
         <img class="brand-logo" src="<?php echo get_template_directory_uri() . '/images/logo_white.png'  ?>" alt="Logo Soâm">
         <div class="text-sm color-white brand-desc mg-24px-t ft-mulish">
-          <?php echo get_field('description', 'options'); ?>
+          <?php echo $brand_desc; ?>
         </div>
       </div>
       <?php dynamic_sidebar( 'footer-sidebar' ); ?>
       <nav class="footer-nav mg-32px-t">
         <div class="footer-nav-entry">
-          <h3 class="footer-nav-entry-title">SOÂM</h3>
+          <h3 class="footer-nav-entry-title">
+            <?php echo $brand['title']; ?>
+          </h3>
           <ul class="footer-nav-entry-list">
-            <li><a href="">Gamme Soâm</a></li>
-            <li><a href="">À propos</a></li>
-            <li><a href="">Conseils Pratiques</a></li>
-            <li><a href="">Partenaires</a></li>
-            <li><a href="">Points de Vente</a></li>
+            <?php foreach ($brand_links as $links) { ?>
+              <li><a href="<?php echo $links['link']['url']; ?>"><?php echo $links['link']['title']; ?></a></li>
+            <?php } ?>
           </ul>
         </div>
         <div class="footer-nav-entry">
-          <h3 class="footer-nav-entry-title">CONTACT</h3>
+          <h3 class="footer-nav-entry-title">
+            <?php echo $contact['title']; ?>
+          </h3>
           <ul class="footer-nav-entry-list">
-            <li><a href="mailto:amandinepiroux@hotmail.fr">amandinepiroux@hotmail.fr</a></li>
-            <li><a href="tel:+33123456789">+33 (0)1 23 45 67 89</a></li>
+            <?php 
+              // Go through every email address, if any
+
+              foreach ($contact_content as $emails) { 
+                foreach ($emails as $email) { ?>
+
+                <li><a href="mailto:<?php echo trim($email['email']); ?>"><?php echo $email['email']; ?></a></li>
+
+            <?php } } ?>
+
+            <!-- Phone number -->
+            <li><a href="tel:+<?php echo $contact_phone; ?>">+<?php echo $contact_phone; ?></a></li>
             <li class="socials">
               <a href="">
                 <img
