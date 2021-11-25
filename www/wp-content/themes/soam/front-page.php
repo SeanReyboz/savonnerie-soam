@@ -6,6 +6,7 @@ $products = get_field('products');
 $product = get_field('product');
 $values = get_field("values");
 $about = get_field('about');
+$advice_section = get_field('advice_section');
 get_header();
 
 ?>
@@ -178,30 +179,47 @@ get_header();
 <!--
     Besoin de conseils ?
 -->
+
 <section id="advice-section" class="mg-136px-t">
     <div id="advice-info" class="mg-136px-l">
         <h2 class="ft-nunito text-xxl ft-bold ">
-        Besoin de conseils ? 
+        <?php 
+            echo $advice_section['title'];
+        ?>
         </h2>
         <p class="text-base mg-16px-t">
-        Peau grasse ? Cheveux secs ? <br>
-        Et si vous trouviez des produits 100% naturels pour prendre soin de vous ?  <br>
-        Retrouvez les soins et conseils adaptés à vos besoins pour construire votre routine beauté bien-être. 
-
+        <?php 
+            echo $advice_section['text'];
+        ?>
         </p>
-        <a class="mg-32px-t button bg-cyan color-white" href="">En savoir plus</a>
+        <a class="mg-32px-t button bg-cyan color-white" href="<?php echo $advice_section['link']['url'];?>"><?php 
+            echo $advice_section['link']['title'];
+        ?></a>
         <div id="advice-links">
+
+       
+        <?php foreach ($advice_section['care'] as $care) {
+        ?>
+
+
             <div class="advice-link mg-88px-r">
-                <img src="https://picsum.photos/64" alt="" class="mg-16px-r">
-                <a href="" class="text-base ft-semibold color-black">Soins des Cheveux</a>
+                <img src="<?php echo $care['image']['url'] ?>" alt="" class="mg-16px-r">
+                <a href="<?php echo $care['link']['url'] ?>" class="text-base ft-semibold color-black"><?php echo $care['link']['title'] ?></a>
             </div>
-            <div class="advice-link">
+
+
+            <?php } ?>
+            <!-- <div class="advice-link">
                 <img src="https://picsum.photos/64" alt="" class="mg-16px-r">
                 <a href="" class="text-base ft-semibold color-black">Soins de la peau</a>
-            </div>
+            </div> -->
         </div>
     </div>
-    <img src="https://picsum.photos/488" alt="Image savons">
+    <img src="
+    <?php 
+            echo $advice_section['image']['url'];
+        ?>
+    " alt="Image savons">
 
 
 </section>
