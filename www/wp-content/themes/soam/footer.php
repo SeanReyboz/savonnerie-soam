@@ -21,13 +21,10 @@ $contact_emails = $contact_content['emails'];
 $contact_phone = $contact_content['phone'];
 $contact_links = $contact_content['links'];
 
-debug($contact_phone);
-
-// debug($contact);
-
 // Third Field (legals & politics)
-$politics = $footer_fields['legals'];
-$politics_links = $politics['links'];
+$legals = $footer_fields['legals'];
+$legals_links = $legals['links'];
+
 
 
 ?>
@@ -83,11 +80,13 @@ $politics_links = $politics['links'];
           </ul>
         </div>
         <div class="footer-nav-entry">
-          <h3 class="footer-nav-entry-title">POLITIQUES</h3>
+          <h3 class="footer-nav-entry-title">
+            <?php echo $legals['title']; ?>
+          </h3>
           <ul class="footer-nav-entry-list">
-            <li><a href="">Politique de Confidentialité</a></li>
-            <li><a href="">Politique des Cookies</a></li>
-            <li><a href="">Mentions Légales</a></li>
+            <?php foreach($legals_links as $links) { ?>
+              <li><a href="<?php echo $links['link']['url']; ?>"><?php echo $links['link']['title']; ?></a></li>
+            <?php } ?>
           </ul>
         </div>
       </nav>
