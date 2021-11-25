@@ -228,13 +228,21 @@ get_header();
     points de ventes
 -->
 <section id="selling-points-section" class="mg-136px-t pg-40px-y bg-cyan">
+    <!-- Swiper container -->
     <div class="selling-points-container main-wrapper mg-40px-t">
         <h2 class="text-center ft-nunito text-xxl ft-bold color-white mg-88px-b">Points de vente</h2>
-        <div class="selling-points-content">
-            <div class="selling-points-content_slider">
-                
+        <div class="swiper selling-points-content">
+            <div class="swiper-wrapper">
+                <?php 
+                    // Go through each "slider" item and put it in a `swiper-slider` div
+                    //foreach ($variable as $key => $value) { ?>
+                    <div class="swiper-slider">
+                        
+
+                    </div>
+                <?php //} ?>
             </div>
-            <div class="selling-points-content_text">
+            <div class="swiper-pagination">
 
             </div>
         </div>
