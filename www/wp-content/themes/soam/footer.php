@@ -2,7 +2,7 @@
     <div class="content main-wrapper">
       <div class="brand-information">
         <img class="brand-logo" src="<?php echo get_template_directory_uri() . '/images/logo_white.png'  ?>" alt="Logo Soâm">
-        <div class="text-sm color-white brand-desc mg-24px-t">
+        <div class="text-sm color-white brand-desc mg-24px-t ft-mulish">
           <?php echo get_field('description', 'options'); ?>
         </div>
       </div>
