@@ -38,8 +38,8 @@ get_header();
     <div class="main-wrapper values-container">
 
         <?php 
-            
-            foreach ($values as $value) {
+            // Make sure that `valuesìs not empty to prevent errors
+            if(!empty($values)) foreach ($values as $value) {
                 ?>
                      <div class="values ">
                         <img src="<?php echo $value['icon']['url']; ?>" alt="Icon ">
@@ -89,7 +89,9 @@ get_header();
     </h2>
     <div id="features" class="mg-96px-t">
 
-        <?php foreach ($products['product'] as $product) {
+        <?php 
+            // Make sure `products` is not empty to prevent errors
+            if(!empty($products['product'])) foreach ($products['product'] as $product) {
         ?>
         <!-- Features 1 -->
         <div class="features">
@@ -198,7 +200,9 @@ get_header();
         <div id="advice-links">
 
        
-        <?php foreach ($advice_section['care'] as $care) {
+        <?php 
+            // Make sure advice_sectin is not empty to prevent errors
+            if(!empty($advice_section['care'])) foreach ($advice_section['care'] as $care) {
         ?>
 
 
