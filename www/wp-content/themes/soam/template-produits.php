@@ -3,6 +3,9 @@
 Template Name: Page produit
  */
 get_header();
+
+$products = get_field('products');
+
 ?>
 
 
@@ -17,15 +20,30 @@ get_header();
     <div class="products main-wrapper">
 
       <div class="soap">
-        <h2>Les savons à froid</h2>
+      <?php 
+            // Make sure that products ìs not empty to prevent errors
+            if(!empty($products)) foreach ($products as $categorie) {
+                ?>
+
+
+        <h2><?php echo $categorie['title']; ?></h2>
         <div class="soap_window">
+
+         <?php 
+            // Make sure that product ìs not empty to prevent errors
+            if(!empty($product)) foreach ($product as $value) {
+                ?>
           <button type="button" name="neemteem">
-            <img src=<?php echo get_template_directory_uri() . '/images/produit.png'; ?> alt="Le savon Neem Teem"> 
-            <h3>Neem Teem</h3>
+            <img src=<?php echo $value['image']['url'] ?> alt="Le savon Neem Teem"> 
+            <h3><?php echo $value['title'] ?> </h3>
           </button>
 
+          <?php } ?>
 
-          <button type="button" name="dendelion">
+          <?php } ?>
+
+
+          <!-- <button type="button" name="dendelion">
             <img src=<?php echo get_template_directory_uri() . '/images/produit.png'; ?> alt="Le savon Dendelion">
             <h3>Dendelion</h3>
           </button>
@@ -48,7 +66,7 @@ get_header();
           <button type="button" name="kaoline">
             <img src=<?php echo get_template_directory_uri() . '/images/produit.png'; ?> alt="Le savon Kaoline">
             <h3>Kaoline</h3>
-          </button>
+          </button> -->
 
         </div>
         <div class="$cyan-light product_presentation ">
