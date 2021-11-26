@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="author" content="Agence Pikoom">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
     <title><?php bloginfo('name'); ?></title>
     <?php wp_head(); ?>
   </head>

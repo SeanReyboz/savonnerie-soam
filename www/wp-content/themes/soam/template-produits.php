@@ -5,7 +5,6 @@ Template Name: Page produit
 get_header();
 ?>
 
-
     <nav class="search_menu">
       <ul>
       <li><a href="#all" class="search_menu_products">Tous les produis</a></li>
@@ -19,7 +18,20 @@ get_header();
       <div class="soap">
         <h2>Les savons à froid</h2>
         <div class="soap_window">
-          <button type="button" name="neemteem">
+          <button id="neemteem" type="button" name="neemteem">
+          <script type="text/javascript">
+            document.getElementById("neemteem").addEventListener("click", function() {
+            
+            document.querySelector(".product").style.display = "flex";
+            TweenMax.to(".product", 1, {
+              delay: 0,
+              opacity: 1,
+              y: 0,
+              ease: Expo.easeInOut,
+            })
+
+            });
+          </script>
             <img src=<?php echo get_template_directory_uri() . '/images/produit.png'; ?> alt="Le savon Neem Teem"> 
             <h3>Neem Teem</h3>
           </button>
@@ -56,18 +68,7 @@ get_header();
           <img src=<?php echo get_template_directory_uri() . '/images/zoom_produit.png'; ?> alt="Le savon le Rebelle">
           </div>
           <div class="product_infos ">
-            <h2>Savon Neem Teen, Surgras 8%</h2>
-            <p class="text-sm">PEAUX ACNÉIQUES, MIXTES À PROBLÈMES</p>
-            <h3 class="text-base">Description</h3>
-            <p class="text-sm">L’huile de Neem, antibactérienne et antifongique, aide à lutter contre les infections de la peau, de l’acné aux mycoses, en passant par l’eczéma et le psoriasis.</p>
-            <h3 class="text-base">Composition</h3>
-            <p class="text-sm">Huile de Neem, beurre de mangue, huile Onagre, huile de Cameline.</p>
-            <h3 class="text-base">Propriétés</h3>
-            <ul>
-              <li class="text-sm">Hydratation de la peau</li>
-              <li class="text-sm">Revitalisation de l’épiderme</li>
-              <li class="text-sm">Propriétés adoucissantes</li>
-            </ul>
+          <?php include("popin.php"); ?>
           </div>
         </div>
 
