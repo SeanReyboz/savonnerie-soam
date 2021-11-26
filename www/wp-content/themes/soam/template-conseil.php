@@ -28,15 +28,22 @@ get_header();
     </div>
 
     <div class="contact">
-      <div class="">
-        <img src="" alt="">
+      <div class="formulaire_image">
+      <img src=<?php echo get_template_directory_uri().'/images/conseils/contacter.png';?>  alt="contact_image"/>
       </div>
-      <form action="action.php" method="post">
-        <p>Votre nom : <input type="text" name="nom" /></p>
-        <p>Email : <input type="text" name="mail" /></p>
-        <p>Message : <input type="text" name="message"></p>
-        <p><input type="submit" value="OK"></p>
-      </form>
+      <div class="formulaire">
+        <h2 class=" contact-me text-xxl">Me contacter</h2>
+        <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. At malesuada quis non consectetur hendrerit pellentesque hac. Elementum orci et egestas ut sit amet, enim est. Massa sed porta viverra sed tincidunt.</p>
+        <form action="action.php" method="post">
+          <p >Name</p>
+          <p id="name"> <input type="text" name="nom" placeholder="Amandine..." /></p>
+          <p >Mail</p>
+          <p id="mail"><input type="text" name="mail" placeholder="@..."/></p>
+          <p >Message</p>
+          <p id="message"><input type="text" name="message" placeholder="Message..."></p>
+          <p ><input type="submit" value="Envoyer"></p>
+        </form>
+      </div>
     </div>
 
     <div class="infos">
