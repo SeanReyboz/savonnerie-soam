@@ -31,20 +31,21 @@
 		grid: repeat(2, 330px) / auto-flow 405px;
 		margin-left: auto;
 		margin-right: auto;
-		#neemteem:hover{
-			cursor:pointer
+		#neemteem:hover {
+			cursor: pointer;
 		}
 	}
-    .product_presentation{
-        max-width: 700px;
-        display: flex;
-        justify-content: space-between;
+	.product_presentation {
+		max-width: 700px;
+		display: flex;
+		justify-content: space-between;
 
-        .product_infos{
-            .product{display:none;}
-        }
-        
-    }
+		.product_infos {
+			.product {
+				display: none;
+			}
+		}
+	}
 	.oil_window {
 		max-width: 1216px;
 		display: grid;
