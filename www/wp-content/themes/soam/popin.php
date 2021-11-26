@@ -13,6 +13,10 @@
 <style type="text/css">
   .product {
     display: flex;
+    left: 10%;
+    position: fixed;
+    top:10%;  
+    z-index:100;
     margin: auto;
     margin-top: 2vh;
     flex-direction: column;
@@ -24,13 +28,14 @@
     background-size: 35em;
     background-position-x: 0px;
     width: 80vw;
-    height: 600pw;
+    height: 80vh;
   }
 
   h2 {
     font-weight: bold;
     font-size: xxx-large;
     text-align: center;
+    padding-top: 33px;
   }
 
   #close {
@@ -53,7 +58,9 @@
     display: flex;
     align-items: center;
     width: 55vw;
-    margin-left: 5vw;
+    margin-left: 10vw;
+    top:40%;
+    position:fixed;
   }
 
   .image_product img {
@@ -61,8 +68,12 @@
   }
 
   .about_product {
-    max-width: 35vw;
+    width: 35vw;
     margin-right: 5vw;
+    position: fixed; 
+    margin-right: 0%;
+    left: 50%;
+    top: 32%;
   }
 
   h3.product_effect {
@@ -83,23 +94,6 @@
     font-size: medium;
   }
 
-  div.skin {
-    display: flex;
-  }
-
-  div.skin div {
-    padding-top: unset;
-    padding-bottom: unset;
-    margin: auto;
-    color: white;
-    background-color: #9D2450;
-    padding: 5px;
-    border-radius: 5px;
-    text-align: center;
-    font-size: 1.2vw;
-    box-shadow: 8px 8px 10px #222222;
-    ;
-  }
 </style>
 
 <!-- ------------------------------------------------------- -->
@@ -119,7 +113,7 @@
         setTimeout(disappear, 1000);
 
         function disappear() {
-          document.querySelector("product").style.display = "none";
+          document.querySelector(".product").style.display = "none";
         }
       })
     </script>
@@ -146,11 +140,6 @@
           </div>
           <div>
             Surgras 8 %
-          </div>
-          <div class="skin">
-            <div>Peaux acnéique</div>
-            <div>Peaux mixtes</div>
-            <div>Peaux à problèmes</div>
           </div>
         </div>
       </div>
