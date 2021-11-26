@@ -1,0 +1,42 @@
+// Stylesheet for the swiperjs slider
+
+.swiper {
+  // Swiperjs wrapper styling
+  &-wrapper {
+  }
+
+  // Swiperjs slider styling
+  &-slider {
+    display: flex;
+    justify-content: space-between;
+  }
+  // Slider navigation styling
+  &-navigation {
+  }
+}
+
+// ---
+//  Slider image
+// ---
+.slider-image {
+  border-radius: var(--radius);
+  max-width: 480px;
+  width: 100%;
+  height: auto;
+
+  img {
+    border-radius: inherit;
+    width: inherit;
+    height: inherit;
+  }
+}
+
+// ---
+//  Slider content
+// ---
+
+.slider-content {
+  &-what {
+    max-width: 485px;
+  }
+}

@@ -1,36 +1,57 @@
 {
     "key": "group_61a098d510344",
-    "title": "Réseaux Sociaux",
+    "title": "Informations de Contact",
     "fields": [
         {
-            "key": "field_61a098df6c039",
-            "label": "Instagram",
-            "name": "instagram",
-            "type": "link",
-            "instructions": "Lien vers la page publique de votre profil Instagram.",
-            "required": 1,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "array"
-        },
-        {
             "key": "field_61a099a86642a",
-            "label": "Facebook",
-            "name": "facebook",
-            "type": "link",
-            "instructions": "Lien vers la page publique de votre profil Facebook.",
-            "required": 1,
+            "label": "Réseaux Sociaux",
+            "name": "social_networks",
+            "type": "group",
+            "instructions": "Groupe contenant les liens vers les pages publiques de vos réseaux sociaux.",
+            "required": 0,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
                 "class": "",
                 "id": ""
             },
-            "return_format": "array"
+            "layout": "block",
+            "acfe_seamless_style": 0,
+            "acfe_group_modal": 0,
+            "sub_fields": [
+                {
+                    "key": "field_61a0af6b6dcd7",
+                    "label": "Instagram",
+                    "name": "instagram",
+                    "type": "url",
+                    "instructions": "Lien vers votre profil public Instagram.",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "https:\/\/www.instagram.com\/soam_savonneriebio\/",
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_61a0afde6dcd8",
+                    "label": "Facebook",
+                    "name": "facebook",
+                    "type": "url",
+                    "instructions": "Lien vers votre profil public Facebook",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "https:\/\/www.facebook.com\/SoAmsavonneriebbio",
+                    "placeholder": ""
+                }
+            ]
         }
     ],
     "location": [
@@ -57,5 +78,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1637915240
+    "modified": 1637921717
 }
