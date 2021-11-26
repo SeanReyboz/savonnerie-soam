@@ -1,6 +1,6 @@
 {
     "key": "group_619e5f46691a7",
-    "title": "Footer",
+    "title": "Pied de Page",
     "fields": [
         {
             "key": "field_619e5f6251295",
@@ -344,6 +344,44 @@
                     ]
                 }
             ]
+        },
+        {
+            "key": "field_61a0b40a5fba2",
+            "label": "socials",
+            "name": "socials",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "acfe_seamless_style": 0,
+            "acfe_group_modal": 0,
+            "sub_fields": [
+                {
+                    "key": "field_61a0b4155fba3",
+                    "label": "insta",
+                    "name": "insta",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "ekmjccbeoce",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
         }
     ],
     "location": [
@@ -370,5 +408,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1637837537
+    "modified": 1637923459
 }

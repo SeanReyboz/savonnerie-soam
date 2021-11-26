@@ -41,9 +41,13 @@ $legals_links = $legals['links'];
         <div class="footer-nav-entry">
           <h3 class="footer-nav-entry-title">
             <?php echo $brand['title']; ?>
-          </h3>
+          </h3> 
+          <!-- 46, 60, 87 -->
           <ul class="footer-nav-entry-list">
-            <?php foreach ($brand_links as $links) { ?>
+            <?php
+              // Make sure that $brand_links is not empty to prevent errors 
+              if(!empty($brand_links)) foreach ($brand_links as $links) { 
+            ?>
               <li><a href="<?php echo $links['link']['url']; ?>"><?php echo $links['link']['title']; ?></a></li>
             <?php } ?>
           </ul>
@@ -56,10 +60,11 @@ $legals_links = $legals['links'];
             <?php 
               // Go through every email address, if any
 
-              foreach ($contact_content as $emails) { 
-                foreach ($emails as $email) { ?>
+              if(!empty($contact_content)) foreach ($contact_content as $emails) { 
+                foreach ($emails as $email) { 
+            ?>
 
-                <li><a href="mailto:<?php echo trim($email['email']); ?>"><?php echo $email['email']; ?></a></li>
+            <li><a href="mailto:<?php echo trim($email['email']); ?>"><?php echo $email['email']; ?></a></li>
 
             <?php } } ?>
 
@@ -84,7 +89,10 @@ $legals_links = $legals['links'];
             <?php echo $legals['title']; ?>
           </h3>
           <ul class="footer-nav-entry-list">
-            <?php foreach($legals_links as $links) { ?>
+            <?php 
+              // Make sure $legals_links is not empty to prevent any error
+              if(!empty($legals_links)) foreach($legals_links as $links) { 
+            ?>
               <li><a href="<?php echo $links['link']['url']; ?>"><?php echo $links['link']['title']; ?></a></li>
             <?php } ?>
           </ul>
@@ -92,7 +100,7 @@ $legals_links = $legals['links'];
       </nav>
     </div>
     <small class="copyrights color-white text-xs ft-mulish mg-72px-t">
-      &copy; 2021 La Savonnerie Soâm | Design et Développement par <a href="https://mmi.univ-smb.fr/">Pikoom 🌵</a>
+      &copy; <?php echo date('Y'); ?> La Savonnerie Soâm | Design et Développement par <a href="https://mmi.univ-smb.fr/">Pikoom 🌵</a>
     </small>
   </footer>
 
