@@ -1,0 +1,61 @@
+{
+    "key": "group_61a098d510344",
+    "title": "Réseaux Sociaux",
+    "fields": [
+        {
+            "key": "field_61a098df6c039",
+            "label": "Instagram",
+            "name": "instagram",
+            "type": "link",
+            "instructions": "Lien vers la page publique de votre profil Instagram.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
+            "key": "field_61a099a86642a",
+            "label": "Facebook",
+            "name": "facebook",
+            "type": "link",
+            "instructions": "Lien vers la page publique de votre profil Facebook.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "acfe_display_title": "",
+    "acfe_autosync": [
+        "json"
+    ],
+    "acfe_form": 0,
+    "acfe_meta": "",
+    "acfe_note": "",
+    "modified": 1637915240
+}
