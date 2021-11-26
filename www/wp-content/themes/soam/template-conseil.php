@@ -28,17 +28,15 @@ get_header();
     </div>
 
     <div class="contact">
-      <div class="image3">
+      <div class="">
         <img src="" alt="">
       </div>
-      <div class="text3">
-        <h2>Me contacter</h2>
-        <p>...</p>
-        <a class="button-xl bg-cyan color-white" href=""><button>Envoyer !</button></a>
-        <p>Name</p>
-        <p>Email</p>
-        <p>Message</p>
-      </div>
+      <form action="action.php" method="post">
+        <p>Votre nom : <input type="text" name="nom" /></p>
+        <p>Email : <input type="text" name="mail" /></p>
+        <p>Message : <input type="text" name="message"></p>
+        <p><input type="submit" value="OK"></p>
+      </form>
     </div>
 
     <div class="infos">
