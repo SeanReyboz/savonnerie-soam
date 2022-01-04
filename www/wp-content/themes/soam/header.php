@@ -14,20 +14,7 @@
   <body>
     <header>
       <div class="main_nav flex-row">
-        <a 
-          href="<?php  
-            /**
-             * @BUG
-             * La fonction `get_home_path()` fait planter toute la page pour une
-             * raison totalement inconnue...
-             * 
-             * @TODO
-             * Trouver une solution ou une alternative...
-             */
-
-            // echo get_home_path(); 
-          ?>"
-        >
+        <a href="<?php echo home_url(); ?>" >
           <img 
             class="logo" 
             src="<?php echo get_template_directory_uri() . '/images/logo.png'; ?>" 
