@@ -3,11 +3,11 @@
     "title": "Page produit",
     "fields": [
         {
-            "key": "field_61a0b0b8bce66",
-            "label": "Type de produit",
-            "name": "products",
+            "key": "field_61a0d45042548",
+            "label": "Catégories",
+            "name": "categories",
             "type": "repeater",
-            "instructions": "Remplissez ici les groupes de produits que vous vendez.",
+            "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -21,13 +21,31 @@
             "max": 0,
             "layout": "table",
             "button_label": "",
+            "sub_fields": []
+        },
+        {
+            "key": "field_61a0cc9701248",
+            "label": "Groupe de produit",
+            "name": "groupe",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "acfe_seamless_style": 0,
+            "acfe_group_modal": 0,
             "sub_fields": [
                 {
-                    "key": "field_61a0b130bce67",
-                    "label": "Titre",
+                    "key": "field_61a0cbca06a39",
+                    "label": "Titre de la catégorie",
                     "name": "title",
                     "type": "text",
-                    "instructions": "Rentrer le nom de votre catégorie",
+                    "instructions": "Entrer le titre de votre catégorie.",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -42,11 +60,11 @@
                     "maxlength": ""
                 },
                 {
-                    "key": "field_61a0b14cbce68",
-                    "label": "les produits",
+                    "key": "field_61a0cbfe06a3a",
+                    "label": "Le produit",
                     "name": "product",
                     "type": "repeater",
-                    "instructions": "Rentrer ici chacun de vos produits que vous vendez dans la catégorie choisi.",
+                    "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -62,11 +80,11 @@
                     "button_label": "",
                     "sub_fields": [
                         {
-                            "key": "field_61a0b181bce69",
+                            "key": "field_61a0cc1b06a3b",
                             "label": "Image",
                             "name": "image",
                             "type": "image",
-                            "instructions": "L\"image de votre produit",
+                            "instructions": "Image de votre produit",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -88,11 +106,11 @@
                             "library": "all"
                         },
                         {
-                            "key": "field_61a0b19abce6a",
-                            "label": "Titre",
+                            "key": "field_61a0cc4806a3c",
+                            "label": "titre",
                             "name": "title",
                             "type": "text",
-                            "instructions": "Le nom de votre produit",
+                            "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -107,6 +125,25 @@
                             "maxlength": ""
                         }
                     ]
+                },
+                {
+                    "key": "field_61a0d43499759",
+                    "label": "class",
+                    "name": "class",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
                 }
             ]
         }
@@ -135,5 +172,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1637921215
+    "modified": 1637930085
 }

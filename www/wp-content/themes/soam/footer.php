@@ -60,13 +60,17 @@ $legals_links = $legals['links'];
             <?php 
               // Go through every email address, if any
 
-              if(!empty($contact_content)) foreach ($contact_content as $emails) { 
+              if(!empty($contact_content)) {
+              
+
+              foreach ($contact_content['emails'] as $emails) { 
                 foreach ($emails as $email) { 
+
             ?>
 
-            <li><a href="mailto:<?php echo trim($email['email']); ?>"><?php echo $email['email']; ?></a></li>
+            <li><a href="mailto:<?php echo trim($email); ?>"><?php echo $email; ?></a></li>
 
-            <?php } } ?>
+            <?php } } } ?>
 
             <!-- Phone number -->
             <li><a href="tel:+<?php echo $contact_phone; ?>">+<?php echo $contact_phone; ?></a></li>

@@ -41,3 +41,10 @@ function debug($val){
     var_dump($val);
   echo "</pre>";
 }
+
+if (! function_exists('custom_register_nav_menu')){
+  function custom_register_nav_menu(){
+      register_nav_menus( array('primary_menu' => 'Menu principal',) );
+  }
+  add_action( 'after_setup_theme', 'custom_register_nav_menu', 0);
+}

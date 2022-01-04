@@ -4,7 +4,7 @@ Template Name: Page produit
  */
 get_header();
 
-$products = get_field('products');
+$groupes = get_field('groupe');
 
 ?>
 
@@ -19,13 +19,33 @@ $products = get_field('products');
     <div class="products main-wrapper">
 
       <div class="soap">
+
+      <?php
+
+      foreach ($groupes as $key => $groupe) {
+
+        ?>
+
+
+
+
+
+        <?php
+      }
+
+      ?>  
+
+
+
       <?php
             // Make sure that products ìs not empty to prevent errors
             if(!empty($products)) foreach ($products as $categorie) {
+
+
                 ?>
 
 
-        <h2><?php echo $categorie['title']; ?></h2>
+        <h2><?php echo $groupe['title']; ?></h2>
         <div class="soap_window">
           <button id="neemteem" type="button" name="neemteem">
           <script type="text/javascript">
@@ -41,20 +61,14 @@ $products = get_field('products');
 
             });
           </script>
-            <img src=<?php echo get_template_directory_uri() . '/images/produit.png'; ?> alt="Le savon Neem Teem">
+
+
+
+            <img src=<?php echo ''; ?> alt="Le savon Neem Teem">
             <h3>Neem Teem</h3>
-            <?php
-               // Make sure that product ìs not empty to prevent errors
-               if(!empty($product)) foreach ($product as $value) {
-                   ?>
-             <button type="button" name="neemteem">
-               <img src=<?php echo $value['image']['url'] ?> alt="Le savon Neem Teem">
-               <h3><?php echo $value['title'] ?> </h3>
-          </button>
+            
 
-          <?php } ?>
-
-          <?php } ?>
+            <?php } ?>
 
 
           <!-- <button type="button" name="dendelion">

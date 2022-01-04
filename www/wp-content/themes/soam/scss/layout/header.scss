@@ -43,6 +43,19 @@
   }
 }
 
+.menu {
+	@extend .nav;
+	@extend .flex-row;
+
+	li {
+		margin-right: 40px;
+
+		a {
+			@extend .text;
+		}
+	}
+}
+
 .text {
   text-decoration: none;
   color: $black;
