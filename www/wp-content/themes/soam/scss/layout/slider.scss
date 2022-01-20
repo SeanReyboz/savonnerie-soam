@@ -1,34 +1,35 @@
 // Stylesheet for the swiperjs slider
 
 .swiper {
-  // Swiperjs wrapper styling
-  &-wrapper {
-  }
+	// Swiperjs wrapper styling
+	&-wrapper {
+	}
 
-  // Swiperjs slider styling
-  &-slider {
-    display: flex;
-    justify-content: space-between;
-  }
-  // Slider navigation styling
-  &-navigation {
-  }
+	// Swiperjs slider styling
+	&-slider {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+	}
+	// Slider navigation styling
+	&-navigation {
+	}
 }
 
 // ---
 //  Slider image
 // ---
 .slider-image {
-  border-radius: var(--radius);
-  max-width: 480px;
-  width: 100%;
-  height: auto;
+	border-radius: var(--radius);
+	max-width: 480px;
+	width: 100%;
+	height: auto;
 
-  img {
-    border-radius: inherit;
-    width: inherit;
-    height: inherit;
-  }
+	img {
+		border-radius: inherit;
+		width: inherit;
+		height: inherit;
+	}
 }
 
 // ---
@@ -36,7 +37,25 @@
 // ---
 
 .slider-content {
-  &-what {
-    max-width: 485px;
-  }
+	&-what {
+		max-width: 485px;
+	}
+	&-who {
+		.collaborators-container {
+			display: flex;
+			justify-content: space-between;
+			.collaborator {
+				max-width: 180px;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+
+				.collaborator-image {
+					width: 48px;
+					height: 48px;
+					border-radius: 500px;
+				}
+			}
+		}
+	}
 }

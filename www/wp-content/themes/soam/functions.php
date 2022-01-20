@@ -1,4 +1,22 @@
 <?php
+
+
+
+
+if (!function_exists('custom_register_nav_menu')) {
+    function custom_register_nav_menu() {
+        register_nav_menus([
+            'primary_menu' => 'Mon Menu principal',
+        ]);
+    }
+    add_action('after_setup_theme', 'custom_register_nav_menu', 0);
+}
+
+
+
+
+
+
 function add_style() {
     //wp_enqueue_style('main-style', get_template_directory_uri() . '/style.css', false);
     wp_enqueue_style('main', get_template_directory_uri() . '/css/main.css?t='.time(), false);
@@ -22,4 +40,11 @@ function debug($val){
   echo "<pre> ";
     var_dump($val);
   echo "</pre>";
+}
+
+if (! function_exists('custom_register_nav_menu')){
+  function custom_register_nav_menu(){
+      register_nav_menus( array('primary_menu' => 'Menu principal',) );
+  }
+  add_action( 'after_setup_theme', 'custom_register_nav_menu', 0);
 }

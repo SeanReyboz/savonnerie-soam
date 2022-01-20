@@ -2,32 +2,65 @@
 
 //Start
 .flex-row {
-	display: flex;
-	flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .main_nav {
-	justify-content: space-between;
-	align-items: center;
-	padding: 34px 112px 34px 48px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 34px 112px 34px 48px;
 
-	.logo {
-		height: 50px;
-		width: auto;
-	}
+  .logo {
+    height: 50px;
+    width: auto;
+  }
 
-	.nav {
-		li {
-			margin-right: 40px;
+  .nav {
+    display: flex;
+
+    li {
+      margin-right: 40px;
+
+      &.current_page_item {
+        a {
+          text-decoration: underline;
+        }
+      }
+
+      a {
+        font-size: 1rem;
+        color: $black;
+        text-decoration: none;
+        transition: color 100ms ease-out;
+
+        &:hover,
+        &:focus-visible {
+          color: $cyan;
+        }
+      }
+    }
+  }
+}
+
+.menu {
+	@extend .nav;
+	@extend .flex-row;
+
+	li {
+		margin-right: 40px;
+
+		a {
+			@extend .text;
 		}
 	}
 }
 
 .text {
-	text-decoration: none;
-	color: $black;
+  text-decoration: none;
+  color: $black;
 
-	&:hover {
-		color: $cyan;
-	}
+  &:hover {
+    color: $cyan;
+  }
 }
