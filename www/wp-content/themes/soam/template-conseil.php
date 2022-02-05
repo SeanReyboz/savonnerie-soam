@@ -29,7 +29,7 @@ get_header();
 
     <div class="contact">
       <div class="formulaire_image">
-      <img src=<?php echo get_template_directory_uri().'/images/conseils/contacter.png';?>  alt="contact_image"/>
+      <img class="form_image" src=<?php echo get_template_directory_uri().'/images/conseils/contacter.png';?>  alt="contact_image"/>
       </div>
       <div class="formulaire">
         <h2 class=" contact-me text-xxl">Me contacter</h2>

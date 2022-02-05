@@ -33,7 +33,7 @@ $groupes = get_field('groupe');
         <?php
       }
 
-      ?>  
+      ?>
 
 
 
@@ -64,14 +64,16 @@ $groupes = get_field('groupe');
 
 
 
+
             <img src=<?php echo ''; ?> alt="Le savon Neem Teem">
             <h3>Neem Teem</h3>
-            
+
 
             <?php } ?>
 
 
           <!-- <button type="button" name="dendelion">
+
             <img src=<?php echo get_template_directory_uri() . '/images/produit.png'; ?> alt="Le savon Dendelion">
             <h3>Dendelion</h3>
           </button>
@@ -94,7 +96,7 @@ $groupes = get_field('groupe');
           <button type="button" name="kaoline">
             <img src=<?php echo get_template_directory_uri() . '/images/produit.png'; ?> alt="Le savon Kaoline">
             <h3>Kaoline</h3>
-          </button> -->
+          </button>
 
         </div>
         <div class="$cyan-light product_presentation ">
