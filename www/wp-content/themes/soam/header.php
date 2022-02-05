@@ -14,10 +14,10 @@
   <body>
     <header>
       <div class="main_nav flex-row">
-        <a href="<?php echo home_url(); ?>" >
+        <a href="<?= home_url(); ?>" >
           <img 
             class="logo" 
-            src="<?php echo get_template_directory_uri() . '/images/logo.png'; ?>" 
+            src="<?= get_template_directory_uri() . '/images/logo.png'; ?>" 
             alt="Logo Soam" 
           />
         </a>
@@ -32,31 +32,39 @@
 
         ?>
 
+        <?php 
+
+          /** 
+           * Récupérer les liens vers les réseaux sociaux
+           */
+
+          $socials = get_field("social_networks", "option");
+        
+        ?>
+
         <div class="rs_icons">
           <a 
             id="facebook" 
             class="mg-16px-r" 
             target="_blank"
             rel="noopener noreferrer"
-            href="<?php echo get_field('instagram', 'option'); ?>" 
+            href="<?= $socials['facebook'] ?>" 
             alt="Logo facebook"
           >
-            <img 
-              src="<?php echo get_template_directory_uri() . '/images/icons/facebook.svg'; ?>"
+          <img 
+              src="<?= get_template_directory_uri() . '/images/icons/facebook.svg' ?>"
               alt="Icone Facebook" 
-            />
-          </a>
+            /></a>
           <a 
             id="instagram" 
             target="_blank"
             rel="noopener noreferrer"
-            href="<?php echo get_field('facebook', 'option'); ?>"
+            href="<?= $socials['instagram'] ?>"
           >
-            <img 
-              src="<?php echo get_template_directory_uri() . '/images/icons/instagram.svg'; ?>" 
+          <img 
+              src="<?= get_template_directory_uri() . '/images/icons/instagram.svg' ?>" 
               alt="Logo Instagram" 
-            />
-          </a>
+            /></a>
         </div>
       </div>
     </header>

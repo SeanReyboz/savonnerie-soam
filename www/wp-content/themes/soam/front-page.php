@@ -9,26 +9,28 @@ $about = get_field('about');
 $advice_section = get_field('advice_section');
 get_header();
 
+
+
+
 ?>
 <section id="hero-section">
     <div id="hero-info">
         <h1 class="text-xxl ft-bold ft-nunito">
-            <?php echo get_field("title"); ?>
+            <?= get_field("title") ?>
         </h1>
         <p class="text-base">
-            <?php echo get_field("description"); ?>
+            <?= get_field("description"); ?>
         </p>
-        <a class="button-xl bg-cyan color-white" href="<?php  echo $link['url']; ?>">
-             <?php 
-                echo $link['title'];
-             ?> 
+        <a 
+            class="button-xl bg-cyan color-white" 
+            href="<?= $link['url']; ?>"
+        >
+            <?= $link['title'] ?>
         </a>
     </div>
-    <img src="
-        <?php 
-            echo $headerimg['url'];
-         ?>" 
-         alt="Image savons">
+ 
+    <img src="<?= $headerimg['url'] ?>" 
+         alt="<?= $headerimg['alt'] ?>">
 </section>
 
 <!--
@@ -38,17 +40,31 @@ get_header();
     <div class="main-wrapper values-container">
 
         <?php 
-            // Make sure that `valuesìs not empty to prevent errors
-            if(!empty($values)) foreach ($values as $value) {
-                ?>
-                     <div class="values ">
-                        <img src="<?php echo $value['icon']['url']; ?>" alt="Icon ">
-                        <h3 class="text-xl ft-semibold mg-16px-t" ><?php echo $value['title']; ?></h3>
-                        <p class="text-base mg-24px-t"><?php echo $value['description']; ?></p>
-                        <a class="ft-semibold color-cyan mg-16px-t" href="<?php echo $value['link']['url']; ?>"><?php echo $value['link']['title']; ?></a>
-                    </div>   
-                <?php
-            }
+        // Make sure that `valuesìs not empty to prevent errors
+
+        if ( !empty($values) ) 
+            foreach ( $values as $value ):
+
+        ?>
+        <div class="values ">
+            <img 
+                src="<?= $value['icon']['url'] ?>" 
+                alt="<?= $value['icon']['alt'] ?>" 
+            />
+            <h3 class="text-xl ft-semibold mg-16px-t" ><?= $value['title']; ?></h3>
+            <p class="text-base mg-24px-t">
+                <?= $value['description']; ?>
+            </p>
+            <a 
+                class="ft-semibold color-cyan mg-16px-t"
+                href="<?= $value['link']['url']; ?>"
+            >
+                <?= $value['link']['title']; ?>
+            </a>
+        </div>   
+        <?php
+
+            endforeach
         
         ?>
     <!-- Respect du corps 
@@ -85,56 +101,47 @@ get_header();
 
 
     <h2 class="ft-nunito text-xxl ft-bold ">
-       <?php echo $products['title']; ?>
+       <?= $products['title']; ?>
     </h2>
     <div id="features" class="mg-96px-t">
 
-        <?php 
-            // Make sure `products` is not empty to prevent errors
-            if(!empty($products['product'])) foreach ($products['product'] as $product) {
-        ?>
-        <!-- Features 1 -->
+    <?php 
+    // Make sure `products` is not empty to prevent errors
+    if ( !empty($products['product']) ) 
+        foreach ($products['product'] as $product):
+    ?>
+        <!-- Feature -->
         <div class="features">
             <div class="feature-image">
-                <img src="<?php echo $product['image']['url']; ?>" style=" --mask:url(<?php echo get_template_directory_uri() . '/images/blob/blob1.png'; ?>);" alt="png mask blob">
+                <img 
+                    src="<?= $product['image']['url']; ?>" 
+                    style="--mask:url(<?= get_template_directory_uri() . '/images/blob/blob1.png'; ?>);" 
+                    alt="<?= $product['image']['alt'] ?>"
+                />
             </div>
-            <?php if ($product['product_name']){ ?>
-            <h3 class="text-lg ft-semibold mg-72px-t "><?php echo $product['product_name']; ?></h3>
-                <?php } ?>
-            <p class="mg-24px-t"> <?php echo $product['product_description']; ?> </p>
-            <a class="color-cyan ft-semibold mg-16px-t" href="<?php echo $product['product_link']['url']; ?>"><?php echo $product['product_link']['title']; ?></a>
+
+            <?php  if ( $product['product_name'] ): ?>
+            
+            <h3 class="text-lg ft-semibold mg-72px-t">
+                <?= $product['product_name']; ?>
+            </h3>
+            
+            <?php endif ?>
+            
+            <p class="mg-24px-t">
+                <?= $product['product_description']; ?>
+            </p>
+            <a 
+                class="color-cyan ft-semibold mg-16px-t" 
+                href="<?= $product['product_link']['url']; ?>"
+            >
+                <?= $product['product_link']['title']; ?>
+            </a>
         </div>
-
-        <?php
-
-        }
-        
-        
-        
-        ?>
-
-
-      
-
-        
-        <!-- <div class="features">
-            <div class="feature-image">
-                <img src="https://picsum.photos/300/300" style=" --mask:url(<?php echo get_template_directory_uri() . '/images/blob/blob2.png'; ?>);" alt="png mask blob">
-            </div>
-            <h3 class="text-lg ft-semibold mg-72px-t ">Les Baumes</h3>
-            <p class="mg-24px-t">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fusce eros, at massa dictum nulla a. </p>
-            <a class="color-cyan ft-semibold mg-16px-t" href="">En savoir plus</a>
-        </div>
-
-        
-        <div class="features">
-            <div class="feature-image">
-                <img src="https://picsum.photos/300/300" style=" --mask:url(<?php echo get_template_directory_uri() . '/images/blob/blob3.png'; ?>);" alt="png mask blob">
-            </div>
-            <h3 class="text-lg ft-semibold mg-72px-t ">Huiles & Sérums</h3>
-            <p class="mg-24px-t">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fusce eros, at massa dictum nulla a. </p>
-            <a class="color-cyan ft-semibold mg-16px-t" href="">En savoir plus</a>
-        </div> -->
+        <!-- End feature -->
+    <?php
+        endforeach
+    ?>
     </div>
 </section>
 
@@ -146,36 +153,36 @@ get_header();
     <div class="about-container main-wrapper">
         <!-- About double image -->
         <div class="doubled-image" style="--bg-img-height: 520px; --fg-img-height: 392px; --fg-img-width: 280px; --margin-left: 30%;">
-            <img class="doubled-image-bg box-shadow-lg" src=" 
-            <?php 
-                echo $about['background_img']['url'];
-            ?> " alt="background image">
-            <img class="doubled-image-fg box-shadow-lg" src=" 
-            <?php 
-                echo $about['image']['url'];
-             ?> " alt="foreground image">
+            <img 
+                class="doubled-image-bg box-shadow-lg" 
+                src="<?= $about['background_img']['url'] ?>" 
+                alt="background image"
+            />
+            <img 
+                class="doubled-image-fg box-shadow-lg" 
+                src="<?= $about['image']['url'] ?>"
+                alt="foreground image" 
+             />
         </div>
 
 
         <!-- About text -->
         <div id="about-text">
-            <h2 class="ft-nunito text-xxl ft-bold color-white" >
-            <?php 
-                echo $about['title'];
-             ?> 
+            <h2 class="ft-nunito text-xxl ft-bold color-white">
+                <?= $about['title'] ?> 
             </h2>
             <p class="mg-24px-t color-white">
-            <?php 
-                echo $about['text'];
-             ?> 
+                <?= $about['text'] ?> 
             </p>
-            <a id="about-button" class="mg-32px-t button bg-cyan color-white" href=" <?php echo $about['link']['url'];?>"> 
-                <?php 
-                    echo $about['link']['title'];
-                ?> </a>
+            <a 
+                id="about-button" 
+                class="mg-32px-t button bg-cyan color-white" 
+                href="<?= $about['link']['url'] ?>"
+            > 
+                <?= $about['link']['title'] ?>
+            </a>
         </div>
     </div>
-
 </section>
 
 <!--
@@ -185,45 +192,54 @@ get_header();
 <section id="advice-section" class="mg-136px-t">
     <div id="advice-info" class="mg-136px-l">
         <h2 class="ft-nunito text-xxl ft-bold ">
-        <?php 
-            echo $advice_section['title'];
-        ?>
+            <?= $advice_section['title'] ?>
         </h2>
         <p class="text-base mg-16px-t">
-        <?php 
-            echo $advice_section['text'];
-        ?>
+        <?= $advice_section['text'] ?>
         </p>
-        <a class="mg-32px-t button bg-cyan color-white" href="<?php echo $advice_section['link']['url'];?>"><?php 
-            echo $advice_section['link']['title'];
-        ?></a>
+        <a 
+            class="mg-32px-t button bg-cyan color-white" 
+            href="<?= $advice_section['link']['url'] ?>"
+        >
+            <?= $advice_section['link']['title'] ?>
+        </a>
         <div id="advice-links">
-
        
         <?php 
             // Make sure advice_sectin is not empty to prevent errors
-            if(!empty($advice_section['care'])) foreach ($advice_section['care'] as $care) {
+            if ( !empty($advice_section['care']) ) 
+                foreach ($advice_section['care'] as $care):
         ?>
 
 
             <div class="advice-link mg-88px-r">
-                <img src="<?php echo $care['image']['url'] ?>" alt="" class="mg-16px-r">
-                <a href="<?php echo $care['link']['url'] ?>" class="text-base ft-semibold color-black"><?php echo $care['link']['title'] ?></a>
+                <img 
+                    src="<?= $care['image']['url'] ?>" 
+                    alt="<?= $care['image']['alt'] ?>" 
+                    class="mg-16px-r" 
+                />
+                <a 
+                    href="<?= $care['link']['url'] ?>" 
+                    class="text-base ft-semibold color-black"
+                >
+                    <?= $care['link']['title'] ?>
+                </a>
             </div>
 
 
-            <?php } ?>
+        <?php 
+            endforeach
+        ?>
             <!-- <div class="advice-link">
                 <img src="https://picsum.photos/64" alt="" class="mg-16px-r">
                 <a href="" class="text-base ft-semibold color-black">Soins de la peau</a>
             </div> -->
         </div>
     </div>
-    <img src="
-    <?php 
-            echo $advice_section['image']['url'];
-        ?>
-    " alt="Image savons">
+    <img 
+        src="<?= $advice_section['image']['url'] ?>" 
+        alt="Image savons" 
+    />
 
 
 </section>
@@ -288,6 +304,6 @@ get_header();
 </section>
 <?php
 
-get_footer();
+var_dump(get_footer());
 
 ?>

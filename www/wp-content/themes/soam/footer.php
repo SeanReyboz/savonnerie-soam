@@ -46,15 +46,21 @@ $legals_links = $legals['links'];
           <ul class="footer-nav-entry-list">
             <?php
               // Make sure that $brand_links is not empty to prevent errors 
-              if(!empty($brand_links)) foreach ($brand_links as $links) { 
+              if(!empty($brand_links)) 
+                foreach ($brand_links as $links):
+                  $link = $links['link'];
             ?>
-              <li><a href="<?php echo $links['link']['url']; ?>"><?php echo $links['link']['title']; ?></a></li>
-            <?php } ?>
+              <li>
+                <a href="<?= $link['url'] ?>">
+                  <?= $link['title'] ?>
+                </a>
+              </li>
+            <?php endforeach ?>
           </ul>
         </div>
         <div class="footer-nav-entry">
           <h3 class="footer-nav-entry-title">
-            <?php echo $contact['title']; ?>
+            <?= $contact['title'] ?>
           </h3>
           <ul class="footer-nav-entry-list">
             <?php 
@@ -84,6 +90,7 @@ $legals_links = $legals['links'];
                 <img 
                   src="<?php echo get_template_directory_uri() . '/images/icons/facebook_white.svg'; ?>" 
                   alt="Icone Facebook">
+                  
               </a>
             </li>
           </ul>
@@ -104,7 +111,7 @@ $legals_links = $legals['links'];
       </nav>
     </div>
     <small class="copyrights color-white text-xs ft-mulish mg-72px-t">
-      &copy; <?php echo date('Y'); ?> La Savonnerie Soâm | Design et Développement par <a href="https://mmi.univ-smb.fr/">Pikoom 🌵</a>
+      &copy; <?php echo date('Y'); ?> La Savonnerie Soâm | Design et Développement par <a href="https://mmi.univ-smb.fr/~reybozs/pikoom">Pikoom 🌵</a>
     </small>
   </footer>
 

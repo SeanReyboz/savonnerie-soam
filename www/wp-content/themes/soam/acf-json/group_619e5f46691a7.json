@@ -80,7 +80,7 @@
                             "name": "links",
                             "type": "repeater",
                             "instructions": "",
-                            "required": 0,
+                            "required": 1,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
@@ -100,8 +100,16 @@
                                     "name": "link",
                                     "type": "link",
                                     "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
+                                    "required": 1,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_619e5f6251295",
+                                                "operator": "==pattern",
+                                                "value": ""
+                                            }
+                                        ]
+                                    ],
                                     "wrapper": {
                                         "width": "",
                                         "class": "",
@@ -155,7 +163,7 @@
                             "name": "links",
                             "type": "group",
                             "instructions": "Les liens permettant à vos internautes de vous contacter.",
-                            "required": 0,
+                            "required": 1,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
@@ -274,7 +282,7 @@
                     "name": "legals",
                     "type": "group",
                     "instructions": "Cette section contient toutes les informations légales relatives à la marque ou au site.",
-                    "required": 0,
+                    "required": 1,
                     "conditional_logic": 0,
                     "wrapper": {
                         "width": "",
@@ -310,7 +318,7 @@
                             "name": "links",
                             "type": "repeater",
                             "instructions": "Les liens vers les différentes pages de mentions légales.",
-                            "required": 0,
+                            "required": 1,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
@@ -408,5 +416,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1637923459
+    "modified": 1644071806
 }
