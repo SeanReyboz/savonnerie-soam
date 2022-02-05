@@ -6,6 +6,9 @@ $brand_desc = get_field('description', 'options');
 // Get the footer navigation content
 $footer_fields = get_field('footer_nav', 'options');
 
+// Get social network links
+$socials = get_field("social_networks", "option");
+
 // ---
 //  Split the footer fields content
 // ---
@@ -31,16 +34,16 @@ $legals_links = $legals['links'];
   <footer>
     <div class="content main-wrapper">
       <div class="brand-information">
-        <img class="brand-logo" src="<?php echo get_template_directory_uri() . '/images/logo_white.png'  ?>" alt="Logo Soâm">
+        <img class="brand-logo" src="<?= get_template_directory_uri() . '/images/logo_white.png'  ?>" alt="Logo Soâm">
         <div class="text-sm color-white brand-desc mg-24px-t ft-mulish">
-          <?php echo $brand_desc; ?>
+          <?= $brand_desc; ?>
         </div>
       </div>
       <?php dynamic_sidebar( 'footer-sidebar' ); ?>
       <nav class="footer-nav mg-32px-t">
         <div class="footer-nav-entry">
           <h3 class="footer-nav-entry-title">
-            <?php echo $brand['title']; ?>
+            <?= $brand['title']; ?>
           </h3> 
           <!-- 46, 60, 87 -->
           <ul class="footer-nav-entry-list">
@@ -66,55 +69,71 @@ $legals_links = $legals['links'];
             <?php 
               // Go through every email address, if any
 
-              if(!empty($contact_content)) {
-              
-
-              foreach ($contact_content['emails'] as $emails) { 
-                foreach ($emails as $email) { 
-
+              if (!empty($contact_content) ) :
+                foreach ( $contact_content['emails'] as $emails ) : 
+                  foreach ( $emails as $email ) :
             ?>
 
-            <li><a href="mailto:<?php echo trim($email); ?>"><?php echo $email; ?></a></li>
+            <li>
+              <a href="mailto:<?= trim($email); ?>">
+                <?= $email; ?>
+              </a>
+            </li>
 
-            <?php } } } ?>
+            <?php 
+                  endforeach; 
+                endforeach; 
+              endif; 
+            ?>
 
             <!-- Phone number -->
-            <li><a href="tel:+<?php echo $contact_phone; ?>">+<?php echo $contact_phone; ?></a></li>
+            <li>
+              <a href="tel:+<?= $contact_phone; ?>">
+                +<?= $contact_phone; ?>
+              </a>
+            </li>
             <li class="socials">
-              <a href="">
+              <a href="<?= $socials['instagram'] ?>" target="_blank" rel="noopener noreferrer">
                 <img
-                  src="<?php echo get_template_directory_uri() . '/images/icons/instagram_white.svg'; ?>" 
+                  src="<?= get_template_directory_uri() . '/images/icons/instagram_white.svg'; ?>" 
                   alt="Icone Instagram">
               </a>
-              <a href="">
+              <a href="<?= $socials['facebook'] ?>" target="_blank" rel="noopener noreferrer">
                 <img 
-                  src="<?php echo get_template_directory_uri() . '/images/icons/facebook_white.svg'; ?>" 
-                  alt="Icone Facebook">
-                  
+                  src="<?= get_template_directory_uri() . '/images/icons/facebook_white.svg'; ?>" 
+                  alt="Icone Facebook"> 
               </a>
             </li>
           </ul>
         </div>
         <div class="footer-nav-entry">
           <h3 class="footer-nav-entry-title">
-            <?php echo $legals['title']; ?>
+            <?= $legals['title']; ?>
           </h3>
           <ul class="footer-nav-entry-list">
             <?php 
               // Make sure $legals_links is not empty to prevent any error
-              if(!empty($legals_links)) foreach($legals_links as $links) { 
+              if ( !empty($legals_links) ) 
+                foreach ( $legals_links as $links ) : 
             ?>
-              <li><a href="<?php echo $links['link']['url']; ?>"><?php echo $links['link']['title']; ?></a></li>
-            <?php } ?>
+              <li>
+                <a href="<?= $links['link']['url']; ?>">
+                  <?= $links['link']['title']; ?>
+                </a>
+              </li>
+            <?php 
+              endforeach
+            ?>
           </ul>
         </div>
       </nav>
     </div>
     <small class="copyrights color-white text-xs ft-mulish mg-72px-t">
-      &copy; <?php echo date('Y'); ?> La Savonnerie Soâm | Design et Développement par <a href="https://mmi.univ-smb.fr/~reybozs/pikoom">Pikoom 🌵</a>
+      &copy; <?= date('Y'); ?> La Savonnerie Soâm | Design et Développement par 
+      <a href="https://mmi.univ-smb.fr/~reybozs/pikoom">Pikoom 🌵</a>
     </small>
   </footer>
 
-  <?php wp_footer(); ?>
+  <?php wp_footer() ?>
   </body>
 </html>
