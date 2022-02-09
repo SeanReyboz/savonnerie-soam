@@ -7,7 +7,7 @@ $brand_desc = get_field('description', 'options');
 $footer_fields = get_field('footer_nav', 'options');
 
 // Get social network links
-$socials = get_field("social_networks", "option");
+$socials = get_field("social_networks", "options");
 
 // ---
 //  Split the footer fields content
