@@ -1,0 +1,86 @@
+// ----
+// infos section
+// ----
+.info {
+    h1 {
+      text-align: center;
+      padding-bottom: 38px;
+    }
+    .part1{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      .left {
+        align-self: center;
+        .days{
+          display: flex;
+          justify-content: space-between;
+          min-width: 500px;
+          padding-bottom: 44px;
+          ul { 
+            li {
+            }
+          }
+        }
+        .note{
+            padding-bottom: 77px;
+        }
+        .data {
+          ul {
+            
+            li{
+              padding: 4px 0;
+              display: flex;
+              img{
+                margin-right: 58px;
+                max-width: 20px;
+                max-height: 20px;
+                height: 100%;
+                width: 100%;
+              }
+              p{
+                max-width: 193px;
+              }
+            }
+          }
+        }
+      }
+      .right{
+  
+      }
+    padding-bottom: 66px;
+    }
+  }
+
+// ----
+// map section
+// ----
+.map {
+  padding-bottom: 134px;
+  img{
+    width: 100%;
+  }
+}
+
+  // ----
+// partenaire section
+// ----
+.partenaire{
+  height: 406px;
+  color: $white;
+  h2{
+      padding-bottom: 24px;
+  }
+  p{
+      padding-bottom: 32px;
+  }
+  button{
+    background-color: $magenta;
+    color: $white;
+    &:hover{
+      background-color: $white;
+      color: $magenta;
+      border: 1px solid $magenta;
+    }
+  }
+}
