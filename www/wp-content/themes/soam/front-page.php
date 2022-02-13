@@ -258,7 +258,7 @@ get_header();
                     //foreach ($variable as $key => $value) { ?>
                     <!-- Debut slide -->
                     <div class="swiper-slide">
-                        <div class="slider-image bordered-img">
+                        <div class="slider-image">
                             <img src="//picsum.photos/500" alt="Pic">
                             <div class="swiper-navigation"></div>
                         </div>
@@ -297,7 +297,7 @@ get_header();
                     <!-- Fin slide -->
                     <!-- Debut slide -->
                     <div class="swiper-slide">
-                        <div class="slider-image bordered-img">
+                        <div class="slider-image ">
                             <img src="//picsum.photos/500" alt="Pic">
                             <div class="swiper-navigation"></div>
                         </div>
@@ -336,7 +336,7 @@ get_header();
                     <!-- Fin slide -->
                     <!-- Debut slide -->
                     <div class="swiper-slide">
-                        <div class="slider-image bordered-img">
+                        <div class="slider-image ">
                             <img src="//picsum.photos/500" alt="Pic">
                             <div class="swiper-navigation"></div>
                         </div>

@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 
 const frontPageSlider = new Swiper(".swiper", {
   loop: true,
@@ -10,5 +10,6 @@ const frontPageSlider = new Swiper(".swiper", {
 
   pagination: {
     el: ".swiper-pagination",
+    clickable: true,
   },
-})
+});
