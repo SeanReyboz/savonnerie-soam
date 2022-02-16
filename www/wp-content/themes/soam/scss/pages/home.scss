@@ -20,6 +20,10 @@
 		}
 	}
 	img {
+		display: block;
+		max-width: 488px;
+		width: 100%;
+		object-fit: cover;
 		border-radius: 2rem;
 	}
 }

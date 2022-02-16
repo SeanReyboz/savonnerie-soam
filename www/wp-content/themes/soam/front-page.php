@@ -115,7 +115,7 @@ get_header();
             <div class="feature-image">
                 <img 
                     src="<?= $product['image']['url']; ?>" 
-                    style="--mask:url(<?= get_template_directory_uri() . '/images/blob/blob1.png'; ?>);" 
+                    style="--mask:url(<?= get_template_directory_uri() . '/images/blob/blob1.png'; ?>);"
                     alt="<?= $product['image']['alt'] ?>"
                 />
             </div>

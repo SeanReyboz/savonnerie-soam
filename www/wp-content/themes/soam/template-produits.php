@@ -23,7 +23,7 @@ $groupes = get_field('groupe');
       <?php
 
       foreach ($groupes as $key => $groupe) {
-
+          debug($groupe);
         ?>
 
 
