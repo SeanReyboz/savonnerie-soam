@@ -132,7 +132,7 @@ get_header();
                 <?= $product['product_description']; ?>
             </p>
             <a 
-                class="color-cyan ft-semibold mg-16px-t" 
+                class="color-cyan ft-semibold mg-16px-t text-xl"
                 href="<?= $product['product_link']['url']; ?>"
             >
                 <?= $product['product_link']['title']; ?>
@@ -156,12 +156,12 @@ get_header();
             <img 
                 class="doubled-image-bg box-shadow-lg" 
                 src="<?= $about['background_img']['url'] ?>" 
-                alt="background image"
+                alt=""
             />
             <img 
                 class="doubled-image-fg box-shadow-lg" 
                 src="<?= $about['image']['url'] ?>"
-                alt="foreground image" 
+                alt=""
              />
         </div>
 
@@ -171,12 +171,11 @@ get_header();
             <h2 class="ft-nunito text-xxl ft-bold color-white">
                 <?= $about['title'] ?> 
             </h2>
-            <p class="mg-24px-t color-white">
+            <p class="mg-24px-t color-white text-base">
                 <?= $about['text'] ?> 
             </p>
             <a 
-                id="about-button" 
-                class="mg-32px-t button bg-cyan color-white" 
+                class="mg-32px-t button bg-cyan color-white text-base"
                 href="<?= $about['link']['url'] ?>"
             > 
                 <?= $about['link']['title'] ?>

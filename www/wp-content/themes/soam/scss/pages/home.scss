@@ -119,6 +119,11 @@
 	.about-container {
 		display: flex;
 		justify-content: space-between;
+
+		.doubled-image {
+			object-fit: cover;
+		}
+
 	}
 
 	#about-text {

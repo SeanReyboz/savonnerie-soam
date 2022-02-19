@@ -15,12 +15,23 @@
   &-pagination {
     &-bullets {
       --swiper-pagination-bullet-horizontal-gap: 21px;
+      --swiper-pagination-color: #eaeaea;
+      --swiper-pagination-bullet-inactive-color: #eaeaea;
+      --swiper-pagination-bullet-inactive-opacity: 0.8;
     }
     &-bullet {
       --swiper-pagination-bullet-size: 14px;
 
       &-active {
-        --swiper-pagination-color: #ededed;
+        position: relative;
+
+        &::before {
+          content: "";
+          inset: -8px;
+          position: absolute;
+          border: 1px solid $white;
+          border-radius: 999px;
+        }
       }
     }
   }
