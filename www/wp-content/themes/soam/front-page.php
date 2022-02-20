@@ -56,7 +56,7 @@ get_header();
                 <?= $value['description']; ?>
             </p>
             <a 
-                class="ft-semibold color-cyan mg-16px-t"
+                class="text-xl color-cyan mg-16px-t"
                 href="<?= $value['link']['url']; ?>"
             >
                 <?= $value['link']['title']; ?>
@@ -109,12 +109,14 @@ get_header();
     // Make sure `products` is not empty to prevent errors
     if ( !empty($products['product']) ) 
         foreach ($products['product'] as $product):
+
+            // debug($product['image']);
     ?>
         <!-- Feature -->
         <div class="features">
             <div class="feature-image">
-                <img 
-                    src="<?= $product['image']['url']; ?>" 
+                <img
+                    src="<?= $product['image']['url']; ?>"
                     style="--mask:url(<?= get_template_directory_uri() . '/images/blob/blob1.png'; ?>);"
                     alt="<?= $product['image']['alt'] ?>"
                 />
@@ -128,11 +130,11 @@ get_header();
             
             <?php endif ?>
             
-            <p class="mg-24px-t">
+            <p class="mg-24px-t text-base">
                 <?= $product['product_description']; ?>
             </p>
             <a 
-                class="color-cyan ft-semibold mg-16px-t text-xl"
+                class="color-cyan ft-semibold text-base ft-mulish mg-16px-t"
                 href="<?= $product['product_link']['url']; ?>"
             >
                 <?= $product['product_link']['title']; ?>
