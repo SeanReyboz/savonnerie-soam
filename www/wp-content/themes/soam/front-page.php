@@ -190,65 +190,64 @@ get_header();
     Besoin de conseils ?
 -->
 
-<section id="advice-section" class="mg-136px-t">
+<section id="advice-section" class="pg-136px-y" style="--background-img: url(<?=  get_template_directory_uri() . '/images/home/background-image-conseils.png' ?>)">
     <div id="advice-info" class="mg-136px-l">
         <h2 class="ft-nunito text-xxl ft-bold ">
             <?= $advice_section['title'] ?>
         </h2>
         <p class="text-base mg-16px-t">
-        <?= $advice_section['text'] ?>
+            <?= $advice_section['text'] ?>
         </p>
         <a 
-            class="mg-32px-t button bg-cyan color-white" 
+            class="mg-32px-t button bg-cyan color-white text-base"
             href="<?= $advice_section['link']['url'] ?>"
         >
             <?= $advice_section['link']['title'] ?>
         </a>
         <div id="advice-links">
-       
-        <?php 
-            // Make sure advice_sectin is not empty to prevent errors
-            if ( !empty($advice_section['care']) ) 
+        <?php
+            // Make sure advice_section is not empty to prevent errors
+            if ( !empty($advice_section['care']) ):
                 foreach ($advice_section['care'] as $care):
         ?>
+            <div class="advice-link">
 
+                <?php if ( $care['image'] ): ?>
+                    <img
+                        src="<?= $care['image']['url'] ?>"
+                        alt="<?= $care['image']['alt'] ?>"
+                        class="mg-16px-r"
+                    />
+                <?php endif; ?>
 
-            <div class="advice-link mg-88px-r">
-                <img 
-                    src="<?= $care['image']['url'] ?>" 
-                    alt="<?= $care['image']['alt'] ?>" 
-                    class="mg-16px-r" 
-                />
-                <a 
+                <a
                     href="<?= $care['link']['url'] ?>" 
-                    class="text-base ft-semibold color-black"
+                    class="text-base ft-semibold color-black text-base"
                 >
                     <?= $care['link']['title'] ?>
                 </a>
             </div>
 
-
-        <?php 
-            endforeach
+        <?php
+                endforeach;
+            endif;
         ?>
-            <!-- <div class="advice-link">
-                <img src="https://picsum.photos/64" alt="" class="mg-16px-r">
-                <a href="" class="text-base ft-semibold color-black">Soins de la peau</a>
-            </div> -->
         </div>
     </div>
+    <!-- image décorative -->
     <img 
         src="<?= $advice_section['image']['url'] ?>" 
-        alt="Image savons" 
+        alt=""
     />
-
 
 </section>
 
 <!--
     points de ventes
 -->
-<section id="selling-points-section" class="mg-136px-t pg-40px-y bg-cyan">
+<section id="selling-points-section" class="pg-40px-y bg-cyan"
+         style="--background-img: url(<?= get_template_directory_uri() . '/images/home/mountain.png' ?>)"
+>
     <!-- Swiper container -->
     <div class="selling-points-container main-wrapper mg-40px-t">
         <h2 class="text-center ft-nunito text-xxl ft-bold color-white mg-88px-b">Points de vente</h2>
@@ -256,7 +255,8 @@ get_header();
             <div class="swiper-wrapper">
                 <?php 
                     // Go through each "slider" item and put it in a `swiper-slider` div
-                    //foreach ($variable as $key => $value) { ?>
+                    //foreach ($variable as $key => $value) {
+                ?>
                     <!-- Debut slide -->
                     <div class="swiper-slide">
                         <div class="slider-image">

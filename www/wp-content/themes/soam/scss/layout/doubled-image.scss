@@ -9,6 +9,10 @@
   height: var(--bg-img-height);
   border-radius: var(--border-radius);
 
+  img {
+    object-fit: cover;
+  }
+
   &-bg {
     position: absolute;
     inset: 0;
