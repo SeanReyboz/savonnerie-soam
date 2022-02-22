@@ -169,25 +169,6 @@
                                             "prepend": "",
                                             "append": "",
                                             "maxlength": ""
-                                        },
-                                        {
-                                            "key": "field_621370f65e2f0",
-                                            "label": "Adresse",
-                                            "name": "adresse",
-                                            "type": "text",
-                                            "instructions": "",
-                                            "required": 0,
-                                            "conditional_logic": 0,
-                                            "wrapper": {
-                                                "width": "",
-                                                "class": "",
-                                                "id": ""
-                                            },
-                                            "default_value": "",
-                                            "placeholder": "",
-                                            "prepend": "",
-                                            "append": "",
-                                            "maxlength": ""
                                         }
                                     ]
                                 },
@@ -228,24 +209,6 @@
                                             "placeholder": "",
                                             "prepend": "",
                                             "append": ""
-                                        },
-                                        {
-                                            "key": "field_621371eb09d3d",
-                                            "label": "Adresse mail",
-                                            "name": "adresse_mail",
-                                            "type": "email",
-                                            "instructions": "",
-                                            "required": 0,
-                                            "conditional_logic": 0,
-                                            "wrapper": {
-                                                "width": "",
-                                                "class": "",
-                                                "id": ""
-                                            },
-                                            "default_value": "",
-                                            "placeholder": "",
-                                            "prepend": "",
-                                            "append": ""
                                         }
                                     ]
                                 },
@@ -273,8 +236,8 @@
                                             "key": "field_62136f8d407c5",
                                             "label": "Numéro de téléphone",
                                             "name": "phone",
-                                            "type": "link",
-                                            "instructions": "",
+                                            "type": "number",
+                                            "instructions": "Un numéro de téléphone complet : \r\nEx : 33765432134",
                                             "required": 0,
                                             "conditional_logic": 0,
                                             "wrapper": {
@@ -282,22 +245,13 @@
                                                 "class": "",
                                                 "id": ""
                                             },
-                                            "return_format": "array"
-                                        },
-                                        {
-                                            "key": "field_6213720f09d3e",
-                                            "label": "Numéro de téléphone",
-                                            "name": "phone",
-                                            "type": "link",
-                                            "instructions": "",
-                                            "required": 0,
-                                            "conditional_logic": 0,
-                                            "wrapper": {
-                                                "width": "",
-                                                "class": "",
-                                                "id": ""
-                                            },
-                                            "return_format": "array"
+                                            "default_value": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "min": "",
+                                            "max": "",
+                                            "step": ""
                                         }
                                     ]
                                 }
@@ -332,5 +286,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1645441579
+    "modified": 1645526420
 }

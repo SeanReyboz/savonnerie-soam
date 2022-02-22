@@ -44,91 +44,12 @@ $groupes = get_field('categories');
                 </div>
             </section>
         <?php endforeach; ?>
-
-        <h2><?php echo $groupe['title']; ?></h2>
-        <div class="soap_window">
-          <button id="neemteem" type="button" name="neemteem">
-          <script type="text/javascript">
-            document.getElementById("neemteem").addEventListener("click", function() {
-
-            document.querySelector(".product").style.display = "flex";
-            TweenMax.to(".product", 1, {
-              delay: 0,
-              opacity: 1,
-              y: 0,
-              ease: Expo.easeInOut,
-            })
-
-            });
-          </script>
-
-
-
-
-            <img src="<?= '' ?>" alt="Le savon Neem Teem">
-            <h3>Neem Teem</h3>
-      </div>
-
     </div>
 
-<?php
-
-    $info_block = get_field('pre_footer_information_block', 'options');
-
-?>
-
-    <section class="infos">
-        <article class="about color-white">
-          <h2 class="text-xxl ft-nunito">À propos</h2>
-          <p class="about_text text-base">
-              <?=  $info_block['about']['content']  ?>
-          </p>
-          <a href="<?= $info_block['about']['link'] ?>"
-             class="button bg-magenta color-white text-base"
-             id="more_about">En savoir plus
-          </a>
-        </article>
-        <article class="find_me">
-            <h2 class="text-xxl ft-nunito">Où me trouver ?</h2>
-            <p class="about_text text-base">
-                <?=  $info_block['find_me']['content']  ?>
-            </p>
-            <ul>
-                <?php
-
-                    $adresses = $info_block['find_me']['links']['adresses'];
-                    $phones   = $info_block['find_me']['links']['phones'];
-                    $mails    = $info_block['find_me']['links']['mails'];
-
-
-                    if ( $adresses )  foreach ( $adresses as $adress ):
-
-                        debug($adress);
-
-                    endforeach;
-
-                    if ( $phones ) foreach ( $phones as $phone ):
-
-                        debug($phone);
-
-                    endforeach;
-
-                    if ( $mails ) foreach ( $mails as $mail ):
-
-                        debug($mail);
-
-                    endforeach;
-
-
-                ?>
-
-                <li><a href="#adress">1177 Route des Croës,73340 Lescheraines</a></li>
-                <li><a href="#phone">0651600314</a></li>
-                <li><a href="#mail">Email@mail.com</a></li>
-            </ul>
-        </article>
-    </section>
-
     <?php
-    get_footer()
+
+        // Section "À propos | Où me trouver ?"
+        include( 'pre-footer-info-block.php' );
+
+        get_footer()
     ?>
