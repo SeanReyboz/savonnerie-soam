@@ -126,5 +126,12 @@ $color3:#008788;
         padding-left: 32px;
         display: flex;
         flex-direction: column;
+
+      ul {
+        padding-top: 16px;
+        li {
+          padding-block: 8px;
+        }
+      }
     }
 }

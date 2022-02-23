@@ -13,24 +13,26 @@ get_header();
 
 
 ?>
-<section id="hero-section">
+<section id="hero-section" class="main-wrapper">
     <div id="hero-info">
-        <h1 class="text-xxl ft-bold ft-nunito">
+        <img src="<?= get_template_directory_uri() . "/images/logo_white.png" ?>" alt="Logo soâm" class="hero-section__responsive-img">
+        <h1 class="text-xxl ft-bold ft-nunito hero-section__headline">
             <?= get_field("title") ?>
         </h1>
-        <p class="text-base">
+        <p class="text-base hero-section__description">
             <?= get_field("description"); ?>
         </p>
         <a 
-            class="button-xl bg-cyan color-white" 
+            class="button-xl bg-cyan color-white hero-section__quick-link"
             href="<?= $link['url']; ?>"
         >
             <?= $link['title'] ?>
         </a>
     </div>
- 
-    <img src="<?= $headerimg['url'] ?>" 
-         alt="<?= $headerimg['alt'] ?>">
+
+    <div class="hero-section__image">
+        <img src="<?= $headerimg['url'] ?>" alt="<?= $headerimg['alt'] ?>" />
+    </div>
 </section>
 
 <!--

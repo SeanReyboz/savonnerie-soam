@@ -64,3 +64,96 @@
     color: $cyan;
   }
 }
+
+// Bouton d'affichage du menu responsive
+.responsive-nav-btn {
+  position: absolute;
+  z-index: 1000;
+  right: 32px;
+  top: 48px;
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  padding: 1rem;
+
+  &, &:hover, &:focus {
+    background: $white;
+  }
+
+  span {
+    --width: 24px;
+
+    display: block;
+    height: 3px;
+    background-color: $white;
+    mix-blend-mode: difference;
+    width: var(--width);
+
+    &:nth-of-type(2) {
+      width: calc(var(--width) * 1.5);
+    }
+
+  }
+  transform: rotate(180deg);
+}
+
+// Menu responsive
+.responsive-nav {
+  position: fixed;
+  inset: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+
+  background-color: $white;
+  background-image: var(--bg-image);
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  z-index: 999;
+
+  // Contenu du menu
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+
+    a {
+      @extend .text;
+    }
+  }
+
+  // séparateur horizontal
+  .separator {
+    margin: 0;
+    border: 0;
+    max-width: inherit;
+    width: 30%;
+    border-top: 1px solid $black;
+  }
+}
+
+
+// TODO: Navigation responsive
+
+.responsive-nav {
+  display: none;
+}
+
+@media screen and (max-width: 1240px) {
+
+  .main_nav {
+    display: none;
+  }
+
+  /*
+  .responsive-nav-btn {
+    display: flex;
+  }
+
+  .responsive-nav {
+    display: flex;
+  }
+  */
+}

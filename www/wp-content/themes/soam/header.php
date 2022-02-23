@@ -12,7 +12,7 @@
     ?>
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="main_nav flex-row">
         <a href="<?= home_url(); ?>" >
           <img 
@@ -44,19 +44,16 @@
 
         <div class="rs_icons">
           <a 
-            id="facebook" 
-            class="mg-16px-r" 
+            class="mg-16px-r"
             target="_blank"
             rel="noopener noreferrer"
             href="<?= $socials['facebook'] ?>" 
-            alt="Logo facebook"
           >
           <img 
               src="<?= get_template_directory_uri() . '/images/icons/facebook.svg' ?>"
-              alt="Icone Facebook" 
+              alt="Logo Facebook"
             /></a>
           <a 
-            id="instagram" 
             target="_blank"
             rel="noopener noreferrer"
             href="<?= $socials['instagram'] ?>"
@@ -66,5 +63,44 @@
               alt="Logo Instagram" 
             /></a>
         </div>
+      </div>
+      <button class="responsive-nav-btn" type="button">
+          <!-- <img src="<?= get_template_directory_uri() . '/images/icons/burger.svg' ?>" alt="Icône de menu" /> -->
+          <span></span>
+          <span></span>
+          <span></span>
+      </button>
+      <div class="responsive-nav" style="--bg-image: url('<?= get_template_directory_uri() . '/images/blob/menu-responsive.png' ?>') ">
+	      <?php
+              // Afficher le menu
+              wp_nav_menu([
+                  'menu'       => 'primary_menu',
+                  'container'  => 'nav',
+                  'menu_class' => 'nav flex-row',
+              ]);
+	      ?>
+          <hr class="separator" />
+
+          <div class="rs_icons">
+              <a
+                  class="mg-16px-r"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="<?= $socials['facebook'] ?>"
+              >
+                  <img
+                      src="<?= get_template_directory_uri() . '/images/icons/facebook.svg' ?>"
+                      alt="Logo Facebook"
+                  /></a>
+              <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="<?= $socials['instagram'] ?>"
+              >
+                  <img
+                      src="<?= get_template_directory_uri() . '/images/icons/instagram.svg' ?>"
+                      alt="Logo Instagram"
+                  /></a>
+          </div>
       </div>
     </header>
