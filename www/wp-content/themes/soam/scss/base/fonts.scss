@@ -43,6 +43,15 @@
   line-height: 115%;
 }
 
+@media screen and (max-width: 768px){
+  .text-xxl {
+    font-size: 1.5rem;
+    line-height: 1.2;
+  }
+}
+
+
+
 // Font weight
 
 .ft-bold {
