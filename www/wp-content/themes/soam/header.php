@@ -64,13 +64,13 @@
             /></a>
         </div>
       </div>
-      <button class="responsive-nav-btn" type="button">
+      <button class="responsive-nav-btn js-burger" type="button">
           <!-- <img src="<?= get_template_directory_uri() . '/images/icons/burger.svg' ?>" alt="Icône de menu" /> -->
           <span></span>
           <span></span>
           <span></span>
       </button>
-      <div class="responsive-nav" style="--bg-image: url('<?= get_template_directory_uri() . '/images/blob/menu-responsive.png' ?>') ">
+      <div class="responsive-nav js-responsive-nav" style="--bg-image: url('<?= get_template_directory_uri() . '/images/blob/menu-responsive.png' ?>') ">
 	      <?php
               // Afficher le menu
               wp_nav_menu([

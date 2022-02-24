@@ -12,6 +12,7 @@ function add_script() {
   wp_enqueue_script('tweenmax-js', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js', [], false, true);
   wp_enqueue_script('index-js', get_template_directory_uri() . '/js/index.js', [], false, true);
   wp_enqueue_script('front-page-slider', get_template_directory_uri() . '/js/components/frontPageSlider.js', [], false, true);
+	wp_enqueue_script('navigation-responsive', get_template_directory_uri() . '/js/components/navigation.js', [], false, true);
 }
 
 add_action( 'wp_enqueue_scripts', 'add_style' );

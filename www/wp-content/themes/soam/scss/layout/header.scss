@@ -77,7 +77,7 @@
   padding: 1rem;
 
   &, &:hover, &:focus {
-    background: $white;
+    background: transparent;
   }
 
   span {
@@ -147,13 +147,11 @@
     display: none;
   }
 
-  /*
   .responsive-nav-btn {
     display: flex;
   }
 
-  .responsive-nav {
+  .responsive-nav[data-opened="true"] {
     display: flex;
   }
-  */
 }
