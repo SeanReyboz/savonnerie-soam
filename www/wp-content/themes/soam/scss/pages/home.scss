@@ -164,14 +164,16 @@
 		max-width: 384px;
 
 		.feature-image {
+			--size: 300px;
+
 			position: relative;
-			width: 300px;
-			height: 300px;
+			width: var(--size);
+			height: var(--size);
 
 			&::before {
 				content: "";
 				position: absolute;
-				inset: -55px;
+				inset: -20%;
 				background-image: url("../images/blob/colorunderblob.png");
 				background-position: center;
 				background-repeat: no-repeat;
@@ -183,8 +185,8 @@
 				inset: 0;
 				-webkit-mask-image: var(--mask);
 				-webkit-mask-repeat: round;
-				max-width: 300px;
-				max-height: 300px;
+				max-width: var(--size);
+				max-height: var(--size);
 				width: 100%;
 				height: 100%;
 				object-fit: cover;
@@ -197,14 +199,27 @@
 	}
 
 	@media screen and (max-width: 1240px){
-
-
-	}
-
-	@media screen and (max-width: 1240px){
 		#features {
 			overflow-x: scroll;
 			padding: 0 20px 32px 20px;
+		}
+
+		.features {
+			.feature-image {
+				--size: 170px;
+			}
+		}
+	}
+
+	@media screen and (max-width: 768px){
+		#features {
+			gap: 0;
+		}
+
+		.features {
+			p {
+				display: none;
+			}
 		}
 
 	}
@@ -217,11 +232,6 @@
 	.about-container {
 		display: flex;
 		justify-content: space-between;
-
-		.doubled-image {
-			object-fit: cover;
-		}
-
 	}
 
 	#about-text {
@@ -230,6 +240,24 @@
 		#about-button {
 			border: 1px solid $magenta;
 		}
+	}
+	
+	@media screen and (max-width: 1240px) {
+		padding-inline: 20px;
+	}
+
+	@media screen and (max-width: 1024px) {
+
+		.about-container {
+			flex-direction: column-reverse;
+			gap: 48px;
+
+			#about-text {
+				max-width: 72ex;
+				align-self: center;
+			}
+		}
+
 	}
 }
 // ----
@@ -247,11 +275,13 @@
 		position: absolute;
 		z-index: -5;
 		inset: 0;
-		width: 25%;
+		width: 100%;
 		height: 100%;
 		background-image: var(--background-img);
-		background-size: cover;
+		background-size: contain;
 		background-position: center left;
+		background-repeat: no-repeat;
+		transform: translateX(-15%);
 	}
 
 	#advice-info {
@@ -264,6 +294,22 @@
 		max-height: 488px;
 		width: 100%;
 		object-fit: cover;
+	}
+	
+	@media screen and (max-width: 1024px) {
+
+		&::before {
+			background: 0;
+		}
+
+		#advice-info {
+			margin: 0;
+		}
+
+		.advice-info__decorative-img {
+			display: none;
+		}
+
 	}
 }
 #advice-links {
@@ -290,6 +336,11 @@
 		a {
 			text-decoration: none;
 		}
+	}
+
+	@media screen and (max-width: 1024px) {
+		position: relative;
+		margin-top: 48px;
 	}
 }
 

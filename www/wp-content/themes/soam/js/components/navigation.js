@@ -16,7 +16,8 @@ class Navigation {
 
 
     toggleMenu() {
-        console.log(this)
+        //console.log(this)
+
         if (this.state === false) {
             this.openMenu();
         } else {

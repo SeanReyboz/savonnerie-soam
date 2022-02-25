@@ -58,7 +58,7 @@ get_header();
                 <?= $value['description']; ?>
             </p>
             <a 
-                class="text-xl color-cyan mg-16px-t"
+                class="text-lg color-cyan mg-16px-t"
                 href="<?= $value['link']['url']; ?>"
             >
                 <?= $value['link']['title']; ?>
@@ -237,7 +237,8 @@ get_header();
         </div>
     </div>
     <!-- image décorative -->
-    <img 
+    <img
+        class="advice-info__decorative-img"
         src="<?= $advice_section['image']['url'] ?>" 
         alt=""
     />
