@@ -10,13 +10,28 @@
       display: flex;
       justify-content: space-between;
       width: 100%;
+      @media screen and(max-width: 768px) {
+        flex-direction: column;
+        max-width: 768px;
+      }
       .left {
         align-self: center;
+        @media screen and (max-width: 1240px){
+          padding-left: 15px;
+        }
+        @media screen and(max-width: 768px) {
+          padding-bottom: 36px;
+        }
         .days{
           display: flex;
           justify-content: space-between;
           min-width: 500px;
           padding-bottom: 44px;
+          @media screen and (max-width: 768px){
+            font-size: 1em;
+            min-width: unset;
+            padding-bottom: 12px;
+          }
           ul { 
             li {
             }
@@ -24,6 +39,9 @@
         }
         .note{
             padding-bottom: 77px;
+            @media screen and(max-width: 768px) {
+              padding-bottom: 36px;
+            }
         }
         .data {
           ul {
@@ -46,7 +64,18 @@
         }
       }
       .right{
-  
+        @media screen and (max-width: 1240px){
+          position: absolute;
+          z-index: -1;
+          right: 0;
+        }
+      
+        @media screen and(max-width: 768px) {
+          position: inherit;
+          align-self: center;
+          z-index: 0;
+          right: unset;
+        }
       }
     padding-bottom: 66px;
     }
@@ -57,6 +86,9 @@
 // ----
 .map {
   padding-bottom: 134px;
+  @media screen and (max-width: 1240px){
+    padding-bottom: unset;
+  }
   img{
     width: 100%;
   }
@@ -68,6 +100,9 @@
 .partenaire{
   height: 406px;
   color: $white;
+  @media screen and (max-width: 1240px){
+    height: max-content;
+  }
   h2{
       padding-bottom: 24px;
   }

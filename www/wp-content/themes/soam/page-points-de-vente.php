@@ -63,7 +63,7 @@ get_header();
     <img src="https://source.unsplash.com/random/1440x697/" alt="">
 
 </section>
-<section class="partenaire bg-cyan mg-136px-t pg-112px-l pg-64px-y">
+<section class="partenaire bg-cyan pg-112px-l pg-64px-y">
     <div class="main-wrapper">
         <h2 class="text-xxl ft-bold ft-nunito">Les partenaires</h2>
         <p class="text-lg">Soâm est une savonnerie qui s’engage à respecter votre peau en utilisant des
