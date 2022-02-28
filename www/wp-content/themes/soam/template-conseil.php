@@ -4,29 +4,68 @@
 Template Name: Page conseils
  */
 get_header();
+
+$soins = get_field('soins');
 ?>
-    <div class="hair_care main-wrapper">
-      <div class="hair_image">
-        <img src=<?php echo get_template_directory_uri().'/images/conseils/hair.png';?>  alt="Cheveux"/>
+
+<?php
+    if(count($soins)==1):
+      foreach ( $soins as $key => $care ):
+  ?>
+    <div class="care main-wrapper">
+      <div class="care_image">
+        <img src="<?php echo $care['image_du_soin']['url'] ?>" alt="<?php echo $care['image_du_soin']['alt']  ?>">
       </div>
-      <div class="hair_text">
-        <h2 class="underlined_header text-xxl">Soin des Cheveux</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. At malesuada quis non consectetur hendrerit pellentesque hac. Elementum orci et egestas ut sit amet, enim est. Massa sed porta viverra sed tincidunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit. At malesuada quis non consectetur hendrerit pellentesque hac. Elementum orci et egestas ut sit amet, enim est. Massa sed porta viverra sed tincidunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit. At malesuada quis non consectetur hendrerit pellentesque hac. Elementum orci et egestas ut sit amet, enim est. Massa sed porta viverra sed tincidunt.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. At malesuada quis non consectetur hendrerit pellentesque hac. Elementum orci et egestas ut sit amet, enim est. Massa sed porta viverra sed tincidunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit. At malesuada quis non consectetur hendrerit pellentesque hac. Elementum orci et egestas ut sit amet, enim est. Massa sed porta viverra sed tincidunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit. At malesuada quis non consectetur hendrerit pellentesque hac. Elementum orci et egestas ut sit amet, enim est. </p>
+      <div class="care_text">
+        <h2 class="underlined_header text-xxl"><?php echo $care['type_du_soin']; ?></h2>
+        <div><?php echo $care['contenu_du_soin']; ?></div>
       </div>
     </div>
+  <?php
+      endforeach;
+    endif;
+  ?>
 
-    <div class="skin_care main-wrapper">
-      <div class="skin_text">
-        <h2 class="underlined_header text-xxl">Soin de la peau</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. At malesuada quis non consectetur hendrerit pellentesque hac. Elementum orci et egestas ut sit amet, enim est. Massa sed porta viverra sed tincidunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit. At malesuada quis non consectetur hendrerit pellentesque hac. Elementum orci et egestas ut sit amet, enim est. Massa sed porta viverra sed tincidunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit. At malesuada quis non consectetur hendrerit pellentesque hac. Elementum orci et egestas ut sit amet, enim est. Massa sed porta viverra sed tincidunt.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. At malesuada quis non consectetur hendrerit pellentesque hac. Elementum orci et egestas ut sit amet, enim est. Massa sed porta viverra sed tincidunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit. At malesuada quis non consectetur hendrerit pellentesque hac. Elementum orci et egestas ut sit amet, enim est. Massa sed porta viverra sed tincidunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit. At malesuada quis non consectetur hendrerit pellentesque hac. Elementum orci et egestas ut sit amet, enim est. Massa sed porta viverra sed tincidunt.</p>
+  <?php
+    if(count($soins)>1):
+      foreach ( $soins as $key => $care ):
+  ?>
+    <?php
+      if(!($key&1)):
+    ?>
+    <div class="care main-wrapper">
+      <div class="care_image">
+        <img src="<?php echo $care['image_du_soin']['url'] ?>" alt="<?php echo $care['image_du_soin']['alt']  ?>">
       </div>
-      <div class="skin_image">
-      <img src=<?php echo get_template_directory_uri().'/images/conseils/hair.png';?>  alt="Cheveux"/>
+      <div class="care_text">
+        <h2 class="underlined_header text-xxl"><?php echo $care['type_du_soin']; ?></h2>
+        <div><?php echo $care['contenu_du_soin']; ?></div>
       </div>
     </div>
+    <?php
+      endif;
+    ?>
 
+    <?php
+      if($key&1):
+    ?>
+    <div class="care main-wrapper">
+      <div class="care_text">
+        <h2 class="underlined_header text-xxl"><?php echo $care['type_du_soin']; ?></h2>
+        <div><?php echo $care['contenu_du_soin']; ?></div>
+      </div>
+      <div class="care_image">
+        <img src="<?php echo $care['image_du_soin']['url'] ?>" alt="<?php echo $care['image_du_soin']['alt']  ?>">
+      </div>
+    </div>
+    <?php
+      endif;
+    ?>
+
+  <?php
+      endforeach;
+    endif;
+  ?>
     <div class="contact">
       <div class="formulaire_image">
       <img class="form_image" src=<?php echo get_template_directory_uri().'/images/conseils/contacter.png';?>  alt="contact_image"/>
