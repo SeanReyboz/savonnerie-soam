@@ -112,6 +112,13 @@
   background-repeat: no-repeat;
   z-index: 999;
 
+  .logo {
+    margin-bottom: 2rem;
+    height: 48px;
+    width: auto;
+  }
+
+
   // Contenu du menu
   nav ul {
     display: flex;

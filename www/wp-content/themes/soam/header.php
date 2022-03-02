@@ -71,6 +71,14 @@
           <span></span>
       </button>
       <div class="responsive-nav js-responsive-nav" style="--bg-image: url('<?= get_template_directory_uri() . '/images/blob/menu-responsive.png' ?>') ">
+
+          <a href="<?= home_url(); ?>" >
+              <img
+                      class="logo"
+                      src="<?= get_template_directory_uri() . '/images/logo.png'; ?>"
+                      alt="Logo Soam"
+              />
+          </a>
 	      <?php
               // Afficher le menu
               wp_nav_menu([
