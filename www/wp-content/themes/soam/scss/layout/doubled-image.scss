@@ -30,4 +30,20 @@
     width: var(--fg-img-width);
     height: var(--fg-img-height);
   }
+
+  @media screen and (max-width: 768px) {
+    &-bg {
+      inset: unset;
+      left: 0;
+      top: 0;
+    }
+    &-fg {
+      left: unset;
+      right: 0;
+      transform: unset;
+    }
+    &-fg, &-bg {
+      border-radius: 0;
+    }
+  }
 }
