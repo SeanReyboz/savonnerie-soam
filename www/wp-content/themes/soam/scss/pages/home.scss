@@ -255,6 +255,10 @@
 			#about-text {
 				max-width: 72ex;
 				align-self: center;
+
+				h2 {
+					text-align: center;
+				}
 			}
 		}
 
@@ -304,6 +308,11 @@
 
 		#advice-info {
 			margin: 0;
+			padding: 0 20px;
+
+			h2 {
+				text-align: center;
+			}
 		}
 
 		.advice-info__decorative-img {
@@ -341,6 +350,11 @@
 	@media screen and (max-width: 1024px) {
 		position: relative;
 		margin-top: 48px;
+
+		.advice-link {
+			flex-direction: column;
+			gap: 10px;
+		}
 	}
 }
 
