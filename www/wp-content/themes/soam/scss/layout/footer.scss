@@ -11,6 +11,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    padding: 0 20px;
 
     .brand-logo {
       max-width: 175px;
@@ -52,6 +53,7 @@ footer {
     display: block;
     max-width: max-content;
     margin-inline: auto;
+    text-align: center;
 
     a {
       position: relative;
@@ -67,6 +69,36 @@ footer {
         width: 100%;
         height: 1px;
         background-color: rgba($white, $alpha: 0.7);
+      }
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .content {
+      flex-direction: column;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+
+    & {
+      background-image: unset;
+    }
+
+    .content {
+      width: 100%;
+
+      .brand-desc {
+        max-width: 60ex;
+      }
+    }
+
+    .footer-nav {
+      flex-direction: column;
+      gap: 2.75rem;
+
+      &-entry-list {
+        margin-top: 1rem;
       }
     }
   }
