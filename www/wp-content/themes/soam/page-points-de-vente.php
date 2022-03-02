@@ -80,6 +80,6 @@ get_header();
 
 <?php
 
-var_dump(get_footer());
+get_footer();
 
 ?>
