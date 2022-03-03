@@ -68,38 +68,4 @@
 		background-color: transparent;
 	}
 }
-.infos {
-	display: flex;
-	.about {
-		padding-top: 64px;
-		padding-left: 112px;
-		padding-right: 104px;
-		padding-bottom: 84px;
-		width: 50%;
-		background-color: #008788;
 
-		p {
-			margin-top: 24px;
-			margin-bottom: 32px;
-
-			.about_text {
-				max-width: 488px;
-			}
-		}
-	}
-	.find_me {
-		text-align: right;
-		width: 50%;
-		padding-top: 64px;
-		padding-bottom: 68px;
-		padding-right: 113px;
-		padding-left: 32px;
-		display: flex;
-		flex-direction: column;
-
-		p {
-			margin-top: 24px;
-			margin-bottom: 32px;
-		}
-	}
-}

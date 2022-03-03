@@ -2,25 +2,31 @@
 //----
 // @Import
 //----
+
+// base
 @import "base/reset";
 @import "base/colors";
 @import "base/fonts";
 @import "base/shadows";
 @import "base/spacing";
+
+// layout
 @import "layout/header";
 @import "layout/button";
 @import "layout/doubled-image";
+@import "layout/info-block";
 @import "layout/footer";
 @import "layout/slider";
+
+// pages
 @import "pages/home";
 @import "pages/produits";
 @import "pages/conseils";
 @import "pages/404";
 @import "pages/points_de_vente";
+
+
 body {
-	// ---
-	//  Background color - full page
-	// ---
 	background-color: $white;
 	font-family: "mulish", sans-serif;
 	overflow-x: hidden;
