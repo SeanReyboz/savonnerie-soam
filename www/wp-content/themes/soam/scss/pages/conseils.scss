@@ -37,12 +37,12 @@ $color3: #008788;
   .formulaire_image {
     max-height: 500px;
     width: 30%;
-  }
-  .formulaire {
     .form_image {
-      height: 700px;
+      height: 450px;
       width: auto;
     }
+  }
+  .formulaire {
     input[type="text"] {
       border: none;
       border-bottom: 2px Solid black;
