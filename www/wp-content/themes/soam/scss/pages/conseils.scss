@@ -43,40 +43,71 @@ $color3: #008788;
     }
   }
   .formulaire {
-    input[type="text"] {
-      border: none;
-      border-bottom: 2px Solid black;
-      background-color: $white;
-      padding: 3px;
+    form {
+      max-width: 68ex;
 
-      &::placeholder {
-        opacity: 50%;
+      .form-control {
+        position: relative;
+        width: 100%;
+        min-height: 64px;
+        margin: 1.25rem 0;
+
+        label {
+          @extend .text-base;
+          @extend .ft-mulish;
+
+          position: absolute;
+          left: 8px;
+          top: 50%;
+          z-index: -1;
+          opacity: .5;
+
+          transition: 100ms ease-out;
+          transition-property: inset, opacity;
+        }
+
+        input {
+          @extend .text-lg;
+          @extend .ft-mulish;
+
+          width: 75%;
+          border: 0;
+          outline: 0;
+          background: 0;
+
+          // Style de tous les input sauf le submit
+          &:not([type="submit"]) {
+            position: absolute;
+            bottom: 0;
+            padding: 6px 12px;
+
+            border-bottom: 2px solid;
+            border-color: rgba($color: $black, $alpha: .5);
+            transition: 250ms ease-in-out;
+            transition-property: border-color, width;
+
+            &:focus {
+              border-color: rgba($color: $black, $alpha: 1);
+              width: 100%;
+            }
+          }
+        }
+
+        // Animation du label lors du focus de l'input
+        &:focus-within label {
+          top: -8px;
+          opacity: .75;
+        }
       }
-    }
-    input[type="submit"] {
-      border: none;
-      border-bottom: 2px solid black;
-      background-color: $white;
-      padding: 3px;
-    }
 
-    .contact-me {
-      margin-bottom: 31px;
-    }
-    .desc {
-      margin-bottom: 64px;
-    }
-    #name {
-      margin-top: 9px;
-      margin-bottom: 20px;
-    }
-    #mail {
-      margin-top: 9px;
-      margin-bottom: 20px;
-    }
-    #message {
-      margin-top: 9px;
-      margin-bottom: 20px;
+      // Input submit (comme un bouton normal)
+      input[type="submit"] {
+        @extend .mg-32px-t;
+        @extend .button;
+        @extend .ft-nunito;
+        @extend .bg-cyan;
+        @extend .color-white;
+      }
     }
   }
 }
