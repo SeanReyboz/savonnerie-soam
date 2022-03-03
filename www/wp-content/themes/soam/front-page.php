@@ -264,7 +264,6 @@ get_header();
                     <div class="swiper-slide">
                         <div class="slider-image">
                             <img src="//picsum.photos/500" alt="Pic">
-                            <div class="swiper-navigation"></div>
                         </div>
                         <div class="slider-content color-white">
                             <div class="slider-content-what ">
@@ -303,7 +302,6 @@ get_header();
                     <div class="swiper-slide">
                         <div class="slider-image ">
                             <img src="//picsum.photos/500" alt="Pic">
-                            <div class="swiper-navigation"></div>
                         </div>
                         <div class="slider-content color-white">
                             <div class="slider-content-what ">
@@ -342,7 +340,6 @@ get_header();
                     <div class="swiper-slide">
                         <div class="slider-image ">
                             <img src="//picsum.photos/500" alt="Pic">
-                            <div class="swiper-navigation"></div>
                         </div>
                         <div class="slider-content color-white">
                             <div class="slider-content-what ">
