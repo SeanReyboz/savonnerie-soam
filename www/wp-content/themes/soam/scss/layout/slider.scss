@@ -11,6 +11,38 @@
     justify-content: space-between;
     width: 100%;
   }
+
+  // TODO: Finir le responsive du footer
+  
+  @media screen and (max-width: 1024px) {
+    &-slide {
+      flex-direction: column;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+
+    .slider-image {
+      --radius: 0;
+      max-width: unset;
+    }
+
+    .slider-content {
+      padding: 3rem 20px;
+
+      .collaborators-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 2rem 1rem;
+
+        .collaborator {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+
+
   // Slider pagination styling
   &-pagination {
     &-bullets {
@@ -41,15 +73,19 @@
 //  Slider image
 // ---
 .slider-image {
+  --radius: 32px;
+
   border-radius: var(--radius);
   max-width: 480px;
   width: 100%;
   height: auto;
 
   img {
+    display: block;
     border-radius: inherit;
     width: inherit;
     height: inherit;
+    object-fit: cover;
   }
 }
 
