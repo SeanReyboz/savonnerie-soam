@@ -20,7 +20,7 @@
 		<p class="about_text text-base">
 			<?= $info_block['find_me']['content'] ?>
 		</p>
-		<ul>
+		<ul class="links">
 			<?php
 
 			$adresses = $info_block['find_me']['links']['adresses'];
@@ -34,7 +34,7 @@
 			if ( $adresses )  foreach ( $adresses as $key => $adresse ):
             ?>
 
-                <li><?=  $adresse['adresse']  ?></li>
+                <li class="links--address"><?=  $adresse['adresse']  ?></li>
 
             <?php
 			endforeach;
@@ -42,8 +42,8 @@
 			if ( $phones ) foreach ( $phones as $phone ):
             ?>
 
-                <li>
-                    <a href="tel:+<?= $phone['phone'] ?>"><?= $phone['phone'] ?></a>
+                <li class="links--phone">
+                    <a href="tel:+<?= $phone['phone'] ?>">+<?= $phone['phone'] ?></a>
                 </li>
 
             <?php
@@ -52,7 +52,7 @@
 			if ( $mails ) foreach ( $mails as $mail ):
             ?>
 
-                <li>
+                <li class="links--mail">
                     <a href="mailto:<?= $mail['mail'] ?>"><?= $mail['mail'] ?></a>
                 </li>
 

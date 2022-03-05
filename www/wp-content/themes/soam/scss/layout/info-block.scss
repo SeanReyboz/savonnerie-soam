@@ -29,10 +29,38 @@
     display: flex;
     flex-direction: column;
 
-    ul {
-      padding-top: 16px;
+    .links {
+      --icon-size: 2rem;
+
+      padding-bottom: 1rem;
+
       li {
-        padding-block: 8px;
+        padding: .5rem 0;
+        display: flex;
+        align-items: center;
+
+        &::before {
+          display: inline-flex;
+          width: var(--icon-size);
+          height: var(--icon-size);
+          margin-right: calc(var(--icon-size) / 2) ;
+        }
+
+        a {
+          @extend .text;
+        }
+      }
+
+      &--address::before {
+        content: url("../images/icons/map_pin.svg");
+      }
+
+      &--phone::before {
+        content: url("../images/icons/phone.svg");
+      }
+
+      &--mail::before {
+        content: url("../images/icons/mail.svg");
       }
     }
 
@@ -49,6 +77,12 @@
       padding: 5% 10%;
       width: 100%;
       text-align: unset;
+    }
+
+    .find_me {
+      .links {
+        --icon-size: 1.5rem;
+      }
     }
 
     p {
