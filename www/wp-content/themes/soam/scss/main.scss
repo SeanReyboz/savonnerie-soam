@@ -17,6 +17,7 @@
 @import "layout/info-block";
 @import "layout/footer";
 @import "layout/slider";
+@import "layout/content";
 
 // pages
 @import "pages/home";
@@ -25,9 +26,8 @@
 @import "pages/404";
 @import "pages/points_de_vente";
 
-
 body {
-	background-color: $white;
-	font-family: "mulish", sans-serif;
-	overflow-x: hidden;
+  background-color: $white;
+  font-family: "mulish", sans-serif;
+  overflow-x: hidden;
 }

@@ -17,20 +17,6 @@ $color3: #008788;
   }
 }
 
-.care {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 146px;
-  .care_text {
-    max-width: 590px;
-    p {
-      &:not(:last-of-type) {
-        margin-bottom: 50px;
-      }
-    }
-  }
-}
-
 .contact {
   margin-top: 146px;
   display: flex;
@@ -43,7 +29,6 @@ $color3: #008788;
     }
   }
   .formulaire {
-
     .desc {
       max-width: 68ex;
     }
@@ -65,7 +50,7 @@ $color3: #008788;
           left: 8px;
           top: 50%;
           z-index: -1;
-          opacity: .5;
+          opacity: 0.5;
 
           transition: 100ms ease-out;
           transition-property: inset, opacity;
@@ -87,7 +72,7 @@ $color3: #008788;
             padding: 6px 12px;
 
             border-bottom: 2px solid;
-            border-color: rgba($color: $black, $alpha: .5);
+            border-color: rgba($color: $black, $alpha: 0.5);
             transition: 250ms ease-in-out;
             transition-property: border-color, width;
 
@@ -101,7 +86,7 @@ $color3: #008788;
         // Animation du label lors du focus de l'input
         &:focus-within label {
           top: -8px;
-          opacity: .75;
+          opacity: 0.75;
         }
       }
 
@@ -116,4 +101,3 @@ $color3: #008788;
     }
   }
 }
-

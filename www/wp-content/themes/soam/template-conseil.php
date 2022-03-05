@@ -9,68 +9,11 @@ TODO: Vérifier + faire la version responsive
 TODO: Vérifier dynamisation
  */
 get_header();
-
-$soins = get_field('soins');
 ?>
 
-<?php
-    if(count($soins)==1):
-      foreach ( $soins as $key => $care ):
-  ?>
-    <div class="care main-wrapper">
-      <div class="care_image">
-        <img src="<?php echo $care['image_du_soin']['url'] ?>" alt="<?php echo $care['image_du_soin']['alt']  ?>">
-      </div>
-      <div class="care_text">
-        <h2 class="underlined_header text-xxl ft-nunito ft-bold"><?php echo $care['type_du_soin']; ?></h2>
-        <div><?php echo $care['contenu_du_soin']; ?></div>
-      </div>
-    </div>
-  <?php
-      endforeach;
-    endif;
-  ?>
+    <!-- Bloc de contenu princpale -->
+    <?php include "contenu-principaux.php"; ?>
 
-  <?php
-    if(count($soins)>1):
-      foreach ( $soins as $key => $care ):
-  ?>
-    <?php
-      if(!($key&1)):
-    ?>
-    <div class="care main-wrapper">
-      <div class="care_image">
-        <img src="<?php echo $care['image_du_soin']['url'] ?>" alt="<?php echo $care['image_du_soin']['alt']  ?>">
-      </div>
-      <div class="care_text">
-        <h2 class="underlined_header text-xxl ft-nunito ft-bold"><?php echo $care['type_du_soin']; ?></h2>
-        <div class="text-base"><?php echo $care['contenu_du_soin']; ?></div>
-      </div>
-    </div>
-    <?php
-      endif;
-    ?>
-
-    <?php
-      if($key&1):
-    ?>
-    <div class="care main-wrapper">
-      <div class="care_text">
-        <h2 class="underlined_header text-xxl ft-nunito ft-bold"><?php echo $care['type_du_soin']; ?></h2>
-        <div class="text-base"><?php echo $care['contenu_du_soin']; ?></div>
-      </div>
-      <div class="care_image">
-        <img src="<?php echo $care['image_du_soin']['url'] ?>" alt="<?php echo $care['image_du_soin']['alt']  ?>">
-      </div>
-    </div>
-    <?php
-      endif;
-    ?>
-
-  <?php
-      endforeach;
-    endif;
-  ?>
     <div class="contact">
       <div class="formulaire_image">
         <img class="form_image" src="<?= get_template_directory_uri().'/images/conseils/contacter.png' ?>" alt="contact_image"/>
