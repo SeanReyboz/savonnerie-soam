@@ -1,22 +1,45 @@
 .content {
-  .content_image {
-    position: relative;
-  }
-  .content_image::before {
-    content: "";
-    background-color: red;
-    inset: -50px;
-    position: absolute;
-    left: -5%;
-    top: -10%;
-    width: 100%;
-    height: 100%;
-    /* Jouer sur les valeurs "top", "left", "right" et "bottom" pour faire un carré */
-    z-index: -1;
-  }
+  // TODO: Fix temporaire en attendant la dynamisation avec ACF...
+  --color: red;
+
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   margin-top: 146px;
+
+  &[data-is-odd] {
+    flex-direction: row-reverse;
+  }
+
+  &[data-is-even] &_image::before {
+    left: var(--offset);
+  }
+
+  &[data-is-odd] &_image::before {
+    right: var(--offset);
+  }
+
+  .content_image {
+    position: relative;
+    border-radius: 26px;
+
+    &::before {
+      // valeur de l'offset droite/gauche
+      --offset: -20%;
+
+      content: "";
+      position: absolute;
+      width: 100%;
+      z-index: -1;
+      top: -5%;
+      bottom: -5%;
+
+      border-radius: inherit;
+      background-color: var(--color);
+    }
+  }
+
+
   .content_text {
     max-width: 590px;
     p {
