@@ -2,6 +2,8 @@
 $contenu_en_quinconce = get_field('contenu_en_quinconce');
 
 //debug($contenu_en_quinconce);
+
+// TODO: modifier le nom de la classe "content" pour éviter des conflits avec le markup existant...
 ?>
 
 <?php
@@ -13,7 +15,7 @@ $contenu_en_quinconce = get_field('contenu_en_quinconce');
         class="content main-wrapper"
 	    data-is-<?= $even_or_odd ?>
     >
-        <div class="content_image">
+        <div class="content_image" style="--color: <?= $content['background_color'] ?>">
             <img src="<?= $content['image']['url'] ?>" alt="<?= $content['image']['alt']  ?>">
         </div>
         <div class="content_text">
