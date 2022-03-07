@@ -1,4 +1,9 @@
 <?php
+$agenda_jours = get_field('agenda')[0]['jours'];
+$agenda_annotation = get_field('agenda')[0]['annotation'];
+$informations = get_field('informations');
+$partenaires = get_field('les_partenaires');
+
 get_header();
 ?>
 
@@ -9,44 +14,68 @@ get_header();
     <div class="part1">
         <div class="left">
             <div class="days text-lg ft-semibold">
+
+
                 <ul>
-                    <li>Mardi</li>
-                    <li>Mercredi</li>
-                    <li>Jeudi</li>
-                    <li>Vendredi</li>
-                    <li>Samedi</li>
+                    <?php
+                    if (!empty($agenda_jours))
+                        // Make sure that `valuesìs not empty to prevent errors
+
+                        foreach ($agenda_jours as $value) :
+
+                    ?>
+                    <li><?= $value['jour_de_la_semaine'] ?></li>
+                    <?php
+
+                        endforeach
+
+                    ?>
                 </ul>
                 <ul>
-                    <li>Fermé</li>
-                    <li>10h - 12h15</li>
-                    <li>10h - 12h15</li>
-                    <li>10h - 12h15</li>
-                    <li>10h - 12h15</li>
+                    <?php
+                    if (!empty($agenda_jours))
+                        // Make sure that `valuesìs not empty to prevent errors
+
+                        foreach ($agenda_jours as $value) :
+
+                    ?>
+                    <li><?= $value['horaire_de_la_matinee'] ?></li>
+                    <?php
+
+                        endforeach
+
+                    ?>
                 </ul>
-                <ul>
-                    <li>15h - 18h</li>
-                    <li>15h - 18h</li>
-                    <li>15h - 18h</li>
-                    <li>15h - 18h</li>
-                    <li>15h - 18h</li>
+                <ul><?php
+                    if (!empty($agenda_jours))
+                        // Make sure that `valuesìs not empty to prevent errors
+
+                        foreach ($agenda_jours as $value) :
+
+                    ?>
+                    <li><?= $value['horaire_de_lapres-midi'] ?></li>
+                    <?php
+
+                        endforeach
+
+                    ?>
                 </ul>
             </div>
-            <p class="note text-sm">Ouvert toute l'année</p>
+            <p class="note text-sm"><?= $agenda_annotation ?></p>
 
             <div class="data text-base ft-semibold">
                 <ul>
                     <li>
                         <img src="<?= get_template_directory_uri() . '/images/icons/map_pin.svg'; ?>" alt="">
-                        <p>1177 Route des Croës,
-                            73340 Lescheraines</p>
+                        <p><?= $informations['adresse'] ?></p>
                     </li>
                     <li>
                         <img src="<?= get_template_directory_uri() . '/images/icons/phone.svg'; ?>" alt="">
-                        <p>0651600314</p>
+                        <p><?= $informations['telephone'] ?></p>
                     </li>
                     <li>
                         <img src="<?= get_template_directory_uri() . '/images/icons/mail.svg'; ?>" alt="">
-                        <p>Email@mail.com</p>
+                        <p><?= $informations['mail'] ?></p>
                     </li>
 
                 </ul>
@@ -60,18 +89,17 @@ get_header();
 </section>
 <section class="map">
 
-    <img src="https://source.unsplash.com/random/1440x697/" alt="">
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!4v1646648913465!6m8!1m7!1sZnU47Z-5ZOkDsfppC1q_6A!2m2!1d45.70840037878335!2d6.10548575648052!3f49.42238668731225!4f4.850992337515365!5f0.7820865974627469"
+        width="800" height="800" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
 </section>
 <section class="partenaire bg-cyan pg-112px-l pg-64px-y">
     <div class="main-wrapper">
-        <h2 class="text-xxl ft-bold ft-nunito">Les partenaires</h2>
-        <p class="text-lg">Soâm est une savonnerie qui s’engage à respecter votre peau en utilisant des
-            ingrédients 100%
-            naturels. Implanté en Savoie, dans le massif des Bauges, tous les savons et cosmétiques sont
-            confectionnés à la main pour répondre au mieux aux besoins de chacun.</p>
+        <h2 class="text-xxl ft-bold ft-nunito"><?= $partenaires['titre'] ?></h2>
+        <p class="text-lg"><?= $partenaires['texte'] ?></p>
         <button class="button ft-semibold">
-            En savoir plus
+            <?= $partenaires['texte_du_boutton'] ?>
         </button>
     </div>
 </section>
