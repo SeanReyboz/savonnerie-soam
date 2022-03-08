@@ -255,126 +255,84 @@ get_header();
     <div class="selling-points-container main-wrapper mg-40px-t">
         <h2 class="text-center ft-nunito text-xxl ft-bold color-white mg-88px-b">Points de vente</h2>
         <div class="swiper selling-points-content">
+            <?php
+                $partenaires = get_field('partenaires');
+                //debug( $partenaires );
+            ?>
             <div class="swiper-wrapper">
-                <?php 
-                    // Go through each "slider" item and put it in a `swiper-slider` div
-                    //foreach ($variable as $key => $value) {
+                <?php
+
+                    if ( $partenaires )
+                        foreach ( $partenaires as $partenaire ) :
                 ?>
                     <!-- Debut slide -->
                     <div class="swiper-slide">
                         <div class="slider-image">
-                            <img src="//picsum.photos/500" alt="Pic">
+                            <img src="<?= $partenaire['main_img']['url'] ?>" alt="<?= $partenaire['main_img']['alt'] ?? '' ?>">
                         </div>
                         <div class="slider-content color-white">
                             <div class="slider-content-what ">
-                                <h3 class="ft-nunito ft-semibold text-xl mg-24px-b">La boutique de Samy</h3>
+                                <h3 class="ft-nunito ft-semibold text-xl mg-24px-b">
+                                    <?= $partenaire['name'] ?>
+                                </h3>
                                 <p class="text-base ft-mulish">
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Ipsam inventore mollitia
-                                    repellat quod placeat deserunt quis minima.
+                                    <?= $partenaire['description'] ?>
                                 </p>
-                                <button class="button bg-magenta color-white mg-32px-t ft-semibold ft-mulish">En savoir plus</button>
+
+                                <?php if ( $partenaire['link'] ) : ?>
+
+                                    <a href="<?= $partenaire['link']['url'] ?>"
+                                    <?php
+                                        if ( $partenaire['link']['target'] ) :
+                                            echo 'target="' . $partenaire['link']['target'] . '" ';
+                                        endif;
+                                    ?>
+                                       class="button bg-magenta color-white mg-32px-t ft-semibold ft-mulish text-base"
+                                    >
+                                        En savoir plus
+                                    </a>
+
+                                <?php endif; ?>
                             </div>
-                            <div class="slider-content-who mg-32px-t">
+
+	                        <?php if ( $partenaire['collaborators'] ) : ?>
+                                <div class="slider-content-who mg-32px-t">
                                 <h3 class="ft-nunito ft-semibold text-xl mg-24px-b text-xl">Avec qui ?</h3>
-                                <div class="collaborators-container mg-24px-t">
-                                    <div class="collaborator">
-                                        <img class="collaborator-image mg-24px-b" src="//picsum.photos/100" alt="">
-                                        <h5 class="text-base ft-semibold">Samy</h5>
-                                        <p class="text-center mg-16px-t">lorem ipsum dolor sit amet consectetur</p>
-                                    </div>
-                                    <div class="collaborator">
-                                        <img class="collaborator-image mg-24px-b" src="//picsum.photos/100" alt="">
-                                        <h5 class="text-base ft-semibold">Samy</h5>
-                                        <p class="text-center mg-16px-t">lorem ipsum dolor sit amet consectetur</p>
-                                    </div>
-                                    <div class="collaborator">
-                                        <img class="collaborator-image mg-24px-b" src="//picsum.photos/100" alt="">
-                                        <h5 class="text-base ft-semibold">Samy</h5>
-                                        <p class="text-center mg-16px-t">lorem ipsum dolor sit amet consectetur</p>
+
+                                    <div class="collaborators-container mg-24px-t">
+                                    <?php
+                                        foreach ( $partenaire['collaborators'] as $collaborator ) :
+                                    ?>
+                                        <div class="collaborator">
+                                            <img class="collaborator-image mg-24px-b"
+                                                 src="<?= $collaborator['img']['url'] ?>"
+                                                 alt="<?= $collaborator['img']['alt'] ?? '' ?>"
+                                            />
+                                            <h5 class="text-base ft-semibold">
+                                                <?= $collaborator['name'] ?>
+                                            </h5>
+                                            <?php
+                                                if ( $collaborator['description'] ) :
+                                            ?>
+                                                <p class="text-center mg-16px-t">
+                                                    <?= $collaborator['description'] ?>
+                                                </p>
+                                            <?php
+                                                endif;
+                                            ?>
+                                        </div>
+                                    <?php
+                                        endforeach;
+                                    ?>
                                     </div>
                                 </div>
-                            </div>
-                        </div> 
-                    </div>
-                    <!-- Fin slide -->
-                    <!-- Debut slide -->
-                    <div class="swiper-slide">
-                        <div class="slider-image ">
-                            <img src="//picsum.photos/500" alt="Pic">
+	                        <?php endif ?>
                         </div>
-                        <div class="slider-content color-white">
-                            <div class="slider-content-what ">
-                                <h3 class="ft-nunito ft-semibold text-xl mg-24px-b">La boutique de Samy</h3>
-                                <p class="text-base ft-mulish">
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Ipsam inventore mollitia
-                                    repellat quod placeat deserunt quis minima.
-                                </p>
-                                <button class="button bg-magenta color-white mg-32px-t ft-semibold ft-mulish">En savoir plus</button>
-                            </div>
-                            <div class="slider-content-who mg-32px-t">
-                                <h3 class="ft-nunito ft-semibold text-xl mg-24px-b text-xl">Avec qui ?</h3>
-                                <div class="collaborators-container mg-24px-t">
-                                    <div class="collaborator">
-                                        <img class="collaborator-image mg-24px-b" src="//picsum.photos/100" alt="">
-                                        <h5 class="text-base ft-semibold">Samy</h5>
-                                        <p class="text-center mg-16px-t">lorem ipsum dolor sit amet consectetur</p>
-                                    </div>
-                                    <div class="collaborator">
-                                        <img class="collaborator-image mg-24px-b" src="//picsum.photos/100" alt="">
-                                        <h5 class="text-base ft-semibold">Samy</h5>
-                                        <p class="text-center mg-16px-t">lorem ipsum dolor sit amet consectetur</p>
-                                    </div>
-                                    <div class="collaborator">
-                                        <img class="collaborator-image mg-24px-b" src="//picsum.photos/100" alt="">
-                                        <h5 class="text-base ft-semibold">Samy</h5>
-                                        <p class="text-center mg-16px-t">lorem ipsum dolor sit amet consectetur</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> 
                     </div>
                     <!-- Fin slide -->
-                    <!-- Debut slide -->
-                    <div class="swiper-slide">
-                        <div class="slider-image ">
-                            <img src="//picsum.photos/500" alt="Pic">
-                        </div>
-                        <div class="slider-content color-white">
-                            <div class="slider-content-what ">
-                                <h3 class="ft-nunito ft-semibold text-xl mg-24px-b">La boutique de Samy</h3>
-                                <p class="text-base ft-mulish">
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Ipsam inventore mollitia
-                                    repellat quod placeat deserunt quis minima.
-                                </p>
-                                <button class="button bg-magenta color-white mg-32px-t ft-semibold ft-mulish">En savoir plus</button>
-                            </div>
-                            <div class="slider-content-who mg-32px-t">
-                                <h3 class="ft-nunito ft-semibold text-xl mg-24px-b text-xl">Avec qui ?</h3>
-                                <div class="collaborators-container mg-24px-t">
-                                    <div class="collaborator">
-                                        <img class="collaborator-image mg-24px-b" src="//picsum.photos/100" alt="">
-                                        <h5 class="text-base ft-semibold">Samy</h5>
-                                        <p class="text-center mg-16px-t">lorem ipsum dolor sit amet consectetur</p>
-                                    </div>
-                                    <div class="collaborator">
-                                        <img class="collaborator-image mg-24px-b" src="//picsum.photos/100" alt="">
-                                        <h5 class="text-base ft-semibold">Samy</h5>
-                                        <p class="text-center mg-16px-t">lorem ipsum dolor sit amet consectetur</p>
-                                    </div>
-                                    <div class="collaborator">
-                                        <img class="collaborator-image mg-24px-b" src="//picsum.photos/100" alt="">
-                                        <h5 class="text-base ft-semibold">Samy</h5>
-                                        <p class="text-center mg-16px-t">lorem ipsum dolor sit amet consectetur</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> 
-                    </div>
-                    <!-- Fin slide -->
-                <?php //} ?>
+                <?php
+                    endforeach;
+                ?>
             </div>
             <div class="swiper-pagination"></div>
         </div>
