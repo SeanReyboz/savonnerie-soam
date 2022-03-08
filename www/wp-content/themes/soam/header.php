@@ -1,11 +1,18 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr-FR" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <meta name="author" content="Agence Pikoom">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script> -->
+    <meta charset="utf-8" />
+    <meta name="author" content="Agence Pikoom" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title><?php bloginfo('name'); ?></title>
+    <meta property="description" content="<?php bloginfo('description'); ?>" />
+    <meta property="og:url" content="https://www.savonneriesoam.fr/"/>
+    <meta property="og:title" content="<?php bloginfo('name'); ?>"/>
+    <meta property="og:description" content="<?php bloginfo('description'); ?>"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:locale" content="fr_FR"/>
+    <meta property="og:site_name" content="<?php bloginfo('name'); ?>"/>
+    <link rel="shortcut icon" href="<?= get_template_directory_uri() . '/favicon.png' ?>" />
     <?php 
       wp_head(); 
       show_admin_bar(true); 
