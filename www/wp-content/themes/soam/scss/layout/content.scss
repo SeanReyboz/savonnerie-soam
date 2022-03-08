@@ -1,4 +1,4 @@
-.content {
+.content-wrapper {
   // TODO: Fix temporaire en attendant la dynamisation avec ACF...
   --color: red;
 
@@ -11,11 +11,11 @@
     flex-direction: row-reverse;
   }
 
-  &[data-is-even] &_image::before {
+  &[data-is-even] .content_image::before {
     left: var(--offset);
   }
 
-  &[data-is-odd] &_image::before {
+  &[data-is-odd] .content_image::before {
     right: var(--offset);
   }
 

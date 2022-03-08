@@ -71,11 +71,11 @@ get_header();
                     </li>
                     <li>
                         <img src="<?= get_template_directory_uri() . '/images/icons/phone.svg'; ?>" alt="">
-                        <p><?= $informations['telephone'] ?></p>
+                        <a href="tel:+<?= $informations['telephone'] ?>" class="text"><?= $informations['telephone'] ?></a>
                     </li>
                     <li>
                         <img src="<?= get_template_directory_uri() . '/images/icons/mail.svg'; ?>" alt="">
-                        <p><?= $informations['mail'] ?></p>
+                        <a href="mailto:<?= $informations['mail'] ?>" class="text"><?= $informations['mail'] ?></a>
                     </li>
 
                 </ul>
@@ -94,15 +94,17 @@ get_header();
         width="800" height="800" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
 </section>
-<section class="partenaire bg-cyan pg-112px-l pg-64px-y">
-    <div class="main-wrapper">
-        <h2 class="text-xxl ft-bold ft-nunito"><?= $partenaires['titre'] ?></h2>
-        <p class="text-lg"><?= $partenaires['texte'] ?></p>
-        <button class="button ft-semibold">
-            <?= $partenaires['texte_du_boutton'] ?>
-        </button>
-    </div>
-</section>
+<?php if ( $partenaires ): ?>
+    <section class="partenaire bg-cyan pg-112px-l pg-64px-y">
+        <div class="main-wrapper">
+            <h2 class="text-xxl ft-bold ft-nunito"><?= $partenaires['titre'] ?></h2>
+            <p class="text-lg"><?= $partenaires['texte'] ?></p>
+            <button class="button ft-semibold ft-mulish">
+                <?= $partenaires['texte_du_boutton'] ?>
+            </button>
+        </div>
+    </section>
+<?php endif; ?>
 
 
 

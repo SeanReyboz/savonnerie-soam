@@ -4,7 +4,6 @@
 Template Name: Page conseils
 
 
-TODO: Refactor
 TODO: Vérifier + faire la version responsive
 TODO: Vérifier dynamisation
  */

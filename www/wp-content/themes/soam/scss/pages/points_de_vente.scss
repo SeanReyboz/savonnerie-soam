@@ -59,6 +59,9 @@
               p{
                 max-width: 193px;
               }
+              a {
+                @extend .text;
+              }
             }
           }
         }
@@ -108,6 +111,7 @@
   }
   p{
       padding-bottom: 32px;
+      max-width: 72ex;
   }
   button{
     background-color: $magenta;

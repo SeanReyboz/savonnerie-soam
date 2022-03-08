@@ -59,6 +59,7 @@
 .text {
   text-decoration: none;
   color: $black;
+  transition: color 200ms ease-out;
 
   &:hover {
     color: $cyan;

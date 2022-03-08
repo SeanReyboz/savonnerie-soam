@@ -12,7 +12,7 @@ $contenu_en_quinconce = get_field('contenu_en_quinconce');
         $even_or_odd = $key % 2 === 0 ? "even" : "odd";
 ?>
     <div
-        class="content main-wrapper"
+        class="content-wrapper main-wrapper"
 	    data-is-<?= $even_or_odd ?>
     >
         <div class="content_image" style="--color: <?= $content['background_color'] ?>">
