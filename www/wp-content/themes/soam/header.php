@@ -31,7 +31,11 @@
           ]); 
 
         ?>
-
+          <button class="responsive-nav-btn js-burger" type="button">
+              <span></span>
+              <span></span>
+              <span></span>
+          </button>
         <?php 
 
           /** 
@@ -64,19 +68,14 @@
             /></a>
         </div>
       </div>
-      <button class="responsive-nav-btn js-burger" type="button">
-          <!-- <img src="<?= get_template_directory_uri() . '/images/icons/burger.svg' ?>" alt="Icône de menu" /> -->
-          <span></span>
-          <span></span>
-          <span></span>
-      </button>
+
       <div class="responsive-nav js-responsive-nav" style="--bg-image: url('<?= get_template_directory_uri() . '/images/blob/menu-responsive.png' ?>') ">
 
           <a href="<?= home_url(); ?>" >
               <img
-                      class="logo"
-                      src="<?= get_template_directory_uri() . '/images/logo.png'; ?>"
-                      alt="Logo Soam"
+                  class="logo"
+                  src="<?= get_template_directory_uri() . '/images/logo.png'; ?>"
+                  alt="Logo Soam"
               />
           </a>
 	      <?php
