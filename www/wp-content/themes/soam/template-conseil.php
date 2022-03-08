@@ -2,12 +2,11 @@
 <?php
 /*
 Template Name: Page conseils
-
-
-TODO: Vérifier + faire la version responsive
-TODO: Vérifier dynamisation
  */
 get_header();
+
+$contact = get_field('contact_info') ?? "";
+
 ?>
 
     <!-- Bloc de contenu princpale -->
@@ -20,9 +19,7 @@ get_header();
       <div class="formulaire">
         <h2 class="contact-me text-xxl ft-nunito ft-bold">Me contacter</h2>
         <p class="desc text-base mg-32px-y">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. At malesuada quis non consectetur hendrerit
-            pellentesque hac. Elementum orci et egestas ut sit amet, enim est. Massa sed porta viverra sed
-            tincidunt.
+            <?= $contact ?>
         </p>
         <form action="" method="post">
             <div class="form-control">
@@ -37,7 +34,7 @@ get_header();
                 <label for="message">Message</label>
                 <input type="text" name="message" id="message" />
             </div>
-            <input type="submit" value="Envoyer" />
+            <input type="submit" value="Envoyer" disabled />
         </form>
       </div>
     </div>
