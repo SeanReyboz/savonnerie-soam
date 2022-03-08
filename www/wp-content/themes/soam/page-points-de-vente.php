@@ -98,8 +98,8 @@ get_header();
     <section class="partenaire bg-cyan pg-112px-l pg-64px-y">
         <div class="main-wrapper">
             <h2 class="text-xxl ft-bold ft-nunito"><?= $partenaires['titre'] ?></h2>
-            <p class="text-lg"><?= $partenaires['texte'] ?></p>
-            <a href="<?= $partenaires['link'] ?>" class="button-xl bg-magenta color-white ft-semibold ft-mulish">
+            <p class="text-base"><?= $partenaires['texte'] ?></p>
+            <a href="<?= $partenaires['link'] ?>" class="button text-base bg-magenta color-white ft-semibold ft-mulish">
                 En savoir plus
             </a>
         </div>

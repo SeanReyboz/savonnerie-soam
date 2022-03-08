@@ -1,15 +1,13 @@
 .content-wrapper {
-  // TODO: Fix temporaire en attendant la dynamisation avec ACF...
-  --color: red;
-
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   margin-top: 146px;
-  align-items: center;
+
   @media screen and (max-width: 1240px){
       padding:0 20px;
       gap: 20px;
+      margin-top: 4rem;
   }
   @media screen and(max-width: 768px) {
     flex-direction: column-reverse;
