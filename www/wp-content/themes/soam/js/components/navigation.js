@@ -5,6 +5,7 @@ class Navigation {
     }
 
     initEls() {
+        this.body = document.querySelector('html');
         this.burger = document.querySelector('.js-burger');
         this.responsiveNav = document.querySelector('.js-responsive-nav');
         this.state = false;
@@ -30,12 +31,14 @@ class Navigation {
     }
 
     openMenu() {
-        this.setState(true)
+        this.setState(true);
+        this.body.classList.toggle("no-scroll");
         return this.responsiveNav.setAttribute("data-opened", "true");
     }
 
     closeMenu() {
-        this.setState(false)
+        this.setState(false);
+        this.body.classList.toggle("no-scroll");
         return this.responsiveNav.setAttribute("data-opened", "false");
     }
 

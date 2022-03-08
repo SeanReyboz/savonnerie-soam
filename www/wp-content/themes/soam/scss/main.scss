@@ -26,6 +26,16 @@
 @import "pages/404";
 @import "pages/points_de_vente";
 
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  overscroll-behavior: none;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
 body {
   background-color: $white;
   font-family: "mulish", sans-serif;
