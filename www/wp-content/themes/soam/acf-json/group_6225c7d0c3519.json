@@ -257,9 +257,9 @@
                 },
                 {
                     "key": "field_6225c9057377c",
-                    "label": "Texte du boutton",
-                    "name": "texte_du_boutton",
-                    "type": "text",
+                    "label": "Lien vers la page partenaies",
+                    "name": "link",
+                    "type": "page_link",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -268,11 +268,11 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
+                    "post_type": "",
+                    "taxonomy": "",
+                    "allow_null": 0,
+                    "allow_archives": 1,
+                    "multiple": 0
                 }
             ]
         }
@@ -301,5 +301,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1646730686
+    "modified": 1646732978
 }

@@ -99,9 +99,9 @@ get_header();
         <div class="main-wrapper">
             <h2 class="text-xxl ft-bold ft-nunito"><?= $partenaires['titre'] ?></h2>
             <p class="text-lg"><?= $partenaires['texte'] ?></p>
-            <button class="button ft-semibold ft-mulish">
-                <?= $partenaires['texte_du_boutton'] ?>
-            </button>
+            <a href="<?= $partenaires['link'] ?>" class="button-xl bg-magenta color-white ft-semibold ft-mulish">
+                En savoir plus
+            </a>
         </div>
     </section>
 <?php endif; ?>
