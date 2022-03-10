@@ -7,15 +7,6 @@ get_header();
 $groupes = get_field('categories');
 
 ?>
-
-    <nav class="search_menu" aria-label="Product filter">
-      <ul>
-      <li><a href="#all" class="search_menu_products">Tous les produis</a></li>
-      <li><a href="#soap" class="search_menu_soap">Savons</a></li>
-      <li><a href="#oil" class="search_menu_oil">Huiles et Sérums</a></li>
-      <li><a href="#balm" class="search_menu_balm">Baumes</a></li>
-      </ul>
-    </nav>
     <div class="main-wrapper">
 
 	    <?php

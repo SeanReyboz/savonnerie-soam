@@ -163,7 +163,7 @@
                             "name": "links",
                             "type": "group",
                             "instructions": "Les liens permettant à vos internautes de vous contacter.",
-                            "required": 1,
+                            "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
@@ -180,7 +180,7 @@
                                     "name": "emails",
                                     "type": "repeater",
                                     "instructions": "",
-                                    "required": 0,
+                                    "required": 1,
                                     "conditional_logic": 0,
                                     "wrapper": {
                                         "width": "",
@@ -257,7 +257,7 @@
                                     "name": "phone",
                                     "type": "number",
                                     "instructions": "Un numéro de téléphone complet. Ex: 33123456789",
-                                    "required": 0,
+                                    "required": 1,
                                     "conditional_logic": 0,
                                     "wrapper": {
                                         "width": "",
@@ -282,7 +282,7 @@
                     "name": "legals",
                     "type": "group",
                     "instructions": "Cette section contient toutes les informations légales relatives à la marque ou au site.",
-                    "required": 1,
+                    "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
                         "width": "",
@@ -318,7 +318,7 @@
                             "name": "links",
                             "type": "repeater",
                             "instructions": "Les liens vers les différentes pages de mentions légales.",
-                            "required": 1,
+                            "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
@@ -416,5 +416,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1644071806
+    "modified": 1646939196
 }

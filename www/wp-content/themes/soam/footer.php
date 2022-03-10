@@ -111,9 +111,9 @@ $legals_links = $legals['links'];
             <?= $legals['title']; ?>
           </h3>
           <ul class="footer-nav-entry-list">
-            <?php 
+            <?php
               // Make sure $legals_links is not empty to prevent any error
-              if ( !empty($legals_links) ) 
+              if ( !empty($legals_links) )
                 foreach ( $legals_links as $links ) : 
             ?>
               <li>
@@ -122,7 +122,7 @@ $legals_links = $legals['links'];
                 </a>
               </li>
             <?php 
-              endforeach
+              endforeach;
             ?>
           </ul>
         </div>
